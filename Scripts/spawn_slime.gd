@@ -12,10 +12,6 @@ func _ready() -> void:
 func inst(pos):
 	var instance = slimenode.instantiate()
 	instance.position = pos
-	var slime_node = instance.get_child(0)
-	var slime_body = slime_node.get_child(0)
-	#slime_body.scale = Vector2(2,2)
-	var subview = get_node("SubViewport2")
 	add_child(instance)
 	
 func _input(event):
