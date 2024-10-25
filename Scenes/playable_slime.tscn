@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://bq5f582hnlqb2"]
+
+[ext_resource type="Script" path="res://Scenes/slime_scene.gd" id="1_g8ksd"]
+[ext_resource type="Shader" uid="uid://bbi52vg3lcxyi" path="res://Scenes/playable_slime.tres" id="2_oiwfh"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qqi5n"]
+shader = ExtResource("2_oiwfh")
+
+[node name="Node2D" type="Node2D"]
+material = SubResource("ShaderMaterial_qqi5n")
+script = ExtResource("1_g8ksd")

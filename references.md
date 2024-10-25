@@ -9,3 +9,11 @@ https://github.com/RPicster/Godot-SmartShape2D-Example
 Code:
 
 https://medium.com/@merxon22/godot-shader-render-3d-models-as-pixel-art-4839e6528601s
+
+https://github.com/arkology/ShaderV
+Use shift HSV
+
+https://github.com/appsinacup/godot-softbody2d
+
+https://github.com/kubecz3k/FiniteStateMachine
+^^ doesn't work. Need a different one, possibly the godot demo one. Make it an addon?
