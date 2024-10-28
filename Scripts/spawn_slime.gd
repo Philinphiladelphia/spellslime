@@ -1,15 +1,15 @@
 extends Node2D
 
-var slimenode = preload("res://Scenes/slime.tscn")
-var playable_slime = preload("res://Scenes/playable_slime.tscn")
+var slime = preload("res://Scenes/slimes/slime.tscn")
+var clear_slime = preload("res://Scenes/slimes/slime_subtypes/clear_slime.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var instance = playable_slime.instantiate()
+	var instance = slime.instantiate()
 	add_child(instance)
 
 func inst(pos):
-	var instance = playable_slime.instantiate()
+	var instance = slime.instantiate()
 	instance.position = pos
 	add_child(instance)
 	
