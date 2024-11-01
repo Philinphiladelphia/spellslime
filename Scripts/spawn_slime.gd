@@ -1,17 +1,40 @@
 extends Node2D
 
-var slime = preload("res://Scenes/slimes/slime.tscn")
-var clear_slime = preload("res://Scenes/slimes/slime_subtypes/clear_slime.tscn")
+var small_slime = preload("res://Scenes/slimes/small_slime.tscn")
+
+var clear_shader = preload("res://Shaders/clear.tscn")
+var rainbow_shader = preload("res://Shaders/rainbow.tscn")
+var color_glow_shader = preload("res://Shaders/color_glow.tscn")
+
+var shaders = [clear_shader, rainbow_shader]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var instance = slime.instantiate()
-	add_child(instance)
+	pass
+
+func gen_color():
+	return Color.from_hsv(randf_range(0.0, 1.0), 1.0, 1.0)
+
+func random_colored_slime():
+	var glow = color_glow_shader.instantiate()
+	glow.material.set_shader_parameter("glow_color", gen_color())
+	return apply_shader(small_slime.instantiate(), glow)
+	
+func random_shader_slime():
+	randomize()
+	var random_index = randi() % shaders.size()
+	var chosen_shader = shaders[random_index]
+	
+	return apply_shader(small_slime.instantiate(), chosen_shader.instantiate())
 
 func inst(pos):
-	var instance = slime.instantiate()
-	instance.position = pos
-	add_child(instance)
+	var slime = random_colored_slime()
+	slime.position = pos
+	add_child(slime)
+	
+func apply_shader(slime, shader):
+	shader.add_child(slime)
+	return shader
 	
 func _input(event):
 	# Mouse in viewport coordinates.

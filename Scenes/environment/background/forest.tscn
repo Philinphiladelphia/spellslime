@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://cis4gpfh8igqw"]
+[gd_scene load_steps=35 format=3 uid="uid://cis4gpfh8igqw"]
 
 [ext_resource type="Script" path="res://Scripts/framerate_controller.gd" id="1_jr17a"]
 [ext_resource type="ArrayMesh" uid="uid://bmx5gsj2dbhji" path="res://Models/Knot.res" id="2_qwgbo"]
@@ -108,30 +108,6 @@ albedo_texture = ExtResource("12_kutby")
 albedo_texture = ExtResource("12_igax5")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xrjjp"]
-
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_xlmtp"]
-panorama = ExtResource("3_70yns")
-
-[sub_resource type="Sky" id="Sky_learr"]
-sky_material = SubResource("PanoramaSkyMaterial_xlmtp")
-
-[sub_resource type="Environment" id="Environment_ugs4f"]
-background_mode = 2
-background_color = Color(0.496326, 0.65867, 1, 1)
-sky = SubResource("Sky_learr")
-ambient_light_source = 3
-ambient_light_energy = 0.67
-glow_intensity = 6.48
-glow_bloom = 0.03
-glow_hdr_threshold = 0.45
-glow_hdr_luminance_cap = 40.0
-fog_mode = 1
-fog_light_color = Color(0.436642, 0.560666, 0.712906, 1)
-fog_density = 1.0
-fog_depth_curve = 1.93187
-fog_depth_begin = 242.4
-fog_depth_end = 1858.4
-volumetric_fog_density = 0.0
 
 [node name="Scene" type="Node"]
 
@@ -656,9 +632,6 @@ visible = false
 
 [node name="AllSky_DemoEnvironment" parent="AllSky_DemoEnvironment" index="0"]
 surface_material_override/0 = SubResource("ShaderMaterial_xrjjp")
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_ugs4f")
 
 [editable path="SubViewportContainer/SubViewport/flowers2"]
 [editable path="SubViewportContainer/SubViewport/grass"]

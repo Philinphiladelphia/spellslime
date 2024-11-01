@@ -17,7 +17,7 @@ config/icon="res://icon.svg"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/addons/scene_object_brush/plugin.cfg", "res://addons/diagnosticlist/plugin.cfg", "res://addons/gut/plugin.cfg", "res://addons/imjp94.yafsm/plugin.cfg", "res://addons/quillfbxconverter/plugin.cfg", "res://addons/rmsmartshape/plugin.cfg", "res://addons/softbody2d/plugin.cfg")
+enabled=PackedStringArray("res://addons/addons/scene_object_brush/plugin.cfg", "res://addons/diagnosticlist/plugin.cfg", "res://addons/gut/plugin.cfg", "res://addons/imjp94.yafsm/plugin.cfg", "res://addons/plugin_refresher/plugin.cfg", "res://addons/quillfbxconverter/plugin.cfg", "res://addons/rmsmartshape/plugin.cfg", "res://addons/softbody2d/plugin.cfg")
 
 [rendering]
 
