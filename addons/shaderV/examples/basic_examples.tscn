@@ -2312,6 +2312,7 @@ void fragment() {
 
 }
 "
+graph_offset = Vector2(-470.517, -114.97)
 mode = 1
 flags/light_only = false
 nodes/fragment/0/position = Vector2(200, 0)
@@ -5163,22 +5164,22 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(-69.8232, 113.43)
+graph_offset = Vector2(-115.866, -20.3314)
 mode = 1
 flags/light_only = false
 nodes/fragment/0/position = Vector2(1040, 400)
 nodes/fragment/27/node = SubResource("401")
-nodes/fragment/27/position = Vector2(800, 400)
+nodes/fragment/27/position = Vector2(800, 398.389)
 nodes/fragment/28/node = SubResource("402")
-nodes/fragment/28/position = Vector2(460, 240)
+nodes/fragment/28/position = Vector2(460, 238.389)
 nodes/fragment/30/node = SubResource("403")
-nodes/fragment/30/position = Vector2(520, 540)
+nodes/fragment/30/position = Vector2(520, 538.39)
 nodes/fragment/31/node = SubResource("404")
-nodes/fragment/31/position = Vector2(420, 620)
+nodes/fragment/31/position = Vector2(420, 618.39)
 nodes/fragment/32/node = SubResource("405")
-nodes/fragment/32/position = Vector2(540, 460)
+nodes/fragment/32/position = Vector2(540, 458.389)
 nodes/fragment/33/node = SubResource("406")
-nodes/fragment/33/position = Vector2(260, 420)
+nodes/fragment/33/position = Vector2(260, 418.389)
 nodes/fragment/connections = PackedInt32Array(28, 0, 27, 0, 30, 0, 27, 3, 27, 1, 0, 1, 27, 0, 0, 0, 28, 4, 27, 1, 31, 0, 27, 4, 33, 0, 32, 0, 32, 0, 27, 2)
 
 [sub_resource type="Gradient" id="408"]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bq5f582hnlqb2"]
+
+[ext_resource type="Shader" uid="uid://bbi52vg3lcxyi" path="res://Shaders/clear.tres" id="1_wa4u4"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qqi5n"]
+shader = ExtResource("1_wa4u4")
+
+[node name="Node2D" type="Node2D"]
+material = SubResource("ShaderMaterial_qqi5n")

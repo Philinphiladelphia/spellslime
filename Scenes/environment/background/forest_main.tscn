@@ -1,20 +1,28 @@
-[gd_scene load_steps=12 format=3 uid="uid://c4l2y0kdm5yn1"]
+[gd_scene load_steps=10 format=3 uid="uid://c4l2y0kdm5yn1"]
 
-[ext_resource type="Texture2D" uid="uid://digv0cc2qcog1" path="res://Models/skyboxes/AllSkyFree_Sky_EpicGloriousPink_Equirect.png" id="1_r2dok"]
 [ext_resource type="Texture2D" uid="uid://b50apiaiyon1s" path="res://icon.svg" id="2_xfb5p"]
-[ext_resource type="Script" path="res://Scripts/framerate_controller.gd" id="3_1cmkb"]
+[ext_resource type="Shader" path="res://Shaders/pixelate.gdshader" id="3_4daer"]
 [ext_resource type="Script" path="res://Scenes/spawn_game_scene.gd" id="3_46txi"]
+[ext_resource type="Texture2D" uid="uid://7uo37g0jbnfu" path="res://Models/skyboxes/AllSkyFree_Sky_MoonBurst_Equirect.png" id="4_7d81a"]
 
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_1kw22"]
-panorama = ExtResource("1_r2dok")
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1wdx1"]
+shader = ExtResource("3_4daer")
+shader_parameter/pixel_count = Vector2(270, 180)
 
-[sub_resource type="Sky" id="Sky_rjubb"]
-sky_material = SubResource("PanoramaSkyMaterial_1kw22")
+[sub_resource type="ViewportTexture" id="ViewportTexture_qs6sg"]
+viewport_path = NodePath("BoxContainer/Camera3D/Node3D/SubViewport")
 
-[sub_resource type="Environment" id="Environment_cwe07"]
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_rkliq"]
+panorama = ExtResource("4_7d81a")
+
+[sub_resource type="Sky" id="Sky_learr"]
+sky_material = SubResource("PanoramaSkyMaterial_rkliq")
+radiance_size = 2
+
+[sub_resource type="Environment" id="Environment_bbkkp"]
 background_mode = 2
 background_color = Color(0.496326, 0.65867, 1, 1)
-sky = SubResource("Sky_rjubb")
+sky = SubResource("Sky_learr")
 ambient_light_source = 3
 ambient_light_energy = 0.67
 glow_intensity = 6.48
@@ -29,59 +37,47 @@ fog_depth_begin = 242.4
 fog_depth_end = 1858.4
 volumetric_fog_density = 0.0
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_qs6sg"]
-viewport_path = NodePath("Camera3D/Node3D/SubViewport")
+[node name="ForestEnvironment" type="Node3D"]
 
-[sub_resource type="QuadMesh" id="QuadMesh_vbihb"]
+[node name="BoxContainer" type="BoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_4pwug"]
-viewport_path = NodePath("game_sprite/pixelize_viewport")
+[node name="slime_container" type="SubViewportContainer" parent="BoxContainer"]
+material = SubResource("ShaderMaterial_1wdx1")
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+stretch = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kemrb"]
-resource_local_to_scene = true
-transparency = 1
-shading_mode = 0
-albedo_texture = SubResource("ViewportTexture_4pwug")
-disable_receive_shadows = true
-shadow_to_opacity = true
-billboard_mode = 1
-billboard_keep_scale = true
-
-[node name="ForestMain" type="Node3D"]
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_cwe07")
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.90282)
-
-[node name="Node3D" type="Node3D" parent="Camera3D"]
-visible = false
-
-[node name="Sprite3D" type="Sprite3D" parent="Camera3D/Node3D"]
-texture = SubResource("ViewportTexture_qs6sg")
-
-[node name="SubViewport" type="SubViewport" parent="Camera3D/Node3D"]
-handle_input_locally = false
-render_target_update_mode = 4
-
-[node name="Sprite2D" type="Sprite2D" parent="Camera3D/Node3D/SubViewport"]
-texture = ExtResource("2_xfb5p")
-
-[node name="game_sprite" type="MeshInstance3D" parent="."]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
-cast_shadow = 0
-gi_mode = 0
-mesh = SubResource("QuadMesh_vbihb")
-surface_material_override/0 = SubResource("StandardMaterial3D_kemrb")
-
-[node name="pixelize_viewport" type="SubViewport" parent="game_sprite"]
+[node name="pixelize_viewport" type="SubViewport" parent="BoxContainer/slime_container"]
 transparent_bg = true
 handle_input_locally = false
-size = Vector2i(1080, 720)
+size = Vector2i(2, 2)
 render_target_update_mode = 4
-script = ExtResource("3_1cmkb")
-framerate = 60
 
-[node name="game_scene" type="Node" parent="game_sprite/pixelize_viewport"]
+[node name="game_scene" type="Node" parent="BoxContainer/slime_container/pixelize_viewport"]
 script = ExtResource("3_46txi")
+
+[node name="Camera3D" type="Camera3D" parent="BoxContainer"]
+transform = Transform3D(-1, -2.99003e-08, -8.21505e-08, 0, 0.939692, -0.34202, 8.74228e-08, -0.34202, -0.939692, 0, 0, 1.90282)
+
+[node name="Node3D" type="Node3D" parent="BoxContainer/Camera3D"]
+visible = false
+
+[node name="Sprite3D" type="Sprite3D" parent="BoxContainer/Camera3D/Node3D"]
+texture = SubResource("ViewportTexture_qs6sg")
+
+[node name="SubViewport" type="SubViewport" parent="BoxContainer/Camera3D/Node3D"]
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="BoxContainer/Camera3D/Node3D/SubViewport"]
+visible = false
+texture = ExtResource("2_xfb5p")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_bbkkp")

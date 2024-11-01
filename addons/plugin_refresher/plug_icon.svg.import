@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfeau3f6pq3lt"
-path="res://.godot/imported/AllSkyFree_Sky_EpicBlueSunset_Equirect.png-c0f151e441c4d67bc91018a77a4605cd.ctex"
+uid="uid://3ya8sf4egbgy"
+path="res://.godot/imported/plug_icon.svg-b180bca47232308b352da81a86bc8fad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Models/skyboxes/AllSkyFree_Sky_EpicBlueSunset_Equirect.png"
-dest_files=["res://.godot/imported/AllSkyFree_Sky_EpicBlueSunset_Equirect.png-c0f151e441c4d67bc91018a77a4605cd.ctex"]
+source_file="res://addons/plugin_refresher/plug_icon.svg"
+dest_files=["res://.godot/imported/plug_icon.svg-b180bca47232308b352da81a86bc8fad.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false
