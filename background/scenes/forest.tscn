@@ -1,0 +1,616 @@
+[gd_scene load_steps=29 format=3 uid="uid://cis4gpfh8igqw"]
+
+[ext_resource type="ArrayMesh" uid="uid://bmx5gsj2dbhji" path="res://Models/Knot.res" id="2_qwgbo"]
+[ext_resource type="Texture2D" uid="uid://ckoruci4xy2hq" path="res://Models/forest/3d/stylized-lowpoly-flowers-25-assets-pack-vol-2/textures/GRADIENT_COLOR_PALLETS.jpg" id="3_0rqb5"]
+[ext_resource type="Texture2D" uid="uid://digv0cc2qcog1" path="res://Models/skyboxes/AllSkyFree_Sky_EpicGloriousPink_Equirect.png" id="3_70yns"]
+[ext_resource type="PackedScene" uid="uid://cv3p5l6harcc1" path="res://Models/forest/3d/stylized-low-poly-flowers-pack-vol-8/source/flowers.fbx" id="3_j1kq1"]
+[ext_resource type="Texture2D" uid="uid://dp77tpjombcou" path="res://Models/forest/3d/stylized-low-poly-flowers-pack-vol-8/textures/GRADIENT_COLOR_PALLETS.jpg" id="5_cmae6"]
+[ext_resource type="PackedScene" uid="uid://c7koc32bm614w" path="res://Models/forest/3d/low_poly_stylized_grass_vol_10/grass pack vol-10_2.fbx" id="8_1idu2"]
+[ext_resource type="Texture2D" uid="uid://d3ev1vkp20sen" path="res://Models/forest/3d/low_poly_stylized_grass_vol_10/GRADIENT COLOR PALLETS.jpg" id="9_k3uf2"]
+[ext_resource type="PackedScene" uid="uid://bbh61gwoyn87s" path="res://Models/forest/3d/stylized_low_poly_pine_tree_25_assets_vol_2_gltf/scene.gltf" id="10_2hjxf"]
+[ext_resource type="PackedScene" uid="uid://82fwwkyie73o" path="res://Models/forest/3d/low-poly-stylized-nature-pack-vol-7/source/stylizedpack 7 .fbx" id="11_c2kto"]
+[ext_resource type="PackedScene" uid="uid://s3b2b13xia8j" path="res://Models/forest/3d/low-poly-game-asset-pack/source/Low poly game asset pack.fbx" id="11_t2qr6"]
+[ext_resource type="Texture2D" uid="uid://blavpdvclo1fq" path="res://Models/forest/3d/low-poly-game-asset-pack/textures/colors_p.jpg" id="12_igax5"]
+[ext_resource type="Texture2D" uid="uid://d2bdq1m87rxin" path="res://Models/forest/3d/low-poly-stylized-nature-pack-vol-7/textures/GRADIENT_COLOR_PALLETS.jpg" id="12_kutby"]
+[ext_resource type="PackedScene" uid="uid://cad50fshbh1bx" path="res://Models/forest/3d/big_environment_map_for_game_and_animation_gltf/scene.gltf" id="13_678eg"]
+[ext_resource type="PackedScene" uid="uid://dsg2ufrrsm71a" path="res://Models/forest/env_files/AllSky_DemoEnvironment.fbx" id="15_2uwhc"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xrjjp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ahli"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.952388, 0.384899, 0.470088, 1)
+roughness = 0.0
+
+[sub_resource type="Animation" id="Animation_68224"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../MeshInstance3D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_rvkmm"]
+resource_name = "rotate"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../MeshInstance3D:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 6.28319, 0), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bic5x"]
+_data = {
+"RESET": SubResource("Animation_68224"),
+"rotate": SubResource("Animation_rvkmm")
+}
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jvn72"]
+albedo_texture = ExtResource("3_0rqb5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2x7g4"]
+albedo_texture = ExtResource("5_cmae6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2p3qr"]
+albedo_texture = ExtResource("9_k3uf2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v8rdl"]
+albedo_texture = ExtResource("5_cmae6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hhylf"]
+albedo_texture = ExtResource("12_kutby")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ekru3"]
+albedo_texture = ExtResource("12_igax5")
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_gtj3w"]
+panorama = ExtResource("3_70yns")
+
+[sub_resource type="Sky" id="Sky_i3scd"]
+sky_material = SubResource("PanoramaSkyMaterial_gtj3w")
+
+[sub_resource type="Environment" id="Environment_6fdcs"]
+background_mode = 2
+sky = SubResource("Sky_i3scd")
+fog_enabled = true
+fog_mode = 1
+fog_sun_scatter = 1.0
+fog_density = 0.5635
+fog_height_density = 0.6831
+fog_depth_curve = 0.450625
+fog_depth_begin = 26.5
+volumetric_fog_density = 0.5567
+volumetric_fog_albedo = Color(0.370364, 0.370364, 0.370364, 1)
+volumetric_fog_detail_spread = 1.6245
+
+[node name="Scene" type="Node"]
+
+[node name="AllSky_DemoEnvironment" parent="." instance=ExtResource("15_2uwhc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.7079, 62.2815, -48.5447)
+visible = false
+
+[node name="AllSky_DemoEnvironment" parent="AllSky_DemoEnvironment" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_xrjjp")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.8473, -38.5946, -29.3136)
+mesh = ExtResource("2_qwgbo")
+surface_material_override/0 = SubResource("StandardMaterial3D_1ahli")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 0, 30, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.851848, -0.0908594, 0.515849, 0.0221243, 0.990203, 0.137875, -0.523322, -0.106036, 0.845512, 89.4833, 2.91238, 172.977)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("")
+libraries = {
+"": SubResource("AnimationLibrary_bic5x")
+}
+autoplay = "rotate"
+
+[node name="flowers2" parent="." instance=ExtResource("3_j1kq1")]
+transform = Transform3D(19.1065, 0, 0, 0, 19.1065, 0, 0, 0, 19.1065, 0, 155.034, 0)
+
+[node name="default" parent="flowers2" index="0"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default1" parent="flowers2" index="1"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default2" parent="flowers2" index="2"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default3" parent="flowers2" index="3"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default4" parent="flowers2" index="4"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default5" parent="flowers2" index="5"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default6" parent="flowers2" index="6"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default7" parent="flowers2" index="7"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default8" parent="flowers2" index="8"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default9" parent="flowers2" index="9"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="Clump5" parent="flowers2" index="10"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="Clump6" parent="flowers2" index="11"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="Clump7" parent="flowers2" index="12"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="Clump8" parent="flowers2" index="13"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="FlowerY1" parent="flowers2" index="14"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default10" parent="flowers2" index="15"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default 1" parent="flowers2" index="16"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default 3" parent="flowers2" index="17"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default 2" parent="flowers2" index="18"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default11" parent="flowers2" index="19"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default 4" parent="flowers2" index="20"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default 5" parent="flowers2" index="21"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default 6" parent="flowers2" index="22"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_2x7g4")
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default12" parent="flowers2" index="23"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="default13" parent="flowers2" index="24"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_jvn72")
+
+[node name="grass" parent="." instance=ExtResource("8_1idu2")]
+transform = Transform3D(16.9209, 0, 0, 0, 16.9209, 0, 0, 0, 16.9209, 1.26626, 198.579, -12.1163)
+
+[node name="default" parent="grass" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_2p3qr")
+
+[node name="default1" parent="grass" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_2p3qr")
+
+[node name="default_000" parent="grass" index="2"]
+surface_material_override/0 = SubResource("StandardMaterial3D_2p3qr")
+
+[node name="default2" parent="grass" index="3"]
+surface_material_override/0 = SubResource("StandardMaterial3D_2p3qr")
+
+[node name="default3" parent="grass" index="4"]
+surface_material_override/0 = SubResource("StandardMaterial3D_2p3qr")
+
+[node name="default4" parent="grass" index="5"]
+surface_material_override/0 = SubResource("StandardMaterial3D_2p3qr")
+
+[node name="default5" parent="grass" index="6"]
+surface_material_override/0 = SubResource("StandardMaterial3D_2p3qr")
+
+[node name="default6" parent="grass" index="7"]
+surface_material_override/0 = SubResource("StandardMaterial3D_2p3qr")
+
+[node name="default7" parent="grass" index="8"]
+surface_material_override/0 = SubResource("StandardMaterial3D_2p3qr")
+
+[node name="default8" parent="grass" index="9"]
+surface_material_override/0 = SubResource("StandardMaterial3D_2p3qr")
+
+[node name="default9" parent="grass" index="10"]
+surface_material_override/0 = SubResource("StandardMaterial3D_2p3qr")
+
+[node name="default10" parent="grass" index="11"]
+surface_material_override/0 = SubResource("StandardMaterial3D_2p3qr")
+
+[node name="trees" parent="." instance=ExtResource("10_2hjxf")]
+transform = Transform3D(284.936, 0, 0, 0, 284.936, 0, 0, 0, 284.936, -31.0333, 377.503, -11.837)
+
+[node name="flowers" parent="." instance=ExtResource("3_j1kq1")]
+transform = Transform3D(18.374, 0, 0, 0, 18.374, 0, 0, 0, 18.374, 16.0819, 269.216, -13.495)
+
+[node name="default" parent="flowers" index="0"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default1" parent="flowers" index="1"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default2" parent="flowers" index="2"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default3" parent="flowers" index="3"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default4" parent="flowers" index="4"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default5" parent="flowers" index="5"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default6" parent="flowers" index="6"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default7" parent="flowers" index="7"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default8" parent="flowers" index="8"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default9" parent="flowers" index="9"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="Clump5" parent="flowers" index="10"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="Clump6" parent="flowers" index="11"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="Clump7" parent="flowers" index="12"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="Clump8" parent="flowers" index="13"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="FlowerY1" parent="flowers" index="14"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default10" parent="flowers" index="15"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default 1" parent="flowers" index="16"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default 3" parent="flowers" index="17"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default 2" parent="flowers" index="18"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default11" parent="flowers" index="19"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default 4" parent="flowers" index="20"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default 5" parent="flowers" index="21"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default 6" parent="flowers" index="22"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default12" parent="flowers" index="23"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="default13" parent="flowers" index="24"]
+transform = Transform3D(-2.03334, 1.7776e-07, 0, -1.7776e-07, -2.03334, 0, 0, 0, 2.03334, -5.72205e-06, 0, 1.90735e-06)
+surface_material_override/0 = SubResource("StandardMaterial3D_v8rdl")
+
+[node name="natures" parent="." instance=ExtResource("11_c2kto")]
+transform = Transform3D(123.763, 0, 0, 0, 123.763, 0, 0, 0, 123.763, -4.55052, 208.966, 20.5611)
+
+[node name="default" parent="natures" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default1" parent="natures" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default2" parent="natures" index="2"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default3" parent="natures" index="3"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 1" parent="natures" index="4"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 2" parent="natures" index="5"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 3" parent="natures" index="6"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 17" parent="natures" index="7"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 4" parent="natures" index="8"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 5" parent="natures" index="9"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 6" parent="natures" index="10"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 7" parent="natures" index="11"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 8" parent="natures" index="12"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 9" parent="natures" index="13"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 10" parent="natures" index="14"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 11" parent="natures" index="15"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 12" parent="natures" index="16"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 13" parent="natures" index="17"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 14" parent="natures" index="18"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 15" parent="natures" index="19"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default4" parent="natures" index="20"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default5" parent="natures" index="21"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default6" parent="natures" index="22"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default7" parent="natures" index="23"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default8" parent="natures" index="24"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default9" parent="natures" index="25"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 16" parent="natures" index="26"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 25" parent="natures" index="27"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 19" parent="natures" index="28"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 20" parent="natures" index="29"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 21" parent="natures" index="30"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 22" parent="natures" index="31"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 23" parent="natures" index="32"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="default 24" parent="natures" index="33"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhylf")
+
+[node name="manmade" parent="." instance=ExtResource("11_t2qr6")]
+transform = Transform3D(6530.3, 0, 0, 0, 6530.3, 0, 0, 0, 6530.3, 589.389, 250.414, 10.3164)
+
+[node name="wter" parent="manmade" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="lotus" parent="manmade" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="lotus1" parent="manmade" index="2"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default" parent="manmade" index="3"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default1" parent="manmade" index="4"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default2" parent="manmade" index="5"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default3" parent="manmade" index="6"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default4" parent="manmade" index="7"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default5" parent="manmade" index="8"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default6" parent="manmade" index="9"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default7" parent="manmade" index="10"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default8" parent="manmade" index="11"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default9" parent="manmade" index="12"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default10" parent="manmade" index="13"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default11" parent="manmade" index="14"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default12" parent="manmade" index="15"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default13" parent="manmade" index="16"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default14" parent="manmade" index="17"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default15" parent="manmade" index="18"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default16" parent="manmade" index="19"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default17" parent="manmade" index="20"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default18" parent="manmade" index="21"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default19" parent="manmade" index="22"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="Plane" parent="manmade" index="23"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default20" parent="manmade" index="24"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default21" parent="manmade" index="25"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default22" parent="manmade" index="26"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default23" parent="manmade" index="27"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default24" parent="manmade" index="28"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default25" parent="manmade" index="29"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default26" parent="manmade" index="30"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default27" parent="manmade" index="31"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default28" parent="manmade" index="32"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default29" parent="manmade" index="33"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default30" parent="manmade" index="34"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default31" parent="manmade" index="35"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default32" parent="manmade" index="36"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default33" parent="manmade" index="37"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="default34" parent="manmade" index="38"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ekru3")
+
+[node name="mountains_oasis" parent="." instance=ExtResource("13_678eg")]
+transform = Transform3D(8.57873, 0, 0, 0, 8.57873, 0, 0, 0, 8.57873, 47.8009, 0, 10.2935)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_6fdcs")
+
+[editable path="AllSky_DemoEnvironment"]
+[editable path="flowers2"]
+[editable path="grass"]
+[editable path="trees"]
+[editable path="flowers"]
+[editable path="natures"]
+[editable path="manmade"]
+[editable path="mountains_oasis"]
