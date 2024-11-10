@@ -1,0 +1,92 @@
+[gd_resource type="VisualShader" load_steps=9 format=3 uid="uid://cdaxom0lype0i"]
+
+[ext_resource type="Script" path="res://addons/shaderV/tools/TimeScaled.gd" id="1_8o24h"]
+[ext_resource type="Script" path="res://addons/shaderV/rgba/gradientMapping.gd" id="2_f85nk"]
+
+[sub_resource type="VisualShaderNodeTexture2DParameter" id="VisualShaderNodeTexture2DParameter_o0hix"]
+parameter_name = "gradient"
+
+[sub_resource type="VisualShaderNodeBooleanConstant" id="VisualShaderNodeBooleanConstant_hfxo1"]
+constant = true
+
+[sub_resource type="VisualShaderNodeCustom" id="VisualShaderNodeCustom_cpifa"]
+default_input_values = [0, 1.0]
+initialized = true
+script = ExtResource("1_8o24h")
+
+[sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_bx0vd"]
+expanded_output_ports = [0]
+source = 2
+
+[sub_resource type="VisualShaderNodeFloatConstant" id="VisualShaderNodeFloatConstant_pabcy"]
+constant = 0.3
+
+[sub_resource type="VisualShaderNodeCustom" id="VisualShaderNodeCustom_c6g0b"]
+default_input_values = [1, 1.0, 2, 0.0, 3, false]
+initialized = true
+script = ExtResource("2_f85nk")
+
+[resource]
+code = "shader_type canvas_item;
+render_mode blend_mix;
+
+uniform sampler2D gradient;
+
+
+// GradientMapping
+#include \"res://addons/shaderV/rgba/gradientMapping.gdshaderinc\"
+
+void fragment() {
+	vec4 n_out5p0;
+// Texture2D:5
+	n_out5p0 = texture(TEXTURE, UV);
+	float n_out5p4 = n_out5p0.a;
+
+
+// FloatConstant:6
+	float n_out6p0 = 0.300000;
+
+
+	float n_out4p0;
+// ScaledTIME:4
+	{
+		n_out4p0 = n_out6p0 * TIME;
+	}
+
+
+// BooleanConstant:3
+	bool n_out3p0 = true;
+
+
+	vec3 n_out7p0;
+	float n_out7p1;
+// GradientMapping:7
+	{
+		vec4 n_out7p0n_out7p1 = _gradientMappingFunc(vec3(n_out5p0.xyz), n_out4p0, gradient, n_out3p0);
+		n_out7p0 = n_out7p0n_out7p1.rgb;
+		n_out7p1 = n_out7p0n_out7p1.a * n_out5p4;
+	}
+
+
+// Output:0
+	COLOR.rgb = n_out7p0;
+	COLOR.a = n_out7p1;
+
+
+}
+"
+mode = 1
+flags/light_only = false
+nodes/fragment/2/node = SubResource("VisualShaderNodeTexture2DParameter_o0hix")
+nodes/fragment/2/position = Vector2(-220, 380)
+nodes/fragment/3/node = SubResource("VisualShaderNodeBooleanConstant_hfxo1")
+nodes/fragment/3/position = Vector2(-120, 300)
+nodes/fragment/4/node = SubResource("VisualShaderNodeCustom_cpifa")
+nodes/fragment/4/position = Vector2(-100, 220)
+nodes/fragment/5/node = SubResource("VisualShaderNodeTexture_bx0vd")
+nodes/fragment/5/position = Vector2(-180, 0)
+nodes/fragment/6/node = SubResource("VisualShaderNodeFloatConstant_pabcy")
+nodes/fragment/6/position = Vector2(-380, 180)
+nodes/fragment/7/node = SubResource("VisualShaderNodeCustom_c6g0b")
+nodes/fragment/7/position = Vector2(160, 160)
+nodes/fragment/connections = PackedInt32Array(5, 0, 7, 0, 3, 0, 7, 3, 5, 4, 7, 1, 2, 0, 7, 4, 6, 0, 4, 0, 4, 0, 7, 2, 7, 0, 0, 0, 7, 1, 0, 1)

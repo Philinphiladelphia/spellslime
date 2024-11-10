@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://i6od5uyjcwp2"
+path="res://.godot/imported/StylizedLowpolyFlowers25AssetsPack.obj-6c20fcde39ce41481e3d9af3cf92b93a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/StylizedLowpolyFlowers25AssetsPack.obj-6c20fcde39ce41481e3d9af3cf92b93a.mesh"]
+
+source_file="res://background/scenes/forest/models/stylized-lowpoly-flowers-25-assets-pack-vol-2/source/StylizedLowpolyFlowers25AssetsPack.obj"
+dest_files=["res://.godot/imported/StylizedLowpolyFlowers25AssetsPack.obj-6c20fcde39ce41481e3d9af3cf92b93a.mesh", "res://.godot/imported/StylizedLowpolyFlowers25AssetsPack.obj-6c20fcde39ce41481e3d9af3cf92b93a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

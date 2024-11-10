@@ -1,0 +1,1349 @@
+[gd_scene load_steps=72 format=3 uid="uid://dd32qqj6y33t2"]
+
+[ext_resource type="Texture2D" uid="uid://bdg78nkkgj4j3" path="res://spell_machine_weapon/assets/stone/637059872.png" id="1_hfikh"]
+[ext_resource type="Texture2D" uid="uid://81ljjbnoxjkm" path="res://spell_machine_weapon/assets/stone/22343422.png" id="13_e33m8"]
+[ext_resource type="Texture2D" uid="uid://65n34tbl6ban" path="res://spell_machine_weapon/assets/stone/22484447.png" id="14_mnpit"]
+[ext_resource type="Texture2D" uid="uid://bqok18annibjy" path="res://spell_machine_weapon/assets/stone/71932562.png" id="15_5pnus"]
+[ext_resource type="Texture2D" uid="uid://c0werqjb66ph6" path="res://spell_machine_weapon/assets/stone/84847820.png" id="16_xi5vn"]
+[ext_resource type="Texture2D" uid="uid://7ymfaovcn4kg" path="res://spell_machine_weapon/assets/stone/139767689.png" id="17_kbodm"]
+[ext_resource type="Texture2D" uid="uid://cjcpdlrmb2g8t" path="res://spell_machine_weapon/assets/stone/185569048.png" id="18_un4df"]
+[ext_resource type="Texture2D" uid="uid://dk367jjw2q01c" path="res://spell_machine_weapon/assets/stone/223836336.png" id="19_w58tr"]
+[ext_resource type="Texture2D" uid="uid://iek2kli0bns2" path="res://spell_machine_weapon/assets/stone/296470213.png" id="20_quwbk"]
+[ext_resource type="Texture2D" uid="uid://bh4ux1w42kn6a" path="res://spell_machine_weapon/assets/stone/351322187.png" id="21_1nkxp"]
+[ext_resource type="Texture2D" uid="uid://dh38wbmj8ksop" path="res://spell_machine_weapon/assets/stone/434688670.png" id="22_afc6v"]
+[ext_resource type="Texture2D" uid="uid://chn3aeoajqreb" path="res://spell_machine_weapon/assets/stone/511085767.png" id="23_qpa0y"]
+[ext_resource type="Texture2D" uid="uid://cc3u1v3kt2fdp" path="res://spell_machine_weapon/assets/stone/548464447.png" id="24_vkj1d"]
+[ext_resource type="Texture2D" uid="uid://c3y86pckldj6i" path="res://spell_machine_weapon/assets/pipes/1908131986.png" id="24_wbsbf"]
+[ext_resource type="Texture2D" uid="uid://bwixg3xek1fs7" path="res://spell_machine_weapon/assets/gears/1459653689.png" id="25_8haih"]
+[ext_resource type="Texture2D" uid="uid://8colgcp2yij4" path="res://spell_machine_weapon/assets/pipes/102427822.png" id="25_s501p"]
+[ext_resource type="Texture2D" uid="uid://d8ef80w0mnca" path="res://spell_machine_weapon/assets/stone/838032757.png" id="26_6102a"]
+[ext_resource type="Texture2D" uid="uid://beo6fc2ce2ony" path="res://spell_machine_weapon/assets/pipes/30959994.png" id="26_a8a11"]
+[ext_resource type="Texture2D" uid="uid://c6ob5wcqs7nc7" path="res://spell_machine_weapon/assets/pipes/58812555.png" id="27_5ehyt"]
+[ext_resource type="Texture2D" uid="uid://c3ckwgosv3pu1" path="res://spell_machine_weapon/assets/stone/890562574.png" id="27_viipc"]
+[ext_resource type="Texture2D" uid="uid://baeoo02iv4kfa" path="res://spell_machine_weapon/assets/pipes/65163584.png" id="28_4icus"]
+[ext_resource type="Texture2D" uid="uid://blo1yktfk4ksl" path="res://spell_machine_weapon/assets/stone/1152774207.png" id="28_5dkg4"]
+[ext_resource type="Texture2D" uid="uid://dfvjlnvcdqkiv" path="res://spell_machine_weapon/assets/stone/1181338566.png" id="29_86lvt"]
+[ext_resource type="Texture2D" uid="uid://pd2lkby6kftx" path="res://spell_machine_weapon/assets/pipes/135924026.png" id="29_a2r46"]
+[ext_resource type="Texture2D" uid="uid://dv1kmd8ogs2ps" path="res://spell_machine_weapon/assets/pipes/222748342.png" id="30_tl1uj"]
+[ext_resource type="Texture2D" uid="uid://dyib6p0u47iu1" path="res://spell_machine_weapon/assets/stone/1231790478.png" id="30_totfl"]
+[ext_resource type="Texture2D" uid="uid://c6ifxmiygd8dt" path="res://spell_machine_weapon/assets/stone/1332578388.png" id="31_axb0a"]
+[ext_resource type="Texture2D" uid="uid://bmb5htbf4r2if" path="res://spell_machine_weapon/assets/pipes/235290384.png" id="31_e3bu2"]
+[ext_resource type="Texture2D" uid="uid://bxf1k7uftknxg" path="res://spell_machine_weapon/assets/stone/1980309027.png" id="32_q0m68"]
+[ext_resource type="Texture2D" uid="uid://cq8h8gd0mhvlj" path="res://spell_machine_weapon/assets/pipes/300569711.png" id="32_r2ljp"]
+[ext_resource type="Texture2D" uid="uid://dlyvwmwl038jo" path="res://spell_machine_weapon/assets/pipes/323209769.png" id="33_n41ah"]
+[ext_resource type="Texture2D" uid="uid://burv074pori0v" path="res://spell_machine_weapon/assets/stone/1999630919.png" id="33_v40i0"]
+[ext_resource type="Texture2D" uid="uid://glmrvfj57ug5" path="res://spell_machine_weapon/assets/stone/2047141881.png" id="34_1okfx"]
+[ext_resource type="Texture2D" uid="uid://xw57coijn0k4" path="res://spell_machine_weapon/assets/pipes/374220477.png" id="34_w4t67"]
+[ext_resource type="Texture2D" uid="uid://dug7gs2g6e8ai" path="res://spell_machine_weapon/assets/pipes/379861964.png" id="35_34c7q"]
+[ext_resource type="Texture2D" uid="uid://dgggahwa6cgi1" path="res://spell_machine_weapon/assets/stone/2064920276.png" id="35_ir2kl"]
+[ext_resource type="Texture2D" uid="uid://dd0kgw8k0mkrs" path="res://spell_machine_weapon/assets/pipes/415952676.png" id="36_1yqt0"]
+[ext_resource type="Texture2D" uid="uid://bf0enocyohsux" path="res://spell_machine_weapon/assets/pipes/443267854.png" id="37_urn41"]
+[ext_resource type="Texture2D" uid="uid://whkew3a7x4mn" path="res://spell_machine_weapon/assets/pipes/476695579.png" id="38_75j3m"]
+[ext_resource type="Texture2D" uid="uid://ukum4f3k4sb0" path="res://spell_machine_weapon/assets/pipes/477295555.png" id="39_5y5qt"]
+[ext_resource type="Texture2D" uid="uid://c4dvcexgx2m0p" path="res://spell_machine_weapon/assets/pipes/497710787.png" id="40_w3fyn"]
+[ext_resource type="Texture2D" uid="uid://bxq1xfb7rugje" path="res://spell_machine_weapon/assets/pipes/513768687.png" id="41_3136r"]
+[ext_resource type="Texture2D" uid="uid://sqgprijtkl08" path="res://spell_machine_weapon/assets/pipes/614223861.png" id="42_soobr"]
+[ext_resource type="Texture2D" uid="uid://c0wwdqs2qhqge" path="res://spell_machine_weapon/assets/pipes/624055483.png" id="43_udalb"]
+[ext_resource type="Texture2D" uid="uid://6dwglbl2hgs3" path="res://spell_machine_weapon/assets/pipes/636553550.png" id="44_2pxxk"]
+[ext_resource type="Texture2D" uid="uid://dnwvw1xnwd4sg" path="res://spell_machine_weapon/assets/pipes/661890577.png" id="45_ugqms"]
+[ext_resource type="Texture2D" uid="uid://d1lsopxbndppl" path="res://spell_machine_weapon/assets/pipes/671389962.png" id="46_v21em"]
+[ext_resource type="Texture2D" uid="uid://bc8j1up8sdxqn" path="res://spell_machine_weapon/assets/pipes/711652505.png" id="47_o1la1"]
+[ext_resource type="Texture2D" uid="uid://b1c1lh6qyn655" path="res://spell_machine_weapon/assets/pipes/717980859.png" id="48_mhoqq"]
+[ext_resource type="Texture2D" uid="uid://txlh8kis35f3" path="res://spell_machine_weapon/assets/pipes/735548123.png" id="49_48mom"]
+[ext_resource type="Texture2D" uid="uid://deqynrtg8b57u" path="res://spell_machine_weapon/assets/pipes/541219343.png" id="50_h3tto"]
+[ext_resource type="Texture2D" uid="uid://ihsr72b5mrc3" path="res://spell_machine_weapon/assets/pipes/749080667.png" id="50_jesr4"]
+[ext_resource type="Texture2D" uid="uid://1vls4vry8oyx" path="res://spell_machine_weapon/assets/pipes/778369569.png" id="51_mdxoy"]
+[ext_resource type="Texture2D" uid="uid://dv0jkhq2tsp5n" path="res://spell_machine_weapon/assets/pipes/779125992.png" id="52_pyot7"]
+[ext_resource type="Texture2D" uid="uid://ccgwghhsxgpi5" path="res://spell_machine_weapon/assets/pipes/803527189.png" id="53_t67mw"]
+[ext_resource type="Texture2D" uid="uid://cvn7j862jgx6r" path="res://spell_machine_weapon/assets/pipes/822256358.png" id="54_ii5mf"]
+[ext_resource type="Texture2D" uid="uid://h7x412wslagj" path="res://spell_machine_weapon/assets/pipes/861644688.png" id="55_avoja"]
+[ext_resource type="Texture2D" uid="uid://ieifcvw162l1" path="res://spell_machine_weapon/assets/pipes/1030608527.png" id="56_rdjjb"]
+[ext_resource type="Texture2D" uid="uid://crrh6o3mh72cb" path="res://spell_machine_weapon/assets/pipes/1058778573.png" id="57_f6icj"]
+[ext_resource type="Texture2D" uid="uid://mgkpilxf7qu0" path="res://spell_machine_weapon/assets/pipes/1066497263.png" id="58_6v8ah"]
+[ext_resource type="Texture2D" uid="uid://0gores6s7gm5" path="res://spell_machine_weapon/assets/pipes/718034747.png" id="59_euy1t"]
+[ext_resource type="Texture2D" uid="uid://bkmf5vacu4ko0" path="res://spell_machine_weapon/assets/pipes/1090429252.png" id="59_p1ksm"]
+[ext_resource type="Texture2D" uid="uid://mk8i0kj8crgt" path="res://spell_machine_weapon/assets/pipes/1139776368.png" id="60_g4q53"]
+[ext_resource type="Texture2D" uid="uid://ds3dygjr4as1k" path="res://spell_machine_weapon/assets/pipes/1171622677.png" id="61_bg1ka"]
+[ext_resource type="Texture2D" uid="uid://dmu4hm3cmys5h" path="res://spell_machine_weapon/assets/pipes/1174522567.png" id="62_j18h8"]
+[ext_resource type="Texture2D" uid="uid://cgp3ugbnblarl" path="res://spell_machine_weapon/assets/pipes/1201431734.png" id="63_1mxve"]
+[ext_resource type="Texture2D" uid="uid://dvr1emasbbktj" path="res://spell_machine_weapon/assets/pipes/1237638514.png" id="64_op13p"]
+[ext_resource type="Texture2D" uid="uid://de5jrawwkp8lr" path="res://spell_machine_weapon/assets/pipes/1312790722.png" id="68_7fya6"]
+[ext_resource type="Texture2D" uid="uid://du0u5u1n53m8c" path="res://spell_machine_weapon/assets/pipes/1323920611.png" id="69_4nody"]
+[ext_resource type="Texture2D" uid="uid://b13mpllycyvye" path="res://spell_machine_weapon/assets/pipes/2096440132.png" id="70_olqg8"]
+[ext_resource type="Texture2D" uid="uid://j0lyj8ummo6s" path="res://spell_machine_weapon/assets/pipes/2110537216.png" id="71_kcc2f"]
+
+[node name="SpellMachineWeapon" type="Node2D"]
+
+[node name="nav" type="Node2D" parent="."]
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="nav"]
+
+[node name="NavigationLink2D" type="NavigationLink2D" parent="nav"]
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="nav"]
+
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="nav"]
+
+[node name="stone_houses" type="Node2D" parent="."]
+
+[node name="22343422" type="Sprite2D" parent="stone_houses"]
+position = Vector2(1190, -23)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("13_e33m8")
+
+[node name="22484447" type="Sprite2D" parent="stone_houses"]
+position = Vector2(957, 661)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("14_mnpit")
+
+[node name="71932562" type="Sprite2D" parent="stone_houses"]
+position = Vector2(1350, 418)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("15_5pnus")
+
+[node name="84847820" type="Sprite2D" parent="stone_houses"]
+position = Vector2(1289, 739)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("16_xi5vn")
+
+[node name="139767689" type="Sprite2D" parent="stone_houses"]
+position = Vector2(269, 717)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("17_kbodm")
+
+[node name="185569048" type="Sprite2D" parent="stone_houses"]
+position = Vector2(-358, 679)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("18_un4df")
+
+[node name="223836336" type="Sprite2D" parent="stone_houses"]
+position = Vector2(-337, 366)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("19_w58tr")
+
+[node name="296470213" type="Sprite2D" parent="stone_houses"]
+position = Vector2(-324, -12)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("20_quwbk")
+
+[node name="351322187" type="Sprite2D" parent="stone_houses"]
+position = Vector2(144, -215)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("21_1nkxp")
+
+[node name="434688670" type="Sprite2D" parent="stone_houses"]
+position = Vector2(1486, 100)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("22_afc6v")
+
+[node name="511085767" type="Sprite2D" parent="stone_houses"]
+position = Vector2(413, -18)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("23_qpa0y")
+
+[node name="548464447" type="Sprite2D" parent="stone_houses"]
+position = Vector2(1572, 606)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("24_vkj1d")
+
+[node name="637059872" type="Sprite2D" parent="stone_houses"]
+position = Vector2(589, 508)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_hfikh")
+
+[node name="838032757" type="Sprite2D" parent="stone_houses"]
+position = Vector2(-9, 620)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("26_6102a")
+
+[node name="890562574" type="Sprite2D" parent="stone_houses"]
+position = Vector2(901, 78)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("27_viipc")
+
+[node name="1152774207" type="Sprite2D" parent="stone_houses"]
+position = Vector2(1139, 467)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("28_5dkg4")
+
+[node name="1181338566" type="Sprite2D" parent="stone_houses"]
+position = Vector2(-37, 349)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("29_86lvt")
+
+[node name="1231790478" type="Sprite2D" parent="stone_houses"]
+position = Vector2(209, 84)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("30_totfl")
+
+[node name="1332578388" type="Sprite2D" parent="stone_houses"]
+position = Vector2(683, 150)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("31_axb0a")
+
+[node name="1980309027" type="Sprite2D" parent="stone_houses"]
+position = Vector2(-584, 313)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("32_q0m68")
+
+[node name="1999630919" type="Sprite2D" parent="stone_houses"]
+position = Vector2(1053, 241)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("33_v40i0")
+
+[node name="2047141881" type="Sprite2D" parent="stone_houses"]
+position = Vector2(25, 59)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("34_1okfx")
+
+[node name="2064920276" type="Sprite2D" parent="stone_houses"]
+position = Vector2(1639, 344)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("35_ir2kl")
+
+[node name="pipes" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="pipes"]
+position = Vector2(1927, 137)
+texture = ExtResource("24_wbsbf")
+region_enabled = true
+region_rect = Rect2(12.0924, 0, 108.344, 512)
+
+[node name="Sprite2D2" type="Sprite2D" parent="pipes"]
+position = Vector2(2076, 134)
+texture = ExtResource("24_wbsbf")
+region_enabled = true
+region_rect = Rect2(119.839, 0, 125.913, 512)
+
+[node name="Sprite2D3" type="Sprite2D" parent="pipes"]
+position = Vector2(2229, 134)
+texture = ExtResource("24_wbsbf")
+region_enabled = true
+region_rect = Rect2(248.68, 0, 131.769, 512)
+
+[node name="Sprite2D4" type="Sprite2D" parent="pipes"]
+position = Vector2(2378, 131)
+texture = ExtResource("24_wbsbf")
+region_enabled = true
+region_rect = Rect2(383.377, 0, 121.521, 512)
+
+[node name="Sprite2D5" type="Sprite2D" parent="pipes"]
+position = Vector2(-851, -184)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(0, 0, 51.7744, 102.219)
+
+[node name="Sprite2D6" type="Sprite2D" parent="pipes"]
+position = Vector2(-949, -241)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(59.4811, 305.961, 75.694, 206.11)
+
+[node name="Sprite2D7" type="Sprite2D" parent="pipes"]
+position = Vector2(-744, -317)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(136.821, 305.961, 67.6414, 206.11)
+
+[node name="Sprite2D8" type="Sprite2D" parent="pipes"]
+position = Vector2(-661, -292)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(201.242, 305.961, 38.6522, 206.11)
+
+[node name="Sprite2D9" type="Sprite2D" parent="pipes"]
+position = Vector2(-565, -310)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(243.115, 265.698, 57.9784, 246.373)
+
+[node name="Sprite2D10" type="Sprite2D" parent="pipes"]
+position = Vector2(-457, -267)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(297.872, 360.718, 33.8207, 151.353)
+
+[node name="Sprite2D11" type="Sprite2D" parent="pipes"]
+position = Vector2(-711, -69)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(328.472, 293.077, 51.5363, 218.994)
+
+[node name="Sprite2D12" type="Sprite2D" parent="pipes"]
+position = Vector2(-953, -461)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(410.608, 330.119, 51.5363, 181.953)
+
+[node name="Sprite2D13" type="Sprite2D" parent="pipes"]
+position = Vector2(-1072, -259)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(380.008, 11.2377, 70.8625, 314.049)
+
+[node name="Sprite2D14" type="Sprite2D" parent="pipes"]
+position = Vector2(-843, -464)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(339.746, 3.15014, 41.8733, 268.955)
+
+[node name="Sprite2D15" type="Sprite2D" parent="pipes"]
+position = Vector2(-611, -64)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(175.474, 3.15014, 64.4204, 283.45)
+
+[node name="Sprite2D16" type="Sprite2D" parent="pipes"]
+position = Vector2(-133, -639)
+texture = ExtResource("26_a8a11")
+region_enabled = true
+region_rect = Rect2(0, 0, 148.095, 497.577)
+
+[node name="Sprite2D17" type="Sprite2D" parent="pipes"]
+position = Vector2(53, -631)
+texture = ExtResource("26_a8a11")
+region_enabled = true
+region_rect = Rect2(138.432, 11.2027, 157.83, 483.153)
+
+[node name="Sprite2D18" type="Sprite2D" parent="pipes"]
+position = Vector2(-296, -633)
+texture = ExtResource("26_a8a11")
+region_enabled = true
+region_rect = Rect2(283.378, 0, 214.198, 497.577)
+
+[node name="Sprite2D19" type="Sprite2D" parent="pipes"]
+position = Vector2(929, -777)
+texture = ExtResource("27_5ehyt")
+region_enabled = true
+region_rect = Rect2(7.98065, 0, 172.325, 512)
+
+[node name="Sprite2D20" type="Sprite2D" parent="pipes"]
+position = Vector2(696, -799)
+texture = ExtResource("27_5ehyt")
+region_enabled = true
+region_rect = Rect2(178.695, 0, 165.883, 512)
+
+[node name="Sprite2D21" type="Sprite2D" parent="pipes"]
+position = Vector2(453, -790)
+texture = ExtResource("27_5ehyt")
+region_enabled = true
+region_rect = Rect2(342.967, 0, 151.388, 512)
+
+[node name="Sprite2D22" type="Sprite2D" parent="pipes"]
+position = Vector2(-1217, 283)
+texture = ExtResource("28_4icus")
+region_enabled = true
+region_rect = Rect2(0, 0, 186.747, 512)
+
+[node name="Sprite2D23" type="Sprite2D" parent="pipes"]
+position = Vector2(-1001, 287)
+texture = ExtResource("28_4icus")
+region_enabled = true
+region_rect = Rect2(181.916, 0, 149.777, 512)
+
+[node name="Sprite2D24" type="Sprite2D" parent="pipes"]
+position = Vector2(-1365, 287)
+texture = ExtResource("28_4icus")
+region_enabled = true
+region_rect = Rect2(330.083, 0, 148.167, 512)
+
+[node name="Sprite2D25" type="Sprite2D" parent="pipes"]
+position = Vector2(-826, -849)
+texture = ExtResource("29_a2r46")
+region_enabled = true
+region_rect = Rect2(72.4011, 355.852, 66.0309, 122.399)
+
+[node name="Sprite2D26" type="Sprite2D" parent="pipes"]
+position = Vector2(-620, -934)
+texture = ExtResource("29_a2r46")
+region_enabled = true
+region_rect = Rect2(130.379, 56.297, 161.051, 428.396)
+
+[node name="Sprite2D27" type="Sprite2D" parent="pipes"]
+position = Vector2(-1055, -840)
+texture = ExtResource("29_a2r46")
+region_enabled = true
+region_rect = Rect2(293.041, 230.232, 151.388, 254.461)
+
+[node name="Sprite2D28" type="Sprite2D" parent="pipes"]
+position = Vector2(2487, -489)
+texture = ExtResource("30_tl1uj")
+region_enabled = true
+region_rect = Rect2(133.6, 0, 119.178, 495.966)
+
+[node name="Sprite2D29" type="Sprite2D" parent="pipes"]
+position = Vector2(2374, -497)
+texture = ExtResource("30_tl1uj")
+region_enabled = true
+region_rect = Rect2(28.9172, 0, 109.515, 495.966)
+
+[node name="Sprite2D30" type="Sprite2D" parent="pipes"]
+position = Vector2(2698, -485)
+texture = ExtResource("30_tl1uj")
+region_enabled = true
+region_rect = Rect2(365.514, 0, 114.346, 495.966)
+
+[node name="Sprite2D31" type="Sprite2D" parent="pipes"]
+position = Vector2(2591, -491)
+texture = ExtResource("30_tl1uj")
+region_enabled = true
+region_rect = Rect2(249.557, 0, 117.567, 495.966)
+
+[node name="Sprite2D32" type="Sprite2D" parent="pipes"]
+position = Vector2(1597, -1035)
+texture = ExtResource("31_e3bu2")
+region_enabled = true
+region_rect = Rect2(149.706, 0, 164.272, 512)
+
+[node name="Sprite2D33" type="Sprite2D" parent="pipes"]
+position = Vector2(1878, -1035)
+texture = ExtResource("31_e3bu2")
+region_enabled = true
+region_rect = Rect2(408.998, 0, 96.6306, 512)
+
+[node name="Sprite2D34" type="Sprite2D" parent="pipes"]
+position = Vector2(1750, -1032)
+texture = ExtResource("31_e3bu2")
+region_enabled = true
+region_rect = Rect2(313.978, 0, 88.5781, 512)
+
+[node name="Sprite2D35" type="Sprite2D" parent="pipes"]
+position = Vector2(1436, -1034)
+texture = ExtResource("31_e3bu2")
+region_enabled = true
+region_rect = Rect2(0, 0, 144.874, 512)
+
+[node name="Sprite2D36" type="Sprite2D" parent="pipes"]
+position = Vector2(-373, -2164)
+texture = ExtResource("32_r2ljp")
+region_enabled = true
+region_rect = Rect2(272.104, 0, 239.896, 512)
+
+[node name="Sprite2D37" type="Sprite2D" parent="pipes"]
+position = Vector2(-655, -2157)
+texture = ExtResource("32_r2ljp")
+region_enabled = true
+region_rect = Rect2(0, 0, 254.389, 512)
+
+[node name="Sprite2D38" type="Sprite2D" parent="pipes"]
+position = Vector2(-1049, -1677)
+texture = ExtResource("33_n41ah")
+region_enabled = true
+region_rect = Rect2(0, 0, 107.832, 452.482)
+
+[node name="Sprite2D39" type="Sprite2D" parent="pipes"]
+position = Vector2(-1049, -1677)
+texture = ExtResource("33_n41ah")
+region_enabled = true
+region_rect = Rect2(0, 0, 107.832, 452.482)
+
+[node name="Sprite2D40" type="Sprite2D" parent="pipes"]
+position = Vector2(-489, -1684)
+texture = ExtResource("33_n41ah")
+region_enabled = true
+region_rect = Rect2(0, 0, 107.832, 452.482)
+
+[node name="Sprite2D41" type="Sprite2D" parent="pipes"]
+position = Vector2(-617, -1625)
+texture = ExtResource("33_n41ah")
+region_enabled = true
+region_rect = Rect2(383.229, 0, 104.683, 505.629)
+
+[node name="Sprite2D42" type="Sprite2D" parent="pipes"]
+position = Vector2(-769, -1693)
+texture = ExtResource("33_n41ah")
+region_enabled = true
+region_rect = Rect2(264.052, 0, 119.178, 508.85)
+
+[node name="Sprite2D43" type="Sprite2D" parent="pipes"]
+position = Vector2(-911, -1695)
+texture = ExtResource("33_n41ah")
+region_enabled = true
+region_rect = Rect2(188.358, 135.212, 77.3045, 336.597)
+
+[node name="Sprite2D44" type="Sprite2D" parent="pipes"]
+position = Vector2(-1810, -1106)
+texture = ExtResource("34_w4t67")
+
+[node name="Sprite2D45" type="Sprite2D" parent="pipes"]
+position = Vector2(-2107, -1096)
+texture = ExtResource("35_34c7q")
+
+[node name="Sprite2D46" type="Sprite2D" parent="pipes"]
+position = Vector2(-1516, -1105)
+texture = ExtResource("36_1yqt0")
+
+[node name="Sprite2D47" type="Sprite2D" parent="pipes"]
+position = Vector2(-2227, -424)
+texture = ExtResource("37_urn41")
+region_enabled = true
+region_rect = Rect2(392.893, 0, 119.107, 512)
+
+[node name="Sprite2D48" type="Sprite2D" parent="pipes"]
+position = Vector2(-2430, -395)
+texture = ExtResource("37_urn41")
+region_enabled = true
+region_rect = Rect2(96.5587, 0, 299.555, 512)
+
+[node name="Sprite2D49" type="Sprite2D" parent="pipes"]
+position = Vector2(-2644, -416)
+texture = ExtResource("37_urn41")
+region_enabled = true
+region_rect = Rect2(0, 0, 98.1692, 512)
+
+[node name="Sprite2D50" type="Sprite2D" parent="pipes"]
+position = Vector2(-1801, -343)
+texture = ExtResource("38_75j3m")
+region_enabled = true
+region_rect = Rect2(178.695, 12.8132, 181.988, 496.037)
+
+[node name="Sprite2D51" type="Sprite2D" parent="pipes"]
+position = Vector2(-2004, -343)
+texture = ExtResource("38_75j3m")
+region_enabled = true
+region_rect = Rect2(0, 0, 186.747, 512)
+
+[node name="Sprite2D52" type="Sprite2D" parent="pipes"]
+position = Vector2(-1564, -355)
+texture = ExtResource("38_75j3m")
+region_enabled = true
+region_rect = Rect2(357.461, 94.9492, 146.556, 418.733)
+
+[node name="Sprite2D53" type="Sprite2D" parent="pipes"]
+position = Vector2(-2973, -881)
+texture = ExtResource("39_5y5qt")
+region_enabled = true
+region_rect = Rect2(148.095, 1.53963, 233.524, 513.753)
+
+[node name="Sprite2D56" type="Sprite2D" parent="pipes"]
+position = Vector2(-3116, -1013)
+texture = ExtResource("39_5y5qt")
+region_enabled = true
+region_rect = Rect2(0, 0, 82.0641, 247.948)
+
+[node name="Sprite2D57" type="Sprite2D" parent="pipes"]
+position = Vector2(-3192, -958)
+texture = ExtResource("39_5y5qt")
+region_enabled = true
+region_rect = Rect2(82.0641, 72.4021, 57.9784, 156.219)
+
+[node name="Sprite2D58" type="Sprite2D" parent="pipes"]
+position = Vector2(-3142, -756)
+texture = ExtResource("39_5y5qt")
+region_enabled = true
+region_rect = Rect2(75.6221, 278.547, 54.7573, 236.745)
+
+[node name="Sprite2D59" type="Sprite2D" parent="pipes"]
+position = Vector2(-3215, -735)
+texture = ExtResource("39_5y5qt")
+region_enabled = true
+region_rect = Rect2(24.0858, 288.21, 51.5363, 223.861)
+
+[node name="Sprite2D60" type="Sprite2D" parent="pipes"]
+position = Vector2(-3304, -871)
+texture = ExtResource("39_5y5qt")
+region_enabled = true
+region_rect = Rect2(376.787, 3.15014, 120.788, 516.974)
+
+[node name="Sprite2D54" type="Sprite2D" parent="pipes"]
+position = Vector2(-2731, -1387)
+texture = ExtResource("40_w3fyn")
+region_enabled = true
+region_rect = Rect2(204.463, 0, 164.272, 512)
+
+[node name="Sprite2D55" type="Sprite2D" parent="pipes"]
+position = Vector2(-3036, -1411)
+texture = ExtResource("40_w3fyn")
+region_enabled = true
+region_rect = Rect2(368.735, 0, 143.265, 512)
+
+[node name="Sprite2D61" type="Sprite2D" parent="pipes"]
+position = Vector2(-2899, -1405)
+texture = ExtResource("40_w3fyn")
+region_enabled = true
+region_rect = Rect2(0, 0, 201.242, 512)
+
+[node name="Sprite2D62" type="Sprite2D" parent="pipes"]
+position = Vector2(-1214, -1342)
+texture = ExtResource("41_3136r")
+
+[node name="Sprite2D63" type="Sprite2D" parent="pipes"]
+position = Vector2(2040, 718)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(7.98065, 6.37115, 54.7573, 202.924)
+
+[node name="Sprite2D65" type="Sprite2D" parent="pipes"]
+position = Vector2(2284, 714)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(90.1166, 273.716, 49.9258, 231.913)
+
+[node name="Sprite2D66" type="Sprite2D" parent="pipes"]
+position = Vector2(2200, 708)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(7.98065, 244.727, 59.5889, 259.292)
+
+[node name="Sprite2D67" type="Sprite2D" parent="pipes"]
+position = Vector2(2113, 715)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(57.9064, -1.6814, 96.6306, 275.397)
+
+[node name="Sprite2D70" type="Sprite2D" parent="pipes"]
+position = Vector2(2364, 715)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(281.767, 231.843, 67.6414, 270.566)
+
+[node name="Sprite2D71" type="Sprite2D" parent="pipes"]
+position = Vector2(2436, 717)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(450.871, 225.401, 49.9258, 278.618)
+
+[node name="Sprite2D72" type="Sprite2D" parent="pipes"]
+position = Vector2(2503, 702)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(425.103, 1.53963, 77.3045, 215.808)
+
+[node name="Sprite2D73" type="Sprite2D" parent="pipes"]
+position = Vector2(2692, 692)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(359.072, 3.15014, 53.1469, 209.366)
+
+[node name="Sprite2D74" type="Sprite2D" parent="pipes"]
+position = Vector2(2609, 690)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(264.052, 4.76064, 91.7991, 212.587)
+
+[node name="Sprite2D64" type="Sprite2D" parent="pipes"]
+position = Vector2(1789, 1019)
+texture = ExtResource("43_udalb")
+region_enabled = true
+region_rect = Rect2(257.61, 1.53963, 143.335, 505.7)
+
+[node name="Sprite2D68" type="Sprite2D" parent="pipes"]
+position = Vector2(1619, 1024)
+texture = ExtResource("43_udalb")
+region_enabled = true
+region_rect = Rect2(122.327, 11.2027, 132.062, 484.764)
+
+[node name="Sprite2D69" type="Sprite2D" parent="pipes"]
+position = Vector2(423, 1251)
+texture = ExtResource("44_2pxxk")
+region_enabled = true
+region_rect = Rect2(0, 0, 181.916, 483.082)
+
+[node name="Sprite2D75" type="Sprite2D" parent="pipes"]
+position = Vector2(580, 1236)
+texture = ExtResource("44_2pxxk")
+region_enabled = true
+region_rect = Rect2(172.253, 0, 169.104, 471.809)
+
+[node name="Sprite2D76" type="Sprite2D" parent="pipes"]
+position = Vector2(752, 1253)
+texture = ExtResource("44_2pxxk")
+region_enabled = true
+region_rect = Rect2(342.967, 0, 141.725, 466.977)
+
+[node name="Sprite2D77" type="Sprite2D" parent="pipes"]
+position = Vector2(1264, 1659)
+texture = ExtResource("45_ugqms")
+region_enabled = true
+region_rect = Rect2(0, 0, 186.747, 512)
+
+[node name="Sprite2D78" type="Sprite2D" parent="pipes"]
+position = Vector2(1686, 1680)
+texture = ExtResource("45_ugqms")
+region_enabled = true
+region_rect = Rect2(341.356, 0, 151.388, 512)
+
+[node name="Sprite2D79" type="Sprite2D" parent="pipes"]
+position = Vector2(1484, 1702)
+texture = ExtResource("45_ugqms")
+region_enabled = true
+region_rect = Rect2(188.358, 0, 146.556, 512)
+
+[node name="Sprite2D80" type="Sprite2D" parent="pipes"]
+position = Vector2(2407, 1475)
+texture = ExtResource("46_v21em")
+region_enabled = true
+region_rect = Rect2(0, 0, 252.778, 512)
+
+[node name="Sprite2D81" type="Sprite2D" parent="pipes"]
+position = Vector2(2643, 1475)
+texture = ExtResource("46_v21em")
+region_enabled = true
+region_rect = Rect2(252.778, 0, 220.64, 512)
+
+[node name="Sprite2D82" type="Sprite2D" parent="pipes"]
+position = Vector2(3054, 288)
+texture = ExtResource("47_o1la1")
+
+[node name="Sprite2D83" type="Sprite2D" parent="pipes"]
+position = Vector2(2715, 172)
+texture = ExtResource("48_mhoqq")
+
+[node name="Sprite2D84" type="Sprite2D" parent="pipes"]
+position = Vector2(2727, -1136)
+texture = ExtResource("49_48mom")
+region_enabled = true
+region_rect = Rect2(0, 0, 120.716, 507.24)
+
+[node name="Sprite2D85" type="Sprite2D" parent="pipes"]
+position = Vector2(2828, -1119)
+texture = ExtResource("49_48mom")
+region_enabled = true
+region_rect = Rect2(125.548, 0, 53.1469, 388.062)
+
+[node name="Sprite2D86" type="Sprite2D" parent="pipes"]
+position = Vector2(2642, -1119)
+texture = ExtResource("49_48mom")
+region_enabled = true
+region_rect = Rect2(122.327, 381.62, 57.9784, 130.38)
+
+[node name="Sprite2D87" type="Sprite2D" parent="pipes"]
+position = Vector2(2550, -1122)
+texture = ExtResource("49_48mom")
+region_enabled = true
+region_rect = Rect2(169.032, 0, 91.7991, 512)
+
+[node name="Sprite2D88" type="Sprite2D" parent="pipes"]
+position = Vector2(2644, -995)
+texture = ExtResource("49_48mom")
+region_enabled = true
+region_rect = Rect2(255.999, 408.999, 57.9784, 93.4095)
+
+[node name="Sprite2D89" type="Sprite2D" parent="pipes"]
+position = Vector2(2458, -1130)
+texture = ExtResource("49_48mom")
+region_enabled = true
+region_rect = Rect2(309.146, 0, 86.9675, 512)
+
+[node name="Sprite2D90" type="Sprite2D" parent="pipes"]
+position = Vector2(2352, -1123)
+texture = ExtResource("49_48mom")
+region_enabled = true
+region_rect = Rect2(389.672, 0, 104.683, 512)
+
+[node name="Sprite2D91" type="Sprite2D" parent="pipes"]
+position = Vector2(2322, -1703)
+texture = ExtResource("50_jesr4")
+region_enabled = true
+region_rect = Rect2(143.263, 0, 212.587, 512)
+
+[node name="Sprite2D92" type="Sprite2D" parent="pipes"]
+position = Vector2(2577, -1729)
+texture = ExtResource("51_mdxoy")
+
+[node name="Sprite2D93" type="Sprite2D" parent="pipes"]
+position = Vector2(3089, -1754)
+texture = ExtResource("52_pyot7")
+region_enabled = true
+region_rect = Rect2(6.37012, 0, 66.0309, 512)
+
+[node name="Sprite2D94" type="Sprite2D" parent="pipes"]
+position = Vector2(2994, -1751)
+texture = ExtResource("52_pyot7")
+region_enabled = true
+region_rect = Rect2(444.429, 11.2027, 57.9784, 489.595)
+
+[node name="Sprite2D95" type="Sprite2D" parent="pipes"]
+position = Vector2(3670, -1761)
+texture = ExtResource("52_pyot7")
+region_enabled = true
+region_rect = Rect2(396.114, -0.0708847, 49.9258, 492.816)
+
+[node name="Sprite2D96" type="Sprite2D" parent="pipes"]
+position = Vector2(3577, -1757)
+texture = ExtResource("52_pyot7")
+region_enabled = true
+region_rect = Rect2(336.525, 0, 62.8099, 512)
+
+[node name="Sprite2D97" type="Sprite2D" parent="pipes"]
+position = Vector2(3488, -1751)
+texture = ExtResource("52_pyot7")
+region_enabled = true
+region_rect = Rect2(267.273, 0, 62.8099, 512)
+
+[node name="Sprite2D98" type="Sprite2D" parent="pipes"]
+position = Vector2(3376, -1739)
+texture = ExtResource("52_pyot7")
+region_enabled = true
+region_rect = Rect2(202.852, 0, 67.6414, 512)
+
+[node name="Sprite2D99" type="Sprite2D" parent="pipes"]
+position = Vector2(3279, -1751)
+texture = ExtResource("52_pyot7")
+region_enabled = true
+region_rect = Rect2(131.99, 0, 62.8099, 512)
+
+[node name="Sprite2D100" type="Sprite2D" parent="pipes"]
+position = Vector2(3194, -1745)
+texture = ExtResource("52_pyot7")
+region_enabled = true
+region_rect = Rect2(72.4011, 0, 56.3679, 512)
+
+[node name="Sprite2D101" type="Sprite2D" parent="pipes"]
+position = Vector2(2051, -2225)
+texture = ExtResource("53_t67mw")
+
+[node name="Sprite2D102" type="Sprite2D" parent="pipes"]
+position = Vector2(724, -2322)
+texture = ExtResource("54_ii5mf")
+region_enabled = true
+region_rect = Rect2(304.315, 334.915, 72.473, 167.493)
+
+[node name="Sprite2D103" type="Sprite2D" parent="pipes"]
+position = Vector2(859, -2366)
+texture = ExtResource("54_ii5mf")
+region_enabled = true
+region_rect = Rect2(28.9172, 0, 122.399, 302.705)
+
+[node name="Sprite2D104" type="Sprite2D" parent="pipes"]
+position = Vector2(1043, -2341)
+texture = ExtResource("54_ii5mf")
+region_enabled = true
+region_rect = Rect2(326.862, -1.6814, 180.377, 335.755)
+
+[node name="Sprite2D105" type="Sprite2D" parent="pipes"]
+position = Vector2(428, -2399)
+texture = ExtResource("54_ii5mf")
+region_enabled = true
+region_rect = Rect2(3.14911, 305.926, 212.587, 201.314)
+
+[node name="Sprite2D106" type="Sprite2D" parent="pipes"]
+position = Vector2(604, -2374)
+texture = ExtResource("54_ii5mf")
+region_enabled = true
+region_rect = Rect2(201.242, 1.53963, 83.7465, 370.417)
+
+[node name="Sprite2D107" type="Sprite2D" parent="pipes"]
+position = Vector2(1459, -2750)
+texture = ExtResource("55_avoja")
+region_enabled = true
+region_rect = Rect2(291.43, 0, 201.314, 512)
+
+[node name="Sprite2D108" type="Sprite2D" parent="pipes"]
+position = Vector2(1831, -2764)
+texture = ExtResource("55_avoja")
+region_enabled = true
+region_rect = Rect2(136.821, 0, 154.609, 504.019)
+
+[node name="Sprite2D109" type="Sprite2D" parent="pipes"]
+position = Vector2(1652, -2748)
+texture = ExtResource("55_avoja")
+region_enabled = true
+region_rect = Rect2(0, 0, 138.432, 507.24)
+
+[node name="Sprite2D110" type="Sprite2D" parent="pipes"]
+position = Vector2(583, -3074)
+texture = ExtResource("56_rdjjb")
+region_enabled = true
+region_rect = Rect2(0, 269.925, 89.7047, 242.075)
+
+[node name="Sprite2D111" type="Sprite2D" parent="pipes"]
+position = Vector2(864, -3097)
+texture = ExtResource("56_rdjjb")
+region_enabled = true
+region_rect = Rect2(201.429, 8.43396, 158.389, 503.566)
+
+[node name="Sprite2D112" type="Sprite2D" parent="pipes"]
+position = Vector2(723, -3051)
+texture = ExtResource("56_rdjjb")
+region_enabled = true
+region_rect = Rect2(89.7047, 63.86, 110.478, 448.14)
+
+[node name="Sprite2D113" type="Sprite2D" parent="pipes"]
+position = Vector2(1053, -3080)
+texture = ExtResource("56_rdjjb")
+region_enabled = true
+region_rect = Rect2(359.818, 8.43396, 102.487, 259.545)
+
+[node name="Sprite2D114" type="Sprite2D" parent="pipes"]
+position = Vector2(1174, -3040)
+texture = ExtResource("56_rdjjb")
+region_enabled = true
+region_rect = Rect2(365.142, 311.902, 135.762, 187.671)
+
+[node name="Sprite2D115" type="Sprite2D" parent="pipes"]
+position = Vector2(2290, -2610)
+texture = ExtResource("57_f6icj")
+region_enabled = true
+region_rect = Rect2(0, 177.471, 86.9629, 320.771)
+
+[node name="Sprite2D116" type="Sprite2D" parent="pipes"]
+position = Vector2(2855, -2607)
+texture = ExtResource("57_f6icj")
+region_enabled = true
+region_rect = Rect2(399.748, 81.639, 41.261, 413.941)
+
+[node name="Sprite2D117" type="Sprite2D" parent="pipes"]
+position = Vector2(2764, -2603)
+texture = ExtResource("57_f6icj")
+region_enabled = true
+region_rect = Rect2(343.846, 8.43396, 55.902, 484.484)
+
+[node name="Sprite2D118" type="Sprite2D" parent="pipes"]
+position = Vector2(2639, -2613)
+texture = ExtResource("57_f6icj")
+region_enabled = true
+region_rect = Rect2(220.063, 4.44096, 119.79, 492.47)
+
+[node name="Sprite2D119" type="Sprite2D" parent="pipes"]
+position = Vector2(2389, -2596)
+texture = ExtResource("57_f6icj")
+region_enabled = true
+region_rect = Rect2(84.3009, 23.075, 61.226, 475.167)
+
+[node name="Sprite2D120" type="Sprite2D" parent="pipes"]
+position = Vector2(2511, -2609)
+texture = ExtResource("57_f6icj")
+region_enabled = true
+region_rect = Rect2(152.182, 4.44096, 62.557, 485.815)
+
+[node name="Sprite2D121" type="Sprite2D" parent="pipes"]
+position = Vector2(2930, -2611)
+texture = ExtResource("57_f6icj")
+region_enabled = true
+region_rect = Rect2(442.34, 9.76497, 54.571, 491.139)
+
+[node name="Sprite2D123" type="Sprite2D" parent="pipes"]
+position = Vector2(-1473, -2368)
+texture = ExtResource("58_6v8ah")
+region_enabled = true
+region_rect = Rect2(0, 0, 82.9699, 512)
+
+[node name="Sprite2D122" type="Sprite2D" parent="pipes"]
+position = Vector2(-1825, -2039)
+texture = ExtResource("58_6v8ah")
+region_enabled = true
+region_rect = Rect2(142.865, 166.823, 82.522, 345.177)
+
+[node name="Sprite2D124" type="Sprite2D" parent="pipes"]
+position = Vector2(-1925, -2022)
+texture = ExtResource("58_6v8ah")
+region_enabled = true
+region_rect = Rect2(0, 0, 82.9699, 512)
+
+[node name="Sprite2D125" type="Sprite2D" parent="pipes"]
+position = Vector2(-1701, -2008)
+texture = ExtResource("58_6v8ah")
+region_enabled = true
+region_rect = Rect2(225.387, -0.883034, 139.755, 507.111)
+
+[node name="Sprite2D126" type="Sprite2D" parent="pipes"]
+position = Vector2(-1235, -2319)
+texture = ExtResource("59_p1ksm")
+
+[node name="Sprite2D127" type="Sprite2D" parent="pipes"]
+position = Vector2(-2458, -2087)
+texture = ExtResource("60_g4q53")
+region_enabled = true
+region_rect = Rect2(389.1, 196.105, 93.17, 312.785)
+
+[node name="Sprite2D128" type="Sprite2D" parent="pipes"]
+position = Vector2(-2909, -2084)
+texture = ExtResource("60_g4q53")
+region_enabled = true
+region_rect = Rect2(11.0959, 51.026, 122.452, 447.216)
+
+[node name="Sprite2D130" type="Sprite2D" parent="pipes"]
+position = Vector2(-2455, -2299)
+texture = ExtResource("60_g4q53")
+region_enabled = true
+region_rect = Rect2(378.452, 5.77197, 118.459, 179.685)
+
+[node name="Sprite2D131" type="Sprite2D" parent="pipes"]
+position = Vector2(-2578, -2035)
+texture = ExtResource("60_g4q53")
+region_enabled = true
+region_rect = Rect2(305.247, 45.702, 77.198, 312.785)
+
+[node name="Sprite2D132" type="Sprite2D" parent="pipes"]
+position = Vector2(-2685, -2115)
+texture = ExtResource("60_g4q53")
+region_enabled = true
+region_rect = Rect2(212.077, 12.427, 102.487, 487.146)
+
+[node name="Sprite2D133" type="Sprite2D" parent="pipes"]
+position = Vector2(-2785, -2110)
+texture = ExtResource("60_g4q53")
+region_enabled = true
+region_rect = Rect2(141.534, 9.76497, 73.205, 315.447)
+
+[node name="Sprite2D129" type="Sprite2D" parent="pipes"]
+position = Vector2(-2291, -1627)
+texture = ExtResource("61_bg1ka")
+region_enabled = true
+region_rect = Rect2(154.844, 21.744, 121.121, 484.484)
+
+[node name="Sprite2D134" type="Sprite2D" parent="pipes"]
+position = Vector2(-2413, -1621)
+texture = ExtResource("61_bg1ka")
+region_enabled = true
+region_rect = Rect2(0, 0, 145.527, 512)
+
+[node name="Sprite2D135" type="Sprite2D" parent="pipes"]
+position = Vector2(-2077, -1640)
+texture = ExtResource("61_bg1ka")
+region_enabled = true
+region_rect = Rect2(355.825, 23.075, 71.874, 481.822)
+
+[node name="Sprite2D136" type="Sprite2D" parent="pipes"]
+position = Vector2(-2135, -1631)
+texture = ExtResource("61_bg1ka")
+region_enabled = true
+region_rect = Rect2(274.634, 373.128, 57.233, 129.107)
+
+[node name="Sprite2D137" type="Sprite2D" parent="pipes"]
+position = Vector2(-2190, -1642)
+texture = ExtResource("61_bg1ka")
+region_enabled = true
+region_rect = Rect2(434.354, 4.44096, 66.55, 501.787)
+
+[node name="Sprite2D138" type="Sprite2D" parent="pipes"]
+position = Vector2(-772, -2865)
+texture = ExtResource("62_j18h8")
+region_enabled = true
+region_rect = Rect2(261.324, 0, 250.676, 512)
+
+[node name="Sprite2D139" type="Sprite2D" parent="pipes"]
+position = Vector2(-1055, -2874)
+texture = ExtResource("62_j18h8")
+region_enabled = true
+region_rect = Rect2(0, 0, 254.669, 512.883)
+
+[node name="Sprite2D140" type="Sprite2D" parent="pipes"]
+position = Vector2(-1927, -2752)
+texture = ExtResource("63_1mxve")
+region_enabled = true
+region_rect = Rect2(374.459, 299.034, 93.17, 202.312)
+
+[node name="Sprite2D141" type="Sprite2D" parent="pipes"]
+position = Vector2(-2254, -2749)
+texture = ExtResource("63_1mxve")
+region_enabled = true
+region_rect = Rect2(24.4059, 186.788, 162.382, 328.757)
+
+[node name="Sprite2D142" type="Sprite2D" parent="pipes"]
+position = Vector2(-2090, -2754)
+texture = ExtResource("63_1mxve")
+region_enabled = true
+region_rect = Rect2(190.781, 6.21396, 162.382, 493.801)
+
+[node name="Sprite2D143" type="Sprite2D" parent="pipes"]
+position = Vector2(-1511, -2949)
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(0, 0, 149.52, 479.608)
+
+[node name="Sprite2D144" type="Sprite2D" parent="pipes"]
+position = Vector2(-1594, -3242)
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(414.389, 301.254, 89.177, 178.354)
+
+[node name="Sprite2D145" type="Sprite2D" parent="pipes"]
+position = Vector2(-1970, -3135)
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(343.846, 337.191, 71.874, 145.079)
+
+[node name="Sprite2D146" type="Sprite2D" parent="pipes"]
+position = Vector2(-1722, -3222)
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(246.683, 285.282, 89.177, 190.333)
+
+[node name="Sprite2D147" type="Sprite2D" parent="pipes"]
+position = Vector2(-1858, -3120)
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(145.527, 299.923, 102.487, 183.678)
+
+[node name="Sprite2D148" type="Sprite2D" parent="pipes"]
+position = Vector2(-1380, -3040)
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(426.368, 19.082, 65.219, 258.214)
+
+[node name="Sprite2D149" type="Sprite2D" parent="pipes"]
+position = Vector2(-1607, -3010)
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(342.515, 27.068, 78.529, 256.883)
+
+[node name="Sprite2D150" type="Sprite2D" parent="pipes"]
+position = Vector2(-1779, -3011)
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(259.993, 41.709, 55.902, 199.65)
+
+[node name="Sprite2D151" type="Sprite2D" parent="pipes"]
+position = Vector2(-1700, -3010)
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(177.471, 20.413, 73.205, 227.601)
+
+[node name="gears" type="Node2D" parent="."]
+position = Vector2(790, -269)
+
+[node name="1459653689" type="Sprite2D" parent="gears"]
+position = Vector2(527.5, -289)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(16.3374, 8.59092, 107.445, 114.545)
+
+[node name="1459653690" type="Sprite2D" parent="gears"]
+position = Vector2(687.5, -304)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(140.519, 3.41507, 125.73, 128.407)
+
+[node name="1459653691" type="Sprite2D" parent="gears"]
+position = Vector2(816.5, -388)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(274.875, 6.12377, 106.121, 119.669)
+
+[node name="1459653692" type="Sprite2D" parent="gears"]
+position = Vector2(880.5, -272)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(384.488, -1.6829, 117.957, 135.988)
+
+[node name="1459653693" type="Sprite2D" parent="gears"]
+position = Vector2(992.5, -400)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(5.06129, 122.176, 135.237, 132.983)
+
+[node name="1459653694" type="Sprite2D" parent="gears"]
+position = Vector2(1013.5, -259)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(147.06, 132.033, 119.459, 118.708)
+
+[node name="1459653695" type="Sprite2D" parent="gears"]
+position = Vector2(1126.5, -344)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(268.773, 129.027, 118.708, 123.967)
+
+[node name="1459653696" type="Sprite2D" parent="gears"]
+position = Vector2(855.5, -166)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(268.773, 129.779, 122.464, 125.47)
+
+[node name="1459653697" type="Sprite2D" parent="gears"]
+position = Vector2(1145.5, -193)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(391.237, 141.8, 109.692, 110.443)
+
+[node name="1459653698" type="Sprite2D" parent="gears"]
+position = Vector2(702.5, -174)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(8.81786, 259.005, 115.703, 116.454)
+
+[node name="1459653699" type="Sprite2D" parent="gears"]
+position = Vector2(552.5, -162)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(138.044, 249.989, 133.734, 131.48)
+
+[node name="1459653700" type="Sprite2D" parent="gears"]
+position = Vector2(596.5, -405)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(277.789, 263.513, 103.682, 111.946)
+
+[node name="1459653701" type="Sprite2D" parent="gears"]
+position = Vector2(718.5, -458)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(393.491, 265.015, 102.93, 102.93)
+
+[node name="1459653702" type="Sprite2D" parent="gears"]
+position = Vector2(1242.5, -277)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(11.2177, 378.407, 118.161, 121.577)
+
+[node name="1459653703" type="Sprite2D" parent="gears"]
+position = Vector2(1250.5, -405)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(132.858, 379.008, 124.184, 122.322)
+
+[node name="1459653704" type="Sprite2D" parent="gears"]
+position = Vector2(1276.5, -133)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(262.5, 383.895, 112.33, 114.588)
+
+[node name="1459653705" type="Sprite2D" parent="gears"]
+position = Vector2(1013.5, -130)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(382.41, 375.396, 116.846, 123.056)
+
+[node name="tower_guns" type="Node2D" parent="."]
+
+[node name="Sprite2D63" type="Sprite2D" parent="tower_guns"]
+position = Vector2(187, -1050)
+texture = ExtResource("50_h3tto")
+region_enabled = true
+region_rect = Rect2(0, 0, 141.653, 294.652)
+
+[node name="Sprite2D64" type="Sprite2D" parent="tower_guns"]
+position = Vector2(549, -1350)
+texture = ExtResource("50_h3tto")
+region_enabled = true
+region_rect = Rect2(388.061, 3.15014, 114.346, 500.869)
+
+[node name="Sprite2D65" type="Sprite2D" parent="tower_guns"]
+position = Vector2(-73, -1444)
+texture = ExtResource("50_h3tto")
+region_enabled = true
+region_rect = Rect2(307.536, 14.4237, 75.694, 494.427)
+
+[node name="Sprite2D66" type="Sprite2D" parent="tower_guns"]
+position = Vector2(656, -1385)
+texture = ExtResource("50_h3tto")
+region_enabled = true
+region_rect = Rect2(239.894, 1.53963, 72.473, 502.479)
+
+[node name="Sprite2D67" type="Sprite2D" parent="tower_guns"]
+position = Vector2(-428, -1253)
+texture = ExtResource("50_h3tto")
+region_enabled = true
+region_rect = Rect2(146.484, 359.073, 91.7991, 146.556)
+
+[node name="Sprite2D68" type="Sprite2D" parent="tower_guns"]
+position = Vector2(-2, -1057)
+texture = ExtResource("50_h3tto")
+region_enabled = true
+region_rect = Rect2(9.59113, 297.874, 136.893, 204.535)
+
+[node name="Sprite2D69" type="Sprite2D" parent="tower_guns"]
+position = Vector2(194, -1507)
+texture = ExtResource("50_h3tto")
+region_enabled = true
+region_rect = Rect2(135.211, 4.76064, 112.736, 354.312)
+
+[node name="Sprite2D70" type="Sprite2D" parent="tower_guns"]
+position = Vector2(772, -1475)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(143.263, 1.53963, 114.346, 507.311)
+
+[node name="Sprite2D71" type="Sprite2D" parent="tower_guns"]
+position = Vector2(955, -1457)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(370.345, 220.569, 70.8624, 283.45)
+
+[node name="Sprite2D72" type="Sprite2D" parent="tower_guns"]
+position = Vector2(1129, -1499)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(90.1166, 273.716, 49.9258, 231.913)
+
+[node name="Sprite2D84" type="Sprite2D" parent="tower_guns"]
+position = Vector2(1395.5, -1556)
+texture = ExtResource("59_euy1t")
+region_enabled = true
+region_rect = Rect2(0, 0, 105.151, 234.122)
+
+[node name="Sprite2D85" type="Sprite2D" parent="tower_guns"]
+position = Vector2(1276.5, -1819)
+texture = ExtResource("59_euy1t")
+region_enabled = true
+region_rect = Rect2(380.008, 0, 77.3045, 125.549)
+
+[node name="Sprite2D86" type="Sprite2D" parent="tower_guns"]
+position = Vector2(1633.5, -1649)
+texture = ExtResource("59_euy1t")
+region_enabled = true
+region_rect = Rect2(201.242, 0, 152.998, 505.629)
+
+[node name="Sprite2D87" type="Sprite2D" parent="tower_guns"]
+position = Vector2(1485.5, -1653)
+texture = ExtResource("59_euy1t")
+region_enabled = true
+region_rect = Rect2(105.151, 0, 96.0904, 504.019)
+
+[node name="Sprite2D88" type="Sprite2D" parent="tower_guns"]
+position = Vector2(1396.5, -1779)
+texture = ExtResource("59_euy1t")
+region_enabled = true
+region_rect = Rect2(0, 234.122, 105.151, 268.286)
+
+[node name="Sprite2D89" type="Sprite2D" parent="tower_guns"]
+position = Vector2(1273.5, -1573)
+texture = ExtResource("59_euy1t")
+region_enabled = true
+region_rect = Rect2(375.177, 120.717, 85.3571, 375.249)
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="pipes2" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="pipes2"]
+position = Vector2(-302, -2918)
+texture = ExtResource("68_7fya6")
+region_enabled = true
+region_rect = Rect2(154.844, 16.42, 106.48, 451.209)
+
+[node name="Sprite2D2" type="Sprite2D" parent="pipes2"]
+position = Vector2(-192, -2938)
+texture = ExtResource("68_7fya6")
+region_enabled = true
+region_rect = Rect2(289.275, 37.716, 77.1981, 423.258)
+
+[node name="Sprite2D4" type="Sprite2D" parent="pipes2"]
+position = Vector2(-429, -2942)
+texture = ExtResource("68_7fya6")
+region_enabled = true
+region_rect = Rect2(37.7159, 0, 106.48, 467.629)
+
+[node name="Sprite2D5" type="Sprite2D" parent="pipes2"]
+position = Vector2(-88, -2908)
+texture = ExtResource("68_7fya6")
+region_enabled = true
+region_rect = Rect2(383.776, 9.76497, 94.501, 455.202)
+
+[node name="Sprite2D3" type="Sprite2D" parent="pipes2"]
+position = Vector2(-622, -3485)
+texture = ExtResource("69_4nody")
+region_enabled = true
+region_rect = Rect2(152.182, 5.77197, 179.685, 497.794)
+
+[node name="Sprite2D6" type="Sprite2D" parent="pipes2"]
+position = Vector2(-743, -3464)
+texture = ExtResource("69_4nody")
+region_enabled = true
+region_rect = Rect2(23.0749, 90.956, 119.79, 420.596)
+
+[node name="Sprite2D7" type="Sprite2D" parent="pipes2"]
+position = Vector2(-482, -3405)
+texture = ExtResource("69_4nody")
+region_enabled = true
+region_rect = Rect2(375.79, 261.324, 130.438, 251.559)
+
+[node name="Sprite2D8" type="Sprite2D" parent="pipes2"]
+position = Vector2(278, -3888)
+texture = ExtResource("70_olqg8")
+
+[node name="Sprite2D9" type="Sprite2D" parent="pipes2"]
+position = Vector2(2212, -3882)
+texture = ExtResource("71_kcc2f")

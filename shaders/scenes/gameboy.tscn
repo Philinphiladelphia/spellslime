@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://p0maedeb06bm"]
+
+[ext_resource type="Shader" uid="uid://4kwj7u4b72wd" path="res://Shaders/gameboy.tres" id="1_xpd8n"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_c8d48"]
+shader = ExtResource("1_xpd8n")
+
+[node name="Gameboy" type="Node2D"]
+material = SubResource("ShaderMaterial_c8d48")
