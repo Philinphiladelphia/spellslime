@@ -1,4 +1,4 @@
-[gd_scene load_steps=86 format=3 uid="uid://dd32qqj6y33t2"]
+[gd_scene load_steps=82 format=3 uid="uid://dd32qqj6y33t2"]
 
 [ext_resource type="Texture2D" uid="uid://bdg78nkkgj4j3" path="res://spell_machine_weapon/assets/stone/637059872.png" id="1_hfikh"]
 [ext_resource type="Texture2D" uid="uid://81ljjbnoxjkm" path="res://spell_machine_weapon/assets/stone/22343422.png" id="13_e33m8"]
@@ -34,7 +34,6 @@
 [ext_resource type="Texture2D" uid="uid://burv074pori0v" path="res://spell_machine_weapon/assets/stone/1999630919.png" id="33_v40i0"]
 [ext_resource type="Texture2D" uid="uid://glmrvfj57ug5" path="res://spell_machine_weapon/assets/stone/2047141881.png" id="34_1okfx"]
 [ext_resource type="Texture2D" uid="uid://xw57coijn0k4" path="res://spell_machine_weapon/assets/pipes/374220477.png" id="34_w4t67"]
-[ext_resource type="Texture2D" uid="uid://dug7gs2g6e8ai" path="res://spell_machine_weapon/assets/pipes/379861964.png" id="35_34c7q"]
 [ext_resource type="Texture2D" uid="uid://dgggahwa6cgi1" path="res://spell_machine_weapon/assets/stone/2064920276.png" id="35_ir2kl"]
 [ext_resource type="Texture2D" uid="uid://dd0kgw8k0mkrs" path="res://spell_machine_weapon/assets/pipes/415952676.png" id="36_1yqt0"]
 [ext_resource type="Texture2D" uid="uid://bf0enocyohsux" path="res://spell_machine_weapon/assets/pipes/443267854.png" id="37_urn41"]
@@ -72,14 +71,11 @@
 [ext_resource type="PackedScene" uid="uid://82i5w8p42hu" path="res://v1_slimes/environment/foreground/basic_platform.tscn" id="72_cyhoc"]
 [ext_resource type="Script" path="res://v1_slimes/spawn_slime.gd" id="73_2v13q"]
 [ext_resource type="Texture2D" uid="uid://djon1eeigry4" path="res://spell_machine_weapon/assets/useful_parts/1129941675(1).png" id="73_svgxs"]
-[ext_resource type="Texture2D" uid="uid://w8hw61f36sgv" path="res://spell_machine_weapon/assets/useful_parts/1113850873(1).png" id="74_liqra"]
-[ext_resource type="Texture2D" uid="uid://dcctwtf83gx4e" path="res://spell_machine_weapon/assets/useful_parts/1585472942(1).png" id="74_ykxs7"]
 [ext_resource type="Texture2D" uid="uid://b4e77xmja2vxb" path="res://spell_machine_weapon/assets/useful_parts/889998723.png" id="75_t3a04"]
 [ext_resource type="Texture2D" uid="uid://dgjag7auc4m7n" path="res://spell_machine_weapon/assets/useful_parts/594464323(1).png" id="76_0i0t1"]
 [ext_resource type="Texture2D" uid="uid://bq222jux067vd" path="res://spell_machine_weapon/assets/useful_parts/437281032.png" id="77_m5eu4"]
 [ext_resource type="LabelSettings" uid="uid://c34qgwo4ca7bk" path="res://upgrade_tree/assets/major_font.tres" id="77_vir2a"]
 [ext_resource type="Texture2D" uid="uid://86covl51pnwi" path="res://spell_machine_weapon/assets/useful_parts/265614735.png" id="78_5amxl"]
-[ext_resource type="Texture2D" uid="uid://c82tj3lm5xhk2" path="res://spell_machine_weapon/assets/useful_parts/335313623.png" id="79_acn48"]
 [ext_resource type="Texture2D" uid="uid://dkxnnxp8mv4t4" path="res://spell_machine_weapon/assets/gears/510281256.png" id="79_kkarc"]
 [ext_resource type="Texture2D" uid="uid://ca2ixsdhdp7xd" path="res://spell_machine_weapon/assets/gears/656772755.png" id="80_lfh57"]
 [ext_resource type="Texture2D" uid="uid://dfa0ncskfplmc" path="res://spell_machine_weapon/assets/gears/1589236748.png" id="82_81aby"]
@@ -1130,7 +1126,7 @@ script = ExtResource("73_2v13q")
 [node name="useful_parts" type="Node2D" parent="."]
 
 [node name="Sprite2D4" type="Sprite2D" parent="useful_parts"]
-position = Vector2(54, 61)
+position = Vector2(1939, 776)
 texture = ExtResource("75_t3a04")
 region_enabled = true
 region_rect = Rect2(6.29993, 6.3, 222.2, 262.9)
@@ -1261,145 +1257,9 @@ texture = ExtResource("76_0i0t1")
 region_enabled = true
 region_rect = Rect2(274.788, 385.984, 235.162, 128.475)
 
-[node name="Sprite2D10" type="Sprite2D" parent="useful_parts"]
-position = Vector2(-231, 1890)
-texture = ExtResource("74_liqra")
-region_enabled = true
-region_rect = Rect2(340.7, 46.6699, 163.35, 458.59)
-
-[node name="robot" type="Sprite2D" parent="."]
-position = Vector2(-583, 1906)
-texture = ExtResource("79_acn48")
-
-[node name="Label" type="Label" parent="robot"]
-offset_left = -114.0
-offset_top = 238.0
-offset_right = 93.0
-offset_bottom = 302.0
-text = "Roberto"
-label_settings = ExtResource("77_vir2a")
-
 [node name="basic_machine" type="Node2D" parent="."]
 
-[node name="Sprite2D95" type="Sprite2D" parent="basic_machine"]
-position = Vector2(17, 1132)
-texture = ExtResource("52_pyot7")
-region_enabled = true
-region_rect = Rect2(396.114, -0.0708847, 49.9258, 492.816)
-
-[node name="Sprite2D98" type="Sprite2D" parent="basic_machine"]
-position = Vector2(11, 697)
-texture = ExtResource("52_pyot7")
-region_enabled = true
-region_rect = Rect2(202.852, 0, 67.6414, 512)
-
-[node name="Sprite2D2" type="Sprite2D" parent="basic_machine"]
-position = Vector2(18, 1627)
-texture = ExtResource("73_svgxs")
-region_enabled = true
-region_rect = Rect2(16, 7, 156, 242)
-
-[node name="Sprite2D9" type="Sprite2D" parent="basic_machine"]
-position = Vector2(17, 1435)
-rotation = -3.14159
-texture = ExtResource("73_svgxs")
-region_enabled = true
-region_rect = Rect2(265.782, 4.76321, 88.6552, 192.337)
-
-[node name="Sprite2D3" type="Sprite2D" parent="basic_machine"]
-position = Vector2(74, 1851)
-texture = ExtResource("74_liqra")
-region_enabled = true
-region_rect = Rect2(176.14, 7.94985, 174.24, 494.89)
-
-[node name="Sprite2D20" type="Sprite2D" parent="basic_machine"]
-position = Vector2(155, 1840)
-texture = ExtResource("74_liqra")
-region_enabled = true
-region_rect = Rect2(9.1597, 3.10985, 175.45, 500.94)
-
-[node name="Sprite2D45" type="Sprite2D" parent="basic_machine"]
-position = Vector2(260, 1900)
-texture = ExtResource("35_34c7q")
-
-[node name="Sprite2D132" type="Sprite2D" parent="basic_machine"]
-position = Vector2(-41, 1899)
-texture = ExtResource("60_g4q53")
-region_enabled = true
-region_rect = Rect2(212.077, 12.427, 102.487, 487.146)
-
-[node name="Sprite2D72" type="Sprite2D" parent="basic_machine"]
-position = Vector2(203, 1751)
-rotation = -0.509986
-texture = ExtResource("42_soobr")
-region_enabled = true
-region_rect = Rect2(281.767, 231.843, 67.6414, 270.566)
-
-[node name="Sprite2D42" type="Sprite2D" parent="basic_machine"]
-position = Vector2(-111, 1819)
-texture = ExtResource("33_n41ah")
-region_enabled = true
-region_rect = Rect2(264.052, 0, 119.178, 508.85)
-
-[node name="Sprite2D128" type="Sprite2D" parent="basic_machine/Sprite2D42"]
-position = Vector2(-64, 108)
-texture = ExtResource("60_g4q53")
-region_enabled = true
-region_rect = Rect2(11.0959, 51.026, 122.452, 447.216)
-
-[node name="Sprite2D19" type="Sprite2D" parent="basic_machine"]
-position = Vector2(261, 1842)
-texture = ExtResource("76_0i0t1")
-region_enabled = true
-region_rect = Rect2(150.817, 295.823, 218.633, 90.1578)
-
-[node name="Sprite2D73" type="Sprite2D" parent="basic_machine"]
-position = Vector2(40, 1745)
-rotation = 0.554275
-texture = ExtResource("42_soobr")
-region_enabled = true
-region_rect = Rect2(281.767, 231.843, 67.6414, 270.566)
-
 [node name="long_pipe" type="Node2D" parent="basic_machine"]
-
-[node name="Sprite2D10" type="Sprite2D" parent="basic_machine/long_pipe"]
-position = Vector2(-215, 1889)
-texture = ExtResource("73_svgxs")
-flip_h = true
-region_enabled = true
-region_rect = Rect2(381.4, 218.6, 124.3, 229.79)
-
-[node name="Sprite2D11" type="Sprite2D" parent="basic_machine/long_pipe"]
-position = Vector2(-215, 2094)
-texture = ExtResource("73_svgxs")
-flip_h = true
-region_enabled = true
-region_rect = Rect2(381.4, 326.41, 124.3, 181.23)
-
-[node name="Sprite2D55" type="Sprite2D" parent="basic_machine/long_pipe"]
-position = Vector2(143, 1509)
-texture = ExtResource("40_w3fyn")
-region_enabled = true
-region_rect = Rect2(368.735, 0, 143.265, 512)
-
-[node name="Sprite2D" type="Sprite2D" parent="basic_machine"]
-position = Vector2(23, 1925)
-texture = ExtResource("74_ykxs7")
-
-[node name="Sprite2D70" type="Sprite2D" parent="basic_machine"]
-position = Vector2(231, 1744)
-rotation = -0.569322
-texture = ExtResource("42_soobr")
-region_enabled = true
-region_rect = Rect2(281.767, 231.843, 67.6414, 270.566)
-
-[node name="Label" type="Label" parent="basic_machine"]
-offset_left = -149.0
-offset_top = 2188.0
-offset_right = 204.0
-offset_bottom = 2252.0
-text = "Spell Furnace"
-label_settings = ExtResource("77_vir2a")
 
 [node name="gears2" type="Node2D" parent="."]
 
@@ -1434,7 +1294,7 @@ region_enabled = true
 region_rect = Rect2(210.174, 210.926, 147.258, 133.734)
 
 [node name="Sprite2D7" type="Sprite2D" parent="gears2"]
-position = Vector2(81.5, 50.5)
+position = Vector2(1686, 632)
 texture = ExtResource("79_kkarc")
 region_enabled = true
 region_rect = Rect2(8.27368, 4.05616, 164.606, 159.738)
@@ -1469,301 +1329,303 @@ texture = ExtResource("80_lfh57")
 region_enabled = true
 region_rect = Rect2(263.281, 222.267, 108.79, 118.54)
 
-[node name="machine_topside" type="Node2D" parent="."]
+[node name="spell_machine_weapon" type="Node2D" parent="."]
 
-[node name="Sprite2D137" type="Sprite2D" parent="machine_topside"]
+[node name="machine_topside" type="Node2D" parent="spell_machine_weapon"]
+
+[node name="Sprite2D137" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(196.5, 199.5)
 scale = Vector2(1, 1.5)
 texture = ExtResource("60_g4q53")
 region_enabled = true
 region_rect = Rect2(389.1, 196.105, 93.17, 312.785)
 
-[node name="Sprite2D138" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D138" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(197, -42.5)
 texture = ExtResource("60_g4q53")
 region_enabled = true
 region_rect = Rect2(378.452, 5.77197, 118.459, 179.685)
 
-[node name="Sprite2D139" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D139" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-168.5, 191.5)
 scale = Vector2(1, 1.5)
 texture = ExtResource("60_g4q53")
 region_enabled = true
 region_rect = Rect2(389.1, 196.105, 93.17, 312.785)
 
-[node name="Sprite2D140" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D140" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-168, -50.5)
 texture = ExtResource("60_g4q53")
 region_enabled = true
 region_rect = Rect2(378.452, 5.77197, 118.459, 179.685)
 
-[node name="Sprite2D135" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D135" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(196.5, 199.5)
 scale = Vector2(1, 1.5)
 texture = ExtResource("60_g4q53")
 region_enabled = true
 region_rect = Rect2(389.1, 196.105, 93.17, 312.785)
 
-[node name="Sprite2D136" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D136" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(197, -42.5)
 texture = ExtResource("60_g4q53")
 region_enabled = true
 region_rect = Rect2(378.452, 5.77197, 118.459, 179.685)
 
-[node name="Sprite2D129" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D129" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-168.5, 191.5)
 scale = Vector2(1, 1.5)
 texture = ExtResource("60_g4q53")
 region_enabled = true
 region_rect = Rect2(389.1, 196.105, 93.17, 312.785)
 
-[node name="Sprite2D134" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D134" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-168, -50.5)
 texture = ExtResource("60_g4q53")
 region_enabled = true
 region_rect = Rect2(378.452, 5.77197, 118.459, 179.685)
 
-[node name="Sprite2D104" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D104" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(3134, 820)
 texture = ExtResource("54_ii5mf")
 region_enabled = true
 region_rect = Rect2(326.862, -1.6814, 180.377, 335.755)
 
-[node name="Sprite2D3" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D3" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-97, 89)
 texture = ExtResource("69_4nody")
 region_enabled = true
 region_rect = Rect2(152.182, 5.77197, 179.685, 497.794)
 
-[node name="Sprite2D5" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D5" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(117, 86)
 texture = ExtResource("69_4nody")
 region_enabled = true
 region_rect = Rect2(152.182, 5.77197, 179.685, 497.794)
 
-[node name="Sprite2D127" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D127" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-141.5, 159)
 scale = Vector2(1, 1.5)
 texture = ExtResource("60_g4q53")
 region_enabled = true
 region_rect = Rect2(389.1, 196.105, 93.17, 312.785)
 
-[node name="Sprite2D99" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D99" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(63, 110)
 rotation = -0.334019
 texture = ExtResource("52_pyot7")
 region_enabled = true
 region_rect = Rect2(267.273, 0, 62.8099, 512)
 
-[node name="Sprite2D100" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D100" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-44, 128)
 rotation = 0.302523
 texture = ExtResource("52_pyot7")
 region_enabled = true
 region_rect = Rect2(267.273, 0, 62.8099, 512)
 
-[node name="Sprite2D128" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D128" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(164.5, 168)
 scale = Vector2(1, 1.5)
 texture = ExtResource("60_g4q53")
 region_enabled = true
 region_rect = Rect2(389.1, 196.105, 93.17, 312.785)
 
-[node name="Sprite2D60" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D60" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-26, 116)
 texture = ExtResource("39_5y5qt")
 region_enabled = true
 region_rect = Rect2(376.787, 3.15014, 120.788, 516.974)
 
-[node name="Sprite2D105" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D105" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(3613, 1492)
 texture = ExtResource("54_ii5mf")
 region_enabled = true
 region_rect = Rect2(3.14911, 305.926, 212.587, 201.314)
 
-[node name="Sprite2D132" type="Sprite2D" parent="machine_topside"]
-position = Vector2(-109, 402)
+[node name="Sprite2D132" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
+position = Vector2(-107, 369.5)
 rotation = -3.14159
 texture = ExtResource("60_g4q53")
 region_enabled = true
 region_rect = Rect2(378.452, 5.77197, 118.459, 179.685)
 
-[node name="Sprite2D133" type="Sprite2D" parent="machine_topside"]
-position = Vector2(119, 398)
+[node name="Sprite2D133" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
+position = Vector2(121, 365.5)
 rotation = -3.14159
 texture = ExtResource("60_g4q53")
 region_enabled = true
 region_rect = Rect2(378.452, 5.77197, 118.459, 179.685)
 
-[node name="Sprite2D" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(7, 247)
 texture = ExtResource("83_dhs73")
 
-[node name="Sprite2D10" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D10" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-9911.5, 999)
 rotation = -3.14159
 texture = ExtResource("82_kvsuo")
 region_enabled = true
 region_rect = Rect2(318.504, 336.118, 141.066, 163.139)
 
-[node name="Sprite2D53" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D53" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(2879, 713)
 texture = ExtResource("39_5y5qt")
 region_enabled = true
 region_rect = Rect2(148.095, 1.53963, 233.524, 513.753)
 
-[node name="Sprite2D7" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D7" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(4183.44, 920.13)
 rotation = -2.53197
 texture = ExtResource("25_s501p")
 region_enabled = true
 region_rect = Rect2(136.821, 305.961, 67.6414, 206.11)
 
-[node name="Sprite2D8" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D8" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(4194.44, 971.13)
 rotation = -2.53197
 texture = ExtResource("25_s501p")
 region_enabled = true
 region_rect = Rect2(136.821, 305.961, 67.6414, 206.11)
 
-[node name="Sprite2D9" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D9" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(4198.44, 1025.13)
 rotation = -2.53197
 texture = ExtResource("25_s501p")
 region_enabled = true
 region_rect = Rect2(136.821, 305.961, 67.6414, 206.11)
 
-[node name="Sprite2D13" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D13" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(86, -279)
 texture = ExtResource("79_kkarc")
 region_enabled = true
 region_rect = Rect2(18.9939, 161.744, 185.097, 187.829)
 
-[node name="Node2D" type="Node2D" parent="machine_topside"]
+[node name="Node2D" type="Node2D" parent="spell_machine_weapon/machine_topside"]
 
-[node name="Sprite2D62" type="Sprite2D" parent="machine_topside/Node2D"]
+[node name="Sprite2D62" type="Sprite2D" parent="spell_machine_weapon/machine_topside/Node2D"]
 position = Vector2(4163.29, 1298.05)
 rotation = 6.68728
 texture = ExtResource("39_5y5qt")
 region_enabled = true
 region_rect = Rect2(24.0858, 288.21, 51.5363, 223.861)
 
-[node name="Sprite2D64" type="Sprite2D" parent="machine_topside/Node2D"]
+[node name="Sprite2D64" type="Sprite2D" parent="spell_machine_weapon/machine_topside/Node2D"]
 position = Vector2(4161.29, 1362.05)
 rotation = 6.68728
 texture = ExtResource("39_5y5qt")
 region_enabled = true
 region_rect = Rect2(24.0858, 288.21, 51.5363, 223.861)
 
-[node name="Sprite2D63" type="Sprite2D" parent="machine_topside/Node2D"]
+[node name="Sprite2D63" type="Sprite2D" parent="spell_machine_weapon/machine_topside/Node2D"]
 position = Vector2(4161.29, 1426.05)
 rotation = 0.404092
 texture = ExtResource("39_5y5qt")
 region_enabled = true
 region_rect = Rect2(24.0858, 288.21, 51.5363, 223.861)
 
-[node name="Sprite2D51" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D51" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(3440, 899)
 texture = ExtResource("38_75j3m")
 region_enabled = true
 region_rect = Rect2(0, 0, 186.747, 512)
 
-[node name="Sprite2D6" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D6" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-8953, -330.5)
 texture = ExtResource("77_m5eu4")
 region_enabled = true
 region_rect = Rect2(24.7281, -6.99789, 120.909, 337.273)
 
-[node name="Sprite2D2" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D2" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-9722.5, 869)
 texture = ExtResource("82_kvsuo")
 region_enabled = true
 region_rect = Rect2(285.282, 0, 226.718, 342.515)
 
-[node name="Sprite2D11" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D11" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(3, -119)
 rotation = -3.14159
 texture = ExtResource("82_kvsuo")
 region_enabled = true
 region_rect = Rect2(0, 0, 275.549, 512)
 
-[node name="Sprite2D97" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D97" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(111, 174)
 rotation = -0.40152
 texture = ExtResource("52_pyot7")
 region_enabled = true
 region_rect = Rect2(267.273, 0, 62.8099, 512)
 
-[node name="Sprite2D98" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D98" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-79, 172)
 rotation = 0.423342
 texture = ExtResource("52_pyot7")
 region_enabled = true
 region_rect = Rect2(267.273, 0, 62.8099, 512)
 
-[node name="Sprite2D44" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D44" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(10, -300)
 texture = ExtResource("34_w4t67")
 
-[node name="Sprite2D130" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D130" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-141, -83)
 texture = ExtResource("60_g4q53")
 region_enabled = true
 region_rect = Rect2(378.452, 5.77197, 118.459, 179.685)
 
-[node name="Sprite2D131" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D131" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(168, -73)
 texture = ExtResource("60_g4q53")
 region_enabled = true
 region_rect = Rect2(378.452, 5.77197, 118.459, 179.685)
 
-[node name="1459653703" type="Sprite2D" parent="machine_topside"]
+[node name="1459653703" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-33, -60)
 texture = ExtResource("25_8haih")
 region_enabled = true
 region_rect = Rect2(132.858, 379.008, 124.184, 122.322)
 
-[node name="Sprite2D17" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D17" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(22, -224)
 texture = ExtResource("80_lfh57")
 region_enabled = true
 region_rect = Rect2(372.73, 232.396, 129.152, 130.394)
 
-[node name="Sprite2D4" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D4" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-8725, -423.5)
 texture = ExtResource("79_kkarc")
 region_enabled = true
 region_rect = Rect2(18.9939, 161.744, 185.097, 187.829)
 
-[node name="Sprite2D12" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D12" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-48, -189)
 texture = ExtResource("79_kkarc")
 region_enabled = true
 region_rect = Rect2(18.9939, 161.744, 185.097, 187.829)
 
-[node name="Sprite2D14" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D14" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-9, -313)
 texture = ExtResource("79_kkarc")
 region_enabled = true
 region_rect = Rect2(18.9939, 161.744, 185.097, 187.829)
 
-[node name="Sprite2D16" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D16" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(12, 3)
 texture = ExtResource("80_lfh57")
 region_enabled = true
 region_rect = Rect2(9.13069, 338.14, 170.753, 167.028)
 
-[node name="Sprite2D110" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D110" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-194, 343)
 texture = ExtResource("56_rdjjb")
 region_enabled = true
 region_rect = Rect2(0, 269.925, 89.7047, 242.075)
 
-[node name="Sprite2D15" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D15" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(12, -465)
 texture = ExtResource("82_81aby")
 
-[node name="Label" type="Label" parent="machine_topside"]
+[node name="Label" type="Label" parent="spell_machine_weapon/machine_topside"]
 offset_left = -150.0
 offset_top = -800.0
 offset_right = 203.0
@@ -1771,8 +1633,10 @@ offset_bottom = -736.0
 text = "Spell Cannon"
 label_settings = ExtResource("77_vir2a")
 
-[node name="Sprite2D111" type="Sprite2D" parent="machine_topside"]
+[node name="Sprite2D111" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(189, 343)
 texture = ExtResource("56_rdjjb")
 region_enabled = true
 region_rect = Rect2(0, 269.925, 89.7047, 242.075)
+
+[node name="hitboxes" type="Node2D" parent="spell_machine_weapon"]
