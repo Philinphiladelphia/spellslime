@@ -1,0 +1,158 @@
+[gd_scene load_steps=13 format=3 uid="uid://bnvr02pptg8vv"]
+
+[ext_resource type="Texture2D" uid="uid://w8hw61f36sgv" path="res://spell_machine_weapon/assets/useful_parts/1113850873(1).png" id="1_7qht6"]
+[ext_resource type="Texture2D" uid="uid://c82tj3lm5xhk2" path="res://spell_machine_weapon/assets/useful_parts/335313623.png" id="2_0upi6"]
+[ext_resource type="LabelSettings" uid="uid://c34qgwo4ca7bk" path="res://upgrade_tree/assets/major_font.tres" id="3_bi300"]
+[ext_resource type="Texture2D" uid="uid://dv0jkhq2tsp5n" path="res://spell_machine_weapon/assets/pipes/779125992.png" id="4_hewmh"]
+[ext_resource type="Texture2D" uid="uid://djon1eeigry4" path="res://spell_machine_weapon/assets/useful_parts/1129941675(1).png" id="5_78nv2"]
+[ext_resource type="Texture2D" uid="uid://dug7gs2g6e8ai" path="res://spell_machine_weapon/assets/pipes/379861964.png" id="6_ewxd0"]
+[ext_resource type="Texture2D" uid="uid://mk8i0kj8crgt" path="res://spell_machine_weapon/assets/pipes/1139776368.png" id="7_uwssq"]
+[ext_resource type="Texture2D" uid="uid://sqgprijtkl08" path="res://spell_machine_weapon/assets/pipes/614223861.png" id="8_rsawx"]
+[ext_resource type="Texture2D" uid="uid://dlyvwmwl038jo" path="res://spell_machine_weapon/assets/pipes/323209769.png" id="9_l51xc"]
+[ext_resource type="Texture2D" uid="uid://dgjag7auc4m7n" path="res://spell_machine_weapon/assets/useful_parts/594464323(1).png" id="10_3vara"]
+[ext_resource type="Texture2D" uid="uid://c4dvcexgx2m0p" path="res://spell_machine_weapon/assets/pipes/497710787.png" id="11_cn51e"]
+[ext_resource type="Texture2D" uid="uid://dcctwtf83gx4e" path="res://spell_machine_weapon/assets/useful_parts/1585472942(1).png" id="12_81mq2"]
+
+[node name="SpellMachine" type="Node2D"]
+
+[node name="spell_machine_base" type="Node2D" parent="."]
+
+[node name="Sprite2D10" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(-231, 1890)
+texture = ExtResource("1_7qht6")
+region_enabled = true
+region_rect = Rect2(340.7, 46.6699, 163.35, 458.59)
+
+[node name="robot" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(-583, 1906)
+texture = ExtResource("2_0upi6")
+
+[node name="Label" type="Label" parent="spell_machine_base/robot"]
+offset_left = -114.0
+offset_top = 238.0
+offset_right = 93.0
+offset_bottom = 302.0
+text = "Roberto"
+label_settings = ExtResource("3_bi300")
+
+[node name="Sprite2D2" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(18, 1627)
+texture = ExtResource("5_78nv2")
+region_enabled = true
+region_rect = Rect2(16, 7, 156, 242)
+
+[node name="Sprite2D9" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(17, 1435)
+rotation = -3.14159
+texture = ExtResource("5_78nv2")
+region_enabled = true
+region_rect = Rect2(265.782, 4.76321, 88.6552, 192.337)
+
+[node name="Sprite2D95" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(16, 1143)
+texture = ExtResource("4_hewmh")
+region_enabled = true
+region_rect = Rect2(396.114, -0.0708847, 49.9258, 492.816)
+
+[node name="Sprite2D98" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(9, 698)
+texture = ExtResource("4_hewmh")
+region_enabled = true
+region_rect = Rect2(202.852, 0, 67.6414, 512)
+
+[node name="Sprite2D3" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(74, 1851)
+texture = ExtResource("1_7qht6")
+region_enabled = true
+region_rect = Rect2(176.14, 7.94985, 174.24, 494.89)
+
+[node name="Sprite2D20" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(155, 1840)
+texture = ExtResource("1_7qht6")
+region_enabled = true
+region_rect = Rect2(9.1597, 3.10985, 175.45, 500.94)
+
+[node name="Sprite2D45" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(260, 1900)
+texture = ExtResource("6_ewxd0")
+
+[node name="Sprite2D132" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(-41, 1899)
+texture = ExtResource("7_uwssq")
+region_enabled = true
+region_rect = Rect2(212.077, 12.427, 102.487, 487.146)
+
+[node name="Sprite2D72" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(203, 1751)
+rotation = -0.509986
+texture = ExtResource("8_rsawx")
+region_enabled = true
+region_rect = Rect2(281.767, 231.843, 67.6414, 270.566)
+
+[node name="Sprite2D42" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(-111, 1819)
+texture = ExtResource("9_l51xc")
+region_enabled = true
+region_rect = Rect2(264.052, 0, 119.178, 508.85)
+
+[node name="Sprite2D128" type="Sprite2D" parent="spell_machine_base/Sprite2D42"]
+position = Vector2(-64, 108)
+texture = ExtResource("7_uwssq")
+region_enabled = true
+region_rect = Rect2(11.0959, 51.026, 122.452, 447.216)
+
+[node name="Sprite2D19" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(261, 1842)
+texture = ExtResource("10_3vara")
+region_enabled = true
+region_rect = Rect2(150.817, 295.823, 218.633, 90.1578)
+
+[node name="Sprite2D73" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(40, 1745)
+rotation = 0.554275
+texture = ExtResource("8_rsawx")
+region_enabled = true
+region_rect = Rect2(281.767, 231.843, 67.6414, 270.566)
+
+[node name="Sprite2D11" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(-215, 1889)
+texture = ExtResource("5_78nv2")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(381.4, 218.6, 124.3, 229.79)
+
+[node name="Sprite2D12" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(-215, 2094)
+texture = ExtResource("5_78nv2")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(381.4, 326.41, 124.3, 181.23)
+
+[node name="Sprite2D55" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(143, 1509)
+texture = ExtResource("11_cn51e")
+region_enabled = true
+region_rect = Rect2(368.735, 0, 143.265, 512)
+
+[node name="Sprite2D" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(23, 1925)
+texture = ExtResource("12_81mq2")
+
+[node name="Sprite2D70" type="Sprite2D" parent="spell_machine_base"]
+position = Vector2(231, 1744)
+rotation = -0.569322
+texture = ExtResource("8_rsawx")
+region_enabled = true
+region_rect = Rect2(281.767, 231.843, 67.6414, 270.566)
+
+[node name="Label" type="Label" parent="spell_machine_base"]
+offset_left = -149.0
+offset_top = 2188.0
+offset_right = 204.0
+offset_bottom = 2252.0
+text = "Spell Furnace"
+label_settings = ExtResource("3_bi300")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-72, 1654)
+zoom = Vector2(0.5, 0.5)
