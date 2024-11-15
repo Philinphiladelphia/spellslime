@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://bw5u4po3icorw"]
+
+[ext_resource type="Texture2D" uid="uid://ikqbvdl1r4o5" path="res://Models/skyboxes/AllSkyFree_Sky_AnotherPlanet_Equirect.png" id="1_e2q7o"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_i38qf"]
+panorama = ExtResource("1_e2q7o")
+
+[sub_resource type="Sky" id="Sky_gihxj"]
+sky_material = SubResource("PanoramaSkyMaterial_i38qf")
+
+[sub_resource type="Environment" id="Environment_s2mdc"]
+background_mode = 2
+sky = SubResource("Sky_gihxj")
+
+[node name="Forest" type="Node2D"]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -69.0
+offset_top = -78.0
+offset_right = 443.0
+offset_bottom = 434.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.62947, 1.56248)
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_s2mdc")
