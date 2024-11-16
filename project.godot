@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Spellslime"
-run/main_scene="res://shaders/screenspace/pixelate_slimes.tscn"
+run/main_scene="res://spell_machine_weapon/scenes/spell_machine_weapon.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
