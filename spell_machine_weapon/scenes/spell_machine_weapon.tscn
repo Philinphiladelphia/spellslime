@@ -1,4 +1,4 @@
-[gd_scene load_steps=82 format=3 uid="uid://dd32qqj6y33t2"]
+[gd_scene load_steps=91 format=3 uid="uid://dd32qqj6y33t2"]
 
 [ext_resource type="Texture2D" uid="uid://bdg78nkkgj4j3" path="res://spell_machine_weapon/assets/stone/637059872.png" id="1_hfikh"]
 [ext_resource type="Texture2D" uid="uid://81ljjbnoxjkm" path="res://spell_machine_weapon/assets/stone/22343422.png" id="13_e33m8"]
@@ -41,6 +41,7 @@
 [ext_resource type="Texture2D" uid="uid://ukum4f3k4sb0" path="res://spell_machine_weapon/assets/pipes/477295555.png" id="39_5y5qt"]
 [ext_resource type="Texture2D" uid="uid://c4dvcexgx2m0p" path="res://spell_machine_weapon/assets/pipes/497710787.png" id="40_w3fyn"]
 [ext_resource type="Texture2D" uid="uid://bxq1xfb7rugje" path="res://spell_machine_weapon/assets/pipes/513768687.png" id="41_3136r"]
+[ext_resource type="Texture2D" uid="uid://dohq4kov27g8y" path="res://spell_machine_weapon/assets/stained_glass/1504497872.png" id="41_a5nek"]
 [ext_resource type="Texture2D" uid="uid://sqgprijtkl08" path="res://spell_machine_weapon/assets/pipes/614223861.png" id="42_soobr"]
 [ext_resource type="Texture2D" uid="uid://c0wwdqs2qhqge" path="res://spell_machine_weapon/assets/pipes/624055483.png" id="43_udalb"]
 [ext_resource type="Texture2D" uid="uid://6dwglbl2hgs3" path="res://spell_machine_weapon/assets/pipes/636553550.png" id="44_2pxxk"]
@@ -80,7 +81,27 @@
 [ext_resource type="Texture2D" uid="uid://ca2ixsdhdp7xd" path="res://spell_machine_weapon/assets/gears/656772755.png" id="80_lfh57"]
 [ext_resource type="Texture2D" uid="uid://dfa0ncskfplmc" path="res://spell_machine_weapon/assets/gears/1589236748.png" id="82_81aby"]
 [ext_resource type="Texture2D" uid="uid://brxbrjc5y7dem" path="res://spell_machine_weapon/assets/useful_parts/365265507.png" id="82_kvsuo"]
+[ext_resource type="Texture2D" uid="uid://kv1nh0sitqdb" path="res://spell_machine_weapon/assets/slime_dome/38993119.png" id="82_xhmt1"]
 [ext_resource type="Texture2D" uid="uid://lecre010pu7y" path="res://spell_machine_weapon/assets/useful_parts/1837649480.png" id="83_dhs73"]
+[ext_resource type="Texture2D" uid="uid://c5gv2bpsap7wy" path="res://spell_machine_weapon/assets/slime_dome/slime_dome.png" id="83_xbyte"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n5dwq"]
+size = Vector2(352.5, 148.5)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3uabp"]
+radius = 60.1332
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g3a8e"]
+radius = 46.6154
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x2myk"]
+radius = 36.2215
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iscp3"]
+size = Vector2(344.5, 1191)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wsdct"]
+radius = 146.014
 
 [node name="SpellMachineWeapon" type="Node2D"]
 
@@ -97,1241 +118,217 @@
 [node name="stone_houses" type="Node2D" parent="."]
 
 [node name="22343422" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-2335, 1520)
+position = Vector2(3296, -751)
 texture = ExtResource("13_e33m8")
 
 [node name="22484447" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-2711, 2611)
+position = Vector2(3093, 235)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("14_mnpit")
 
 [node name="71932562" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-2318, 2156)
+position = Vector2(3486, -220)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("15_5pnus")
 
 [node name="84847820" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-2274, 2608)
+position = Vector2(3530, 232)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("16_xi5vn")
 
 [node name="139767689" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-3347, 2557)
+position = Vector2(2457, 181)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("17_kbodm")
 
 [node name="185569048" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-4312, 2343)
+position = Vector2(2153, 345)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("18_un4df")
 
 [node name="223836336" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-4005, 2104)
-scale = Vector2(0.5, 0.5)
+position = Vector2(2410, -261)
 texture = ExtResource("19_w58tr")
 
 [node name="296470213" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-3992, 1726)
+position = Vector2(1978, 45)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("20_quwbk")
 
 [node name="351322187" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-3524, 1523)
+position = Vector2(2280, -853)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("21_1nkxp")
 
 [node name="434688670" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-2182, 1838)
+position = Vector2(3622, -538)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("22_afc6v")
 
 [node name="511085767" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-2670, 1406)
+position = Vector2(3134, -970)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("23_qpa0y")
 
 [node name="548464447" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-2096, 2344)
+position = Vector2(3708, -32)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("24_vkj1d")
 
-[node name="637059872" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-3079, 2246)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_hfikh")
-
 [node name="838032757" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-4048, 2425)
+position = Vector2(2858, -87)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("26_6102a")
 
 [node name="890562574" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-2103, 1573)
+position = Vector2(3701, -803)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("27_viipc")
 
 [node name="1152774207" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-1835, 2298)
+position = Vector2(3969, -78)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("28_5dkg4")
 
 [node name="1181338566" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-3812, 2018)
+position = Vector2(1992, -358)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("29_86lvt")
 
 [node name="1231790478" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-3290, 1420)
+position = Vector2(2514, -956)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("30_totfl")
 
 [node name="1332578388" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-3033, 1448)
+position = Vector2(2697, -707)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("31_axb0a")
 
 [node name="1980309027" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-4252, 2051)
+position = Vector2(2793, -381)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("32_q0m68")
 
-[node name="1999630919" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-2951, 1904)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("33_v40i0")
-
 [node name="2047141881" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-3817, 1483)
+position = Vector2(1987, -893)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("34_1okfx")
 
 [node name="2064920276" type="Sprite2D" parent="stone_houses"]
-position = Vector2(-2029, 2082)
+position = Vector2(4024, -450)
 texture = ExtResource("35_ir2kl")
 
-[node name="pipes" type="Node2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="stone_houses"]
 
-[node name="Sprite2D" type="Sprite2D" parent="pipes"]
-position = Vector2(2600, -2688)
-texture = ExtResource("24_wbsbf")
-region_enabled = true
-region_rect = Rect2(12.0924, 0, 108.344, 512)
+[node name="1999630919" type="Sprite2D" parent="stone_houses/StaticBody2D"]
+position = Vector2(-729, 270)
+texture = ExtResource("33_v40i0")
 
-[node name="Sprite2D2" type="Sprite2D" parent="pipes"]
-position = Vector2(1736, -2826)
-texture = ExtResource("24_wbsbf")
-region_enabled = true
-region_rect = Rect2(119.839, 0, 125.913, 512)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="stone_houses/StaticBody2D"]
+position = Vector2(-703.25, 347.25)
+shape = SubResource("RectangleShape2D_n5dwq")
 
-[node name="Sprite2D3" type="Sprite2D" parent="pipes"]
-position = Vector2(3026, -2690)
-texture = ExtResource("24_wbsbf")
-region_enabled = true
-region_rect = Rect2(248.68, 0, 131.769, 512)
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stone_houses/StaticBody2D"]
+polygon = PackedVector2Array(-531, 271, -570, 229, -568, 131, -615, 129, -611, 181, -795, 96, -906, 250, -884, 263, -871, 283, -538, 287)
 
-[node name="Sprite2D4" type="Sprite2D" parent="pipes"]
-position = Vector2(2163, -2730)
-texture = ExtResource("24_wbsbf")
-region_enabled = true
-region_rect = Rect2(383.377, 0, 121.521, 512)
+[node name="StaticBody2D2" type="StaticBody2D" parent="stone_houses"]
 
-[node name="Sprite2D5" type="Sprite2D" parent="pipes"]
-position = Vector2(5481, 4310)
-texture = ExtResource("25_s501p")
-region_enabled = true
-region_rect = Rect2(0, 0, 51.7744, 102.219)
+[node name="637059872" type="Sprite2D" parent="stone_houses/StaticBody2D2"]
+position = Vector2(650, 233)
+texture = ExtResource("1_hfikh")
 
-[node name="Sprite2D6" type="Sprite2D" parent="pipes"]
-position = Vector2(2329.5, -607)
-texture = ExtResource("25_s501p")
-region_enabled = true
-region_rect = Rect2(59.4811, 305.961, 75.694, 206.11)
-
-[node name="Sprite2D8" type="Sprite2D" parent="pipes"]
-position = Vector2(5671, 4202)
-texture = ExtResource("25_s501p")
-region_enabled = true
-region_rect = Rect2(201.242, 305.961, 38.6522, 206.11)
-
-[node name="Sprite2D9" type="Sprite2D" parent="pipes"]
-position = Vector2(5767, 4184)
-texture = ExtResource("25_s501p")
-region_enabled = true
-region_rect = Rect2(243.115, 265.698, 57.9784, 246.373)
-
-[node name="Sprite2D10" type="Sprite2D" parent="pipes"]
-position = Vector2(5875, 4227)
-texture = ExtResource("25_s501p")
-region_enabled = true
-region_rect = Rect2(297.872, 360.718, 33.8207, 151.353)
-
-[node name="Sprite2D11" type="Sprite2D" parent="pipes"]
-position = Vector2(5621, 4425)
-texture = ExtResource("25_s501p")
-region_enabled = true
-region_rect = Rect2(328.472, 293.077, 51.5363, 218.994)
-
-[node name="Sprite2D12" type="Sprite2D" parent="pipes"]
-position = Vector2(5379, 4033)
-texture = ExtResource("25_s501p")
-region_enabled = true
-region_rect = Rect2(410.608, 330.119, 51.5363, 181.953)
-
-[node name="Sprite2D13" type="Sprite2D" parent="pipes"]
-position = Vector2(5260, 4235)
-texture = ExtResource("25_s501p")
-region_enabled = true
-region_rect = Rect2(380.008, 11.2377, 70.8625, 314.049)
-
-[node name="Sprite2D14" type="Sprite2D" parent="pipes"]
-position = Vector2(5489, 4030)
-texture = ExtResource("25_s501p")
-region_enabled = true
-region_rect = Rect2(339.746, 3.15014, 41.8733, 268.955)
-
-[node name="Sprite2D15" type="Sprite2D" parent="pipes"]
-position = Vector2(5721, 4430)
-texture = ExtResource("25_s501p")
-region_enabled = true
-region_rect = Rect2(175.474, 3.15014, 64.4204, 283.45)
-
-[node name="Sprite2D16" type="Sprite2D" parent="pipes"]
-position = Vector2(2583, -1123)
-texture = ExtResource("26_a8a11")
-region_enabled = true
-region_rect = Rect2(0, 0, 148.095, 497.577)
-
-[node name="Sprite2D17" type="Sprite2D" parent="pipes"]
-position = Vector2(2769, -1115)
-texture = ExtResource("26_a8a11")
-region_enabled = true
-region_rect = Rect2(138.432, 11.2027, 157.83, 483.153)
-
-[node name="Sprite2D18" type="Sprite2D" parent="pipes"]
-position = Vector2(2420, -1117)
-texture = ExtResource("26_a8a11")
-region_enabled = true
-region_rect = Rect2(283.378, 0, 214.198, 497.577)
-
-[node name="Sprite2D19" type="Sprite2D" parent="pipes"]
-position = Vector2(3645, -1261)
-texture = ExtResource("27_5ehyt")
-region_enabled = true
-region_rect = Rect2(7.98065, 0, 172.325, 512)
-
-[node name="Sprite2D20" type="Sprite2D" parent="pipes"]
-position = Vector2(3412, -1283)
-texture = ExtResource("27_5ehyt")
-region_enabled = true
-region_rect = Rect2(178.695, 0, 165.883, 512)
-
-[node name="Sprite2D21" type="Sprite2D" parent="pipes"]
-position = Vector2(3169, -1274)
-texture = ExtResource("27_5ehyt")
-region_enabled = true
-region_rect = Rect2(342.967, 0, 151.388, 512)
-
-[node name="Sprite2D22" type="Sprite2D" parent="pipes"]
-position = Vector2(2100.5, 313)
-texture = ExtResource("28_4icus")
-region_enabled = true
-region_rect = Rect2(0, 0, 186.747, 512)
-
-[node name="Sprite2D23" type="Sprite2D" parent="pipes"]
-position = Vector2(1755.5, 302)
-texture = ExtResource("28_4icus")
-region_enabled = true
-region_rect = Rect2(181.916, 0, 149.777, 512)
-
-[node name="Sprite2D24" type="Sprite2D" parent="pipes"]
-position = Vector2(6654, 2397)
-texture = ExtResource("28_4icus")
-region_enabled = true
-region_rect = Rect2(330.083, 0, 148.167, 512)
-
-[node name="Sprite2D25" type="Sprite2D" parent="pipes"]
-position = Vector2(1890, -1333)
-texture = ExtResource("29_a2r46")
-region_enabled = true
-region_rect = Rect2(72.4011, 355.852, 66.0309, 122.399)
-
-[node name="Sprite2D26" type="Sprite2D" parent="pipes"]
-position = Vector2(1956.5, -488)
-texture = ExtResource("29_a2r46")
-region_enabled = true
-region_rect = Rect2(130.379, 56.297, 161.051, 428.396)
-
-[node name="Sprite2D27" type="Sprite2D" parent="pipes"]
-position = Vector2(1661, -1324)
-texture = ExtResource("29_a2r46")
-region_enabled = true
-region_rect = Rect2(293.041, 230.232, 151.388, 254.461)
-
-[node name="Sprite2D28" type="Sprite2D" parent="pipes"]
-position = Vector2(3697.5, -500.5)
-texture = ExtResource("30_tl1uj")
-region_enabled = true
-region_rect = Rect2(133.6, 0, 119.178, 495.966)
-
-[node name="Sprite2D29" type="Sprite2D" parent="pipes"]
-position = Vector2(3584.5, -508.5)
-texture = ExtResource("30_tl1uj")
-region_enabled = true
-region_rect = Rect2(28.9172, 0, 109.515, 495.966)
-
-[node name="Sprite2D30" type="Sprite2D" parent="pipes"]
-position = Vector2(3908.5, -496.5)
-texture = ExtResource("30_tl1uj")
-region_enabled = true
-region_rect = Rect2(365.514, 0, 114.346, 495.966)
-
-[node name="Sprite2D31" type="Sprite2D" parent="pipes"]
-position = Vector2(3801.5, -502.5)
-texture = ExtResource("30_tl1uj")
-region_enabled = true
-region_rect = Rect2(249.557, 0, 117.567, 495.966)
-
-[node name="Sprite2D32" type="Sprite2D" parent="pipes"]
-position = Vector2(-9592.5, -48)
-texture = ExtResource("31_e3bu2")
-region_enabled = true
-region_rect = Rect2(149.706, 0, 164.272, 512)
-
-[node name="Sprite2D33" type="Sprite2D" parent="pipes"]
-position = Vector2(-9284.5, -585)
-rotation = 1.5708
-texture = ExtResource("31_e3bu2")
-region_enabled = true
-region_rect = Rect2(408.998, 0, 96.6306, 512)
-
-[node name="Sprite2D34" type="Sprite2D" parent="pipes"]
-position = Vector2(-9325.5, -283)
-texture = ExtResource("31_e3bu2")
-region_enabled = true
-region_rect = Rect2(313.978, 0, 88.5781, 512)
-
-[node name="Sprite2D35" type="Sprite2D" parent="pipes"]
-position = Vector2(5285, 2453)
-texture = ExtResource("31_e3bu2")
-region_enabled = true
-region_rect = Rect2(0, 0, 144.874, 512)
-
-[node name="Sprite2D36" type="Sprite2D" parent="pipes"]
-position = Vector2(-373, -2164)
-texture = ExtResource("32_r2ljp")
-region_enabled = true
-region_rect = Rect2(272.104, 0, 239.896, 512)
-
-[node name="Sprite2D37" type="Sprite2D" parent="pipes"]
-position = Vector2(-655, -2157)
-texture = ExtResource("32_r2ljp")
-region_enabled = true
-region_rect = Rect2(0, 0, 254.389, 512)
-
-[node name="Sprite2D38" type="Sprite2D" parent="pipes"]
-position = Vector2(3028.5, 2263)
-texture = ExtResource("33_n41ah")
-region_enabled = true
-region_rect = Rect2(0, 0, 107.832, 452.482)
-
-[node name="Sprite2D39" type="Sprite2D" parent="pipes"]
-position = Vector2(3028.5, 2263)
-texture = ExtResource("33_n41ah")
-region_enabled = true
-region_rect = Rect2(0, 0, 107.832, 452.482)
-
-[node name="Sprite2D40" type="Sprite2D" parent="pipes"]
-position = Vector2(3588.5, 2256)
-texture = ExtResource("33_n41ah")
-region_enabled = true
-region_rect = Rect2(0, 0, 107.832, 452.482)
-
-[node name="Sprite2D41" type="Sprite2D" parent="pipes"]
-position = Vector2(3460.5, 2315)
-texture = ExtResource("33_n41ah")
-region_enabled = true
-region_rect = Rect2(383.229, 0, 104.683, 505.629)
-
-[node name="Sprite2D43" type="Sprite2D" parent="pipes"]
-position = Vector2(3166.5, 2245)
-texture = ExtResource("33_n41ah")
-region_enabled = true
-region_rect = Rect2(188.358, 135.212, 77.3045, 336.597)
-
-[node name="Sprite2D46" type="Sprite2D" parent="pipes"]
-position = Vector2(6503, 1005)
-texture = ExtResource("36_1yqt0")
-
-[node name="Sprite2D47" type="Sprite2D" parent="pipes"]
-position = Vector2(5792, 1686)
-texture = ExtResource("37_urn41")
-region_enabled = true
-region_rect = Rect2(392.893, 0, 119.107, 512)
-
-[node name="Sprite2D48" type="Sprite2D" parent="pipes"]
-position = Vector2(4864, -2692)
-texture = ExtResource("37_urn41")
-region_enabled = true
-region_rect = Rect2(96.5587, 0, 299.555, 512)
-
-[node name="Sprite2D49" type="Sprite2D" parent="pipes"]
-position = Vector2(-9700.5, -793.5)
-texture = ExtResource("37_urn41")
-region_enabled = true
-region_rect = Rect2(0, 0, 98.1692, 512)
-
-[node name="Sprite2D50" type="Sprite2D" parent="pipes"]
-position = Vector2(2212.5, -598)
-texture = ExtResource("38_75j3m")
-region_enabled = true
-region_rect = Rect2(178.695, 12.8132, 181.988, 496.037)
-
-[node name="Sprite2D52" type="Sprite2D" parent="pipes"]
-position = Vector2(6455, 1755)
-texture = ExtResource("38_75j3m")
-region_enabled = true
-region_rect = Rect2(357.461, 94.9492, 146.556, 418.733)
-
-[node name="Sprite2D56" type="Sprite2D" parent="pipes"]
-position = Vector2(4201, 569)
-texture = ExtResource("39_5y5qt")
-region_enabled = true
-region_rect = Rect2(0, 0, 82.0641, 247.948)
-
-[node name="Sprite2D57" type="Sprite2D" parent="pipes"]
-position = Vector2(4125, 624)
-texture = ExtResource("39_5y5qt")
-region_enabled = true
-region_rect = Rect2(82.0641, 72.4021, 57.9784, 156.219)
-
-[node name="Sprite2D58" type="Sprite2D" parent="pipes"]
-position = Vector2(4049, 1234.5)
-texture = ExtResource("39_5y5qt")
-region_enabled = true
-region_rect = Rect2(75.6221, 278.547, 54.7573, 236.745)
-
-[node name="Sprite2D54" type="Sprite2D" parent="pipes"]
-position = Vector2(3515.5, 2973)
-texture = ExtResource("40_w3fyn")
-region_enabled = true
-region_rect = Rect2(204.463, 0, 164.272, 512)
-
-[node name="Sprite2D61" type="Sprite2D" parent="pipes"]
-position = Vector2(3347.5, 2955)
-texture = ExtResource("40_w3fyn")
-region_enabled = true
-region_rect = Rect2(0, 0, 201.242, 512)
-
-[node name="Sprite2D62" type="Sprite2D" parent="pipes"]
-position = Vector2(1502, -1826)
-texture = ExtResource("41_3136r")
-
-[node name="Sprite2D63" type="Sprite2D" parent="pipes"]
-position = Vector2(3912, 2298.5)
-texture = ExtResource("42_soobr")
-region_enabled = true
-region_rect = Rect2(7.98065, 6.37115, 54.7573, 202.924)
-
-[node name="Sprite2D65" type="Sprite2D" parent="pipes"]
-position = Vector2(3051, 1872.5)
-texture = ExtResource("42_soobr")
-region_enabled = true
-region_rect = Rect2(90.1166, 273.716, 49.9258, 231.913)
-
-[node name="Sprite2D66" type="Sprite2D" parent="pipes"]
-position = Vector2(2967, 1866.5)
-texture = ExtResource("42_soobr")
-region_enabled = true
-region_rect = Rect2(7.98065, 244.727, 59.5889, 259.292)
-
-[node name="Sprite2D67" type="Sprite2D" parent="pipes"]
-position = Vector2(3985, 2295.5)
-texture = ExtResource("42_soobr")
-region_enabled = true
-region_rect = Rect2(57.9064, -1.6814, 96.6306, 275.397)
-
-[node name="Sprite2D71" type="Sprite2D" parent="pipes"]
-position = Vector2(3203, 1875.5)
-texture = ExtResource("42_soobr")
-region_enabled = true
-region_rect = Rect2(450.871, 225.401, 49.9258, 278.618)
-
-[node name="Sprite2D72" type="Sprite2D" parent="pipes"]
-position = Vector2(3270, 1860.5)
-texture = ExtResource("42_soobr")
-region_enabled = true
-region_rect = Rect2(425.103, 1.53963, 77.3045, 215.808)
-
-[node name="Sprite2D73" type="Sprite2D" parent="pipes"]
-position = Vector2(3459, 1850.5)
-texture = ExtResource("42_soobr")
-region_enabled = true
-region_rect = Rect2(359.072, 3.15014, 53.1469, 209.366)
-
-[node name="Sprite2D74" type="Sprite2D" parent="pipes"]
-position = Vector2(3376, 1848.5)
-texture = ExtResource("42_soobr")
-region_enabled = true
-region_rect = Rect2(264.052, 4.76064, 91.7991, 212.587)
-
-[node name="Sprite2D64" type="Sprite2D" parent="pipes"]
-position = Vector2(2646.5, -503)
-texture = ExtResource("43_udalb")
-region_enabled = true
-region_rect = Rect2(257.61, 1.53963, 143.335, 505.7)
-
-[node name="Sprite2D68" type="Sprite2D" parent="pipes"]
-position = Vector2(4933, -3052)
-texture = ExtResource("43_udalb")
-region_enabled = true
-region_rect = Rect2(122.327, 11.2027, 132.062, 484.764)
-
-[node name="Sprite2D69" type="Sprite2D" parent="pipes"]
-position = Vector2(1902.5, -583)
-texture = ExtResource("44_2pxxk")
-region_enabled = true
-region_rect = Rect2(0, 0, 181.916, 483.082)
-
-[node name="Sprite2D75" type="Sprite2D" parent="pipes"]
-position = Vector2(3894, -2840)
-texture = ExtResource("44_2pxxk")
-region_enabled = true
-region_rect = Rect2(172.253, 0, 169.104, 471.809)
-
-[node name="Sprite2D76" type="Sprite2D" parent="pipes"]
-position = Vector2(2067.5, -654)
-texture = ExtResource("44_2pxxk")
-region_enabled = true
-region_rect = Rect2(342.967, 0, 141.725, 466.977)
-
-[node name="Sprite2D77" type="Sprite2D" parent="pipes"]
-position = Vector2(-9170, 1115.5)
-texture = ExtResource("45_ugqms")
-region_enabled = true
-region_rect = Rect2(0, 0, 186.747, 512)
-
-[node name="Sprite2D78" type="Sprite2D" parent="pipes"]
-position = Vector2(-8570.5, 861)
-texture = ExtResource("45_ugqms")
-region_enabled = true
-region_rect = Rect2(341.356, 0, 151.388, 512)
-
-[node name="Sprite2D79" type="Sprite2D" parent="pipes"]
-position = Vector2(-8770.5, 689)
-texture = ExtResource("45_ugqms")
-region_enabled = true
-region_rect = Rect2(188.358, 0, 146.556, 512)
-
-[node name="Sprite2D80" type="Sprite2D" parent="pipes"]
-position = Vector2(2407, 1475)
-texture = ExtResource("46_v21em")
-region_enabled = true
-region_rect = Rect2(0, 0, 252.778, 512)
-
-[node name="Sprite2D81" type="Sprite2D" parent="pipes"]
-position = Vector2(2048.5, 317)
-texture = ExtResource("46_v21em")
-region_enabled = true
-region_rect = Rect2(252.778, 0, 220.64, 512)
-
-[node name="Sprite2D82" type="Sprite2D" parent="pipes"]
-position = Vector2(2148.5, 341)
-texture = ExtResource("47_o1la1")
-
-[node name="Sprite2D83" type="Sprite2D" parent="pipes"]
-position = Vector2(2715, 172)
-texture = ExtResource("48_mhoqq")
-
-[node name="Sprite2D84" type="Sprite2D" parent="pipes"]
-position = Vector2(-9796.5, -779.5)
-texture = ExtResource("49_48mom")
-region_enabled = true
-region_rect = Rect2(0, 0, 120.716, 507.24)
-
-[node name="Sprite2D85" type="Sprite2D" parent="pipes"]
-position = Vector2(4383, 2508.5)
-texture = ExtResource("49_48mom")
-region_enabled = true
-region_rect = Rect2(125.548, 0, 53.1469, 388.062)
-
-[node name="Sprite2D86" type="Sprite2D" parent="pipes"]
-position = Vector2(4197, 2508.5)
-texture = ExtResource("49_48mom")
-region_enabled = true
-region_rect = Rect2(122.327, 381.62, 57.9784, 130.38)
-
-[node name="Sprite2D87" type="Sprite2D" parent="pipes"]
-position = Vector2(-9808.5, -857.5)
-texture = ExtResource("49_48mom")
-region_enabled = true
-region_rect = Rect2(169.032, 0, 91.7991, 512)
-
-[node name="Sprite2D88" type="Sprite2D" parent="pipes"]
-position = Vector2(4199, 2632.5)
-texture = ExtResource("49_48mom")
-region_enabled = true
-region_rect = Rect2(255.999, 408.999, 57.9784, 93.4095)
-
-[node name="Sprite2D89" type="Sprite2D" parent="pipes"]
-position = Vector2(-9820.5, -770.5)
-texture = ExtResource("49_48mom")
-region_enabled = true
-region_rect = Rect2(309.146, 0, 86.9675, 512)
-
-[node name="Sprite2D90" type="Sprite2D" parent="pipes"]
-position = Vector2(-9867.5, -810.5)
-texture = ExtResource("49_48mom")
-region_enabled = true
-region_rect = Rect2(389.672, 0, 104.683, 512)
-
-[node name="Sprite2D91" type="Sprite2D" parent="pipes"]
-position = Vector2(2322, -1703)
-texture = ExtResource("50_jesr4")
-region_enabled = true
-region_rect = Rect2(143.263, 0, 212.587, 512)
-
-[node name="Sprite2D92" type="Sprite2D" parent="pipes"]
-position = Vector2(2577, -1729)
-texture = ExtResource("51_mdxoy")
-
-[node name="Sprite2D93" type="Sprite2D" parent="pipes"]
-position = Vector2(2236.5, 2410)
-texture = ExtResource("52_pyot7")
-region_enabled = true
-region_rect = Rect2(6.37012, 0, 66.0309, 512)
-
-[node name="Sprite2D94" type="Sprite2D" parent="pipes"]
-position = Vector2(2141.5, 2413)
-texture = ExtResource("52_pyot7")
-region_enabled = true
-region_rect = Rect2(444.429, 11.2027, 57.9784, 489.595)
-
-[node name="Sprite2D96" type="Sprite2D" parent="pipes"]
-position = Vector2(2724.5, 2407)
-texture = ExtResource("52_pyot7")
-region_enabled = true
-region_rect = Rect2(336.525, 0, 62.8099, 512)
-
-[node name="Sprite2D99" type="Sprite2D" parent="pipes"]
-position = Vector2(2426.5, 2413)
-texture = ExtResource("52_pyot7")
-region_enabled = true
-region_rect = Rect2(131.99, 0, 62.8099, 512)
-
-[node name="Sprite2D100" type="Sprite2D" parent="pipes"]
-position = Vector2(2341.5, 2419)
-texture = ExtResource("52_pyot7")
-region_enabled = true
-region_rect = Rect2(72.4011, 0, 56.3679, 512)
-
-[node name="Sprite2D101" type="Sprite2D" parent="pipes"]
-position = Vector2(2051, -2225)
-texture = ExtResource("53_t67mw")
-
-[node name="Sprite2D102" type="Sprite2D" parent="pipes"]
-position = Vector2(-9478.5, 1933)
-texture = ExtResource("54_ii5mf")
-region_enabled = true
-region_rect = Rect2(304.315, 334.915, 72.473, 167.493)
-
-[node name="Sprite2D103" type="Sprite2D" parent="pipes"]
-position = Vector2(-8929, 947)
-texture = ExtResource("54_ii5mf")
-region_enabled = true
-region_rect = Rect2(28.9172, 0, 122.399, 302.705)
-
-[node name="Sprite2D106" type="Sprite2D" parent="pipes"]
-position = Vector2(-9583.5, 1772)
-texture = ExtResource("54_ii5mf")
-region_enabled = true
-region_rect = Rect2(201.242, 1.53963, 83.7465, 370.417)
-
-[node name="Sprite2D108" type="Sprite2D" parent="pipes"]
-position = Vector2(3726, 1109)
-texture = ExtResource("55_avoja")
-region_enabled = true
-region_rect = Rect2(136.821, 0, 154.609, 504.019)
-
-[node name="Sprite2D109" type="Sprite2D" parent="pipes"]
-position = Vector2(4403, 690.5)
-texture = ExtResource("55_avoja")
-region_enabled = true
-region_rect = Rect2(0, 0, 138.432, 507.24)
-
-[node name="Sprite2D111" type="Sprite2D" parent="pipes"]
-position = Vector2(864, -3097)
-texture = ExtResource("56_rdjjb")
-region_enabled = true
-region_rect = Rect2(201.429, 8.43396, 158.389, 503.566)
-
-[node name="Sprite2D112" type="Sprite2D" parent="pipes"]
-position = Vector2(723, -3051)
-texture = ExtResource("56_rdjjb")
-region_enabled = true
-region_rect = Rect2(89.7047, 63.86, 110.478, 448.14)
-
-[node name="Sprite2D114" type="Sprite2D" parent="pipes"]
-position = Vector2(1174, -3040)
-texture = ExtResource("56_rdjjb")
-region_enabled = true
-region_rect = Rect2(365.142, 311.902, 135.762, 187.671)
-
-[node name="Sprite2D115" type="Sprite2D" parent="pipes"]
-position = Vector2(-9832.5, -1078.5)
-texture = ExtResource("57_f6icj")
-region_enabled = true
-region_rect = Rect2(0, 177.471, 86.9629, 320.771)
-
-[node name="Sprite2D116" type="Sprite2D" parent="pipes"]
-position = Vector2(-9668.5, -1114.5)
-texture = ExtResource("57_f6icj")
-region_enabled = true
-region_rect = Rect2(399.748, 81.639, 41.261, 413.941)
-
-[node name="Sprite2D117" type="Sprite2D" parent="pipes"]
-position = Vector2(-9786.5, -915.5)
-texture = ExtResource("57_f6icj")
-region_enabled = true
-region_rect = Rect2(343.846, 8.43396, 55.902, 484.484)
-
-[node name="Sprite2D118" type="Sprite2D" parent="pipes"]
-position = Vector2(-9747.5, -275)
-texture = ExtResource("57_f6icj")
-region_enabled = true
-region_rect = Rect2(220.063, 4.44096, 119.79, 492.47)
-
-[node name="Sprite2D119" type="Sprite2D" parent="pipes"]
-position = Vector2(-9697.5, -965.5)
-texture = ExtResource("57_f6icj")
-region_enabled = true
-region_rect = Rect2(84.3009, 23.075, 61.226, 475.167)
-
-[node name="Sprite2D120" type="Sprite2D" parent="pipes"]
-position = Vector2(-9623.5, -1044.5)
-texture = ExtResource("57_f6icj")
-region_enabled = true
-region_rect = Rect2(152.182, 4.44096, 62.557, 485.815)
-
-[node name="Sprite2D121" type="Sprite2D" parent="pipes"]
-position = Vector2(-9839.5, -1112.5)
-texture = ExtResource("57_f6icj")
-region_enabled = true
-region_rect = Rect2(442.34, 9.76497, 54.571, 491.139)
-
-[node name="Sprite2D123" type="Sprite2D" parent="pipes"]
-position = Vector2(-1473, -2368)
-texture = ExtResource("58_6v8ah")
-region_enabled = true
-region_rect = Rect2(0, 0, 82.9699, 512)
-
-[node name="Sprite2D122" type="Sprite2D" parent="pipes"]
-position = Vector2(-1825, -2039)
-texture = ExtResource("58_6v8ah")
-region_enabled = true
-region_rect = Rect2(142.865, 166.823, 82.522, 345.177)
-
-[node name="Sprite2D124" type="Sprite2D" parent="pipes"]
-position = Vector2(-1925, -2022)
-texture = ExtResource("58_6v8ah")
-region_enabled = true
-region_rect = Rect2(0, 0, 82.9699, 512)
-
-[node name="Sprite2D125" type="Sprite2D" parent="pipes"]
-position = Vector2(-1701, -2008)
-texture = ExtResource("58_6v8ah")
-region_enabled = true
-region_rect = Rect2(225.387, -0.883034, 139.755, 507.111)
-
-[node name="Sprite2D126" type="Sprite2D" parent="pipes"]
-position = Vector2(-1235, -2319)
-texture = ExtResource("59_p1ksm")
-
-[node name="Sprite2D131" type="Sprite2D" parent="pipes"]
-position = Vector2(-9040, -1295.5)
-texture = ExtResource("60_g4q53")
-region_enabled = true
-region_rect = Rect2(305.247, 45.702, 77.198, 312.785)
-
-[node name="Sprite2D133" type="Sprite2D" parent="pipes"]
-position = Vector2(-9247, -1370.5)
-texture = ExtResource("60_g4q53")
-region_enabled = true
-region_rect = Rect2(141.534, 9.76497, 73.205, 315.447)
-
-[node name="Sprite2D129" type="Sprite2D" parent="pipes"]
-position = Vector2(-9893.5, -877.5)
-texture = ExtResource("61_bg1ka")
-region_enabled = true
-region_rect = Rect2(154.844, 21.744, 121.121, 484.484)
-
-[node name="Sprite2D134" type="Sprite2D" parent="pipes"]
-position = Vector2(-9863.5, -784.5)
-texture = ExtResource("61_bg1ka")
-region_enabled = true
-region_rect = Rect2(0, 0, 145.527, 512)
-
-[node name="Sprite2D135" type="Sprite2D" parent="pipes"]
-position = Vector2(-9999, -311.5)
-texture = ExtResource("61_bg1ka")
-region_enabled = true
-region_rect = Rect2(355.825, 23.075, 71.874, 481.822)
-
-[node name="Sprite2D136" type="Sprite2D" parent="pipes"]
-position = Vector2(-10057, -302.5)
-texture = ExtResource("61_bg1ka")
-region_enabled = true
-region_rect = Rect2(274.634, 373.128, 57.233, 129.107)
-
-[node name="Sprite2D137" type="Sprite2D" parent="pipes"]
-position = Vector2(-10112, -313.5)
-texture = ExtResource("61_bg1ka")
-region_enabled = true
-region_rect = Rect2(434.354, 4.44096, 66.55, 501.787)
-
-[node name="Sprite2D138" type="Sprite2D" parent="pipes"]
-position = Vector2(-772, -2865)
-texture = ExtResource("62_j18h8")
-region_enabled = true
-region_rect = Rect2(261.324, 0, 250.676, 512)
-
-[node name="Sprite2D139" type="Sprite2D" parent="pipes"]
-position = Vector2(-1055, -2874)
-texture = ExtResource("62_j18h8")
-region_enabled = true
-region_rect = Rect2(0, 0, 254.669, 512.883)
-
-[node name="Sprite2D140" type="Sprite2D" parent="pipes"]
-position = Vector2(-1927, -2752)
-texture = ExtResource("63_1mxve")
-region_enabled = true
-region_rect = Rect2(374.459, 299.034, 93.17, 202.312)
-
-[node name="Sprite2D141" type="Sprite2D" parent="pipes"]
-position = Vector2(-2254, -2749)
-texture = ExtResource("63_1mxve")
-region_enabled = true
-region_rect = Rect2(24.4059, 186.788, 162.382, 328.757)
-
-[node name="Sprite2D142" type="Sprite2D" parent="pipes"]
-position = Vector2(-2090, -2754)
-texture = ExtResource("63_1mxve")
-region_enabled = true
-region_rect = Rect2(190.781, 6.21396, 162.382, 493.801)
-
-[node name="Sprite2D143" type="Sprite2D" parent="pipes"]
-position = Vector2(-1511, -2949)
-texture = ExtResource("64_op13p")
-region_enabled = true
-region_rect = Rect2(0, 0, 149.52, 479.608)
-
-[node name="Sprite2D144" type="Sprite2D" parent="pipes"]
-position = Vector2(-1594, -3242)
-texture = ExtResource("64_op13p")
-region_enabled = true
-region_rect = Rect2(414.389, 301.254, 89.177, 178.354)
-
-[node name="Sprite2D145" type="Sprite2D" parent="pipes"]
-position = Vector2(-1970, -3135)
-texture = ExtResource("64_op13p")
-region_enabled = true
-region_rect = Rect2(343.846, 337.191, 71.874, 145.079)
-
-[node name="Sprite2D146" type="Sprite2D" parent="pipes"]
-position = Vector2(-1722, -3222)
-texture = ExtResource("64_op13p")
-region_enabled = true
-region_rect = Rect2(246.683, 285.282, 89.177, 190.333)
-
-[node name="Sprite2D147" type="Sprite2D" parent="pipes"]
-position = Vector2(-1858, -3120)
-texture = ExtResource("64_op13p")
-region_enabled = true
-region_rect = Rect2(145.527, 299.923, 102.487, 183.678)
-
-[node name="Sprite2D148" type="Sprite2D" parent="pipes"]
-position = Vector2(-1380, -3040)
-texture = ExtResource("64_op13p")
-region_enabled = true
-region_rect = Rect2(426.368, 19.082, 65.219, 258.214)
-
-[node name="Sprite2D149" type="Sprite2D" parent="pipes"]
-position = Vector2(-1607, -3010)
-texture = ExtResource("64_op13p")
-region_enabled = true
-region_rect = Rect2(342.515, 27.068, 78.529, 256.883)
-
-[node name="Sprite2D150" type="Sprite2D" parent="pipes"]
-position = Vector2(-1779, -3011)
-texture = ExtResource("64_op13p")
-region_enabled = true
-region_rect = Rect2(259.993, 41.709, 55.902, 199.65)
-
-[node name="Sprite2D151" type="Sprite2D" parent="pipes"]
-position = Vector2(-1700, -3010)
-texture = ExtResource("64_op13p")
-region_enabled = true
-region_rect = Rect2(177.471, 20.413, 73.205, 227.601)
-
-[node name="gears" type="Node2D" parent="."]
-position = Vector2(3506, -753)
-
-[node name="1459653689" type="Sprite2D" parent="gears"]
-position = Vector2(-12289.5, -1309)
-texture = ExtResource("25_8haih")
-region_enabled = true
-region_rect = Rect2(16.3374, 8.59092, 107.445, 114.545)
-
-[node name="1459653691" type="Sprite2D" parent="gears"]
-position = Vector2(-12000.5, -1408)
-texture = ExtResource("25_8haih")
-region_enabled = true
-region_rect = Rect2(274.875, 6.12377, 106.121, 119.669)
-
-[node name="1459653692" type="Sprite2D" parent="gears"]
-position = Vector2(-11936.5, -1292)
-texture = ExtResource("25_8haih")
-region_enabled = true
-region_rect = Rect2(384.488, -1.6829, 117.957, 135.988)
-
-[node name="1459653693" type="Sprite2D" parent="gears"]
-position = Vector2(-11824.5, -1420)
-texture = ExtResource("25_8haih")
-region_enabled = true
-region_rect = Rect2(5.06129, 122.176, 135.237, 132.983)
-
-[node name="1459653694" type="Sprite2D" parent="gears"]
-position = Vector2(-11803.5, -1279)
-texture = ExtResource("25_8haih")
-region_enabled = true
-region_rect = Rect2(147.06, 132.033, 119.459, 118.708)
-
-[node name="1459653695" type="Sprite2D" parent="gears"]
-position = Vector2(-11690.5, -1364)
-texture = ExtResource("25_8haih")
-region_enabled = true
-region_rect = Rect2(268.773, 129.027, 118.708, 123.967)
-
-[node name="1459653696" type="Sprite2D" parent="gears"]
-position = Vector2(-11961.5, -1186)
-texture = ExtResource("25_8haih")
-region_enabled = true
-region_rect = Rect2(268.773, 129.779, 122.464, 125.47)
-
-[node name="1459653697" type="Sprite2D" parent="gears"]
-position = Vector2(-11671.5, -1213)
-texture = ExtResource("25_8haih")
-region_enabled = true
-region_rect = Rect2(391.237, 141.8, 109.692, 110.443)
-
-[node name="1459653698" type="Sprite2D" parent="gears"]
-position = Vector2(-12114.5, -1194)
-texture = ExtResource("25_8haih")
-region_enabled = true
-region_rect = Rect2(8.81786, 259.005, 115.703, 116.454)
-
-[node name="1459653699" type="Sprite2D" parent="gears"]
-position = Vector2(-1429, 2459)
-texture = ExtResource("25_8haih")
-region_enabled = true
-region_rect = Rect2(138.044, 249.989, 133.734, 131.48)
-
-[node name="1459653700" type="Sprite2D" parent="gears"]
-position = Vector2(-12220.5, -1425)
-texture = ExtResource("25_8haih")
-region_enabled = true
-region_rect = Rect2(277.789, 263.513, 103.682, 111.946)
-
-[node name="1459653701" type="Sprite2D" parent="gears"]
-position = Vector2(-12098.5, -1478)
-texture = ExtResource("25_8haih")
-region_enabled = true
-region_rect = Rect2(393.491, 265.015, 102.93, 102.93)
-
-[node name="1459653702" type="Sprite2D" parent="gears"]
-position = Vector2(-11574.5, -1297)
-texture = ExtResource("25_8haih")
-region_enabled = true
-region_rect = Rect2(11.2177, 378.407, 118.161, 121.577)
-
-[node name="1459653704" type="Sprite2D" parent="gears"]
-position = Vector2(-11540.5, -1153)
-texture = ExtResource("25_8haih")
-region_enabled = true
-region_rect = Rect2(262.5, 383.895, 112.33, 114.588)
-
-[node name="1459653705" type="Sprite2D" parent="gears"]
-position = Vector2(-11803.5, -1150)
-texture = ExtResource("25_8haih")
-region_enabled = true
-region_rect = Rect2(382.41, 375.396, 116.846, 123.056)
-
-[node name="pipes2" type="Node2D" parent="."]
-
-[node name="Sprite2D" type="Sprite2D" parent="pipes2"]
-position = Vector2(-10020.5, -1261.5)
-texture = ExtResource("68_7fya6")
-region_enabled = true
-region_rect = Rect2(154.844, 16.42, 106.48, 451.209)
-
-[node name="Sprite2D2" type="Sprite2D" parent="pipes2"]
-position = Vector2(-8523, -79.5)
-texture = ExtResource("68_7fya6")
-region_enabled = true
-region_rect = Rect2(289.275, 37.716, 77.1981, 423.258)
-
-[node name="Sprite2D4" type="Sprite2D" parent="pipes2"]
-position = Vector2(-8760, -83.5)
-texture = ExtResource("68_7fya6")
-region_enabled = true
-region_rect = Rect2(37.7159, 0, 106.48, 467.629)
-
-[node name="Sprite2D5" type="Sprite2D" parent="pipes2"]
-position = Vector2(-8627, -61)
-texture = ExtResource("68_7fya6")
-region_enabled = true
-region_rect = Rect2(383.776, 9.76497, 94.501, 455.202)
-
-[node name="Sprite2D6" type="Sprite2D" parent="pipes2"]
-position = Vector2(-743, -3464)
-texture = ExtResource("69_4nody")
-region_enabled = true
-region_rect = Rect2(23.0749, 90.956, 119.79, 420.596)
-
-[node name="Sprite2D7" type="Sprite2D" parent="pipes2"]
-position = Vector2(-482, -3405)
-texture = ExtResource("69_4nody")
-region_enabled = true
-region_rect = Rect2(375.79, 261.324, 130.438, 251.559)
-
-[node name="Sprite2D8" type="Sprite2D" parent="pipes2"]
-position = Vector2(278, -3888)
-texture = ExtResource("70_olqg8")
-
-[node name="Sprite2D9" type="Sprite2D" parent="pipes2"]
-position = Vector2(2212, -3882)
-texture = ExtResource("71_kcc2f")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stone_houses/StaticBody2D2"]
+position = Vector2(530, 250)
+polygon = PackedVector2Array(192, -197, 189, -10, 213, 13, 224, 34, 220, 55, 208, 68, 224, 83, 224, 108, 211, 121, 209, 140, 226, 149, 240, 176, 18, 189, 3, 148, 14, 113, 38, 113, 54, 136, 56, 149, 71, 147, 72, 102, 58, 84, 54, 62, 71, 39, 71, -175, 64, -201, 86, -216, 118, -228, 130, -233, 123, -250, 138, -252, 141, -225, 173, -218)
 
 [node name="terrain" parent="." instance=ExtResource("72_cyhoc")]
 position = Vector2(-26.9999, 542)
-scale = Vector2(2, 2.02)
+scale = Vector2(4, 2)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(36, -149)
-zoom = Vector2(0.5, 0.5)
+zoom = Vector2(0.3, 0.3)
 
 [node name="slime_spawner" type="Node2D" parent="."]
 z_index = 5
 script = ExtResource("73_2v13q")
 
-[node name="useful_parts" type="Node2D" parent="."]
-
-[node name="Sprite2D4" type="Sprite2D" parent="useful_parts"]
-position = Vector2(1939, 776)
-texture = ExtResource("75_t3a04")
-region_enabled = true
-region_rect = Rect2(6.29993, 6.3, 222.2, 262.9)
-
-[node name="Sprite2D5" type="Sprite2D" parent="useful_parts"]
-position = Vector2(3032, 3776)
-texture = ExtResource("76_0i0t1")
-region_enabled = true
-region_rect = Rect2(5.80396, 410.031, 129.977, 106.687)
-
-[node name="Sprite2D7" type="Sprite2D" parent="useful_parts"]
-position = Vector2(4685, 291)
-texture = ExtResource("78_5amxl")
-
-[node name="Sprite2D11" type="Sprite2D" parent="useful_parts"]
-position = Vector2(3072.5, 3456)
-texture = ExtResource("73_svgxs")
-region_enabled = true
-region_rect = Rect2(171.853, 5, 92.1466, 188)
-
-[node name="Sprite2D12" type="Sprite2D" parent="useful_parts"]
-position = Vector2(2942.5, 3545.5)
-texture = ExtResource("73_svgxs")
-region_enabled = true
-region_rect = Rect2(356.1, 5.2, 152.9, 190.3)
-
-[node name="Sprite2D8" type="Sprite2D" parent="useful_parts"]
-position = Vector2(1901, -69)
-texture = ExtResource("75_t3a04")
-region_enabled = true
-region_rect = Rect2(4.09991, 318.7, 133.1, 193.6)
-
-[node name="Sprite2D13" type="Sprite2D" parent="useful_parts"]
-position = Vector2(5577, 3787)
-texture = ExtResource("75_t3a04")
-region_enabled = true
-region_rect = Rect2(336.3, 8.5, 156.2, 193.6)
-
-[node name="Sprite2D14" type="Sprite2D" parent="useful_parts"]
-position = Vector2(5770, 3716)
-texture = ExtResource("75_t3a04")
-region_enabled = true
-region_rect = Rect2(418.95, 203.9, 93.35, 309.5)
-
-[node name="Sprite2D15" type="Sprite2D" parent="useful_parts"]
-position = Vector2(5758, 3469)
-texture = ExtResource("75_t3a04")
-region_enabled = true
-region_rect = Rect2(236.2, 403.4, 184.8, 111.1)
-
-[node name="Sprite2D16" type="Sprite2D" parent="useful_parts"]
-position = Vector2(5828, 3443)
-texture = ExtResource("75_t3a04")
-region_enabled = true
-region_rect = Rect2(406.7, 274.7, 11, 85.8)
-
-[node name="Sprite2D17" type="Sprite2D" parent="useful_parts"]
-position = Vector2(3208, 3563)
-rotation = 4.71239
-texture = ExtResource("76_0i0t1")
-region_enabled = true
-region_rect = Rect2(161.4, 10.7, 181.5, 163.9)
-
-[node name="Sprite2D18" type="Sprite2D" parent="useful_parts"]
-position = Vector2(2973, 3352)
-texture = ExtResource("76_0i0t1")
-region_enabled = true
-region_rect = Rect2(89.0774, 181.2, 96.5226, 102.3)
-
-[node name="Sprite2D20" type="Sprite2D" parent="useful_parts"]
-position = Vector2(2934, 3176)
-texture = ExtResource("76_0i0t1")
-region_enabled = true
-region_rect = Rect2(0, 0, 141.6, 182.3)
-
-[node name="Sprite2D21" type="Sprite2D" parent="useful_parts"]
-position = Vector2(2737, 3771)
-texture = ExtResource("76_0i0t1")
-region_enabled = true
-region_rect = Rect2(4.30518, 283.8, 138.242, 90.9091)
-
-[node name="Sprite2D22" type="Sprite2D" parent="useful_parts"]
-position = Vector2(2778.5, 3243)
-rotation = 3.14159
-texture = ExtResource("76_0i0t1")
-region_enabled = true
-region_rect = Rect2(367.1, 7.4, 110, 194.7)
-
-[node name="Sprite2D24" type="Sprite2D" parent="useful_parts"]
-position = Vector2(2889, 3863)
-texture = ExtResource("76_0i0t1")
-region_enabled = true
-region_rect = Rect2(129.028, 383.73, 126.972, 123.967)
-
-[node name="Sprite2D25" type="Sprite2D" parent="useful_parts"]
-position = Vector2(3159, 3740)
-texture = ExtResource("76_0i0t1")
-region_enabled = true
-region_rect = Rect2(371.711, 240.222, 131.48, 134.485)
-
-[node name="Sprite2D26" type="Sprite2D" parent="useful_parts"]
-position = Vector2(3816, 3757)
-texture = ExtResource("77_m5eu4")
-region_enabled = true
-region_rect = Rect2(5, 332, 172, 179)
-
-[node name="Sprite2D27" type="Sprite2D" parent="useful_parts"]
-position = Vector2(4006, 3803)
-texture = ExtResource("77_m5eu4")
-region_enabled = true
-region_rect = Rect2(309.24, 223.219, 192.995, 295.482)
-
-[node name="Sprite2D28" type="Sprite2D" parent="useful_parts"]
-position = Vector2(3812, 3569)
-texture = ExtResource("77_m5eu4")
-region_enabled = true
-region_rect = Rect2(309.24, 19.5761, 200.981, 216.953)
-
-[node name="Sprite2D107" type="Sprite2D" parent="useful_parts"]
-position = Vector2(-8920, 1344.5)
-texture = ExtResource("55_avoja")
-region_enabled = true
-region_rect = Rect2(291.43, 0, 201.314, 512)
-
-[node name="Sprite2D23" type="Sprite2D" parent="useful_parts"]
-position = Vector2(3183.5, 3267)
-texture = ExtResource("76_0i0t1")
-region_enabled = true
-region_rect = Rect2(274.788, 385.984, 235.162, 128.475)
-
-[node name="basic_machine" type="Node2D" parent="."]
-
-[node name="long_pipe" type="Node2D" parent="basic_machine"]
-
-[node name="gears2" type="Node2D" parent="."]
-
-[node name="Sprite2D" type="Sprite2D" parent="gears2"]
-position = Vector2(2895.5, 1295.5)
-texture = ExtResource("79_kkarc")
-region_enabled = true
-region_rect = Rect2(170.622, 10.8001, 157.093, 171.436)
-
-[node name="Sprite2D2" type="Sprite2D" parent="gears2"]
-position = Vector2(3097.5, 1478.5)
-texture = ExtResource("79_kkarc")
-region_enabled = true
-region_rect = Rect2(331.138, 13.3282, 169.046, 193.088)
-
-[node name="Sprite2D3" type="Sprite2D" parent="gears2"]
-position = Vector2(2870.5, 1470.5)
-texture = ExtResource("79_kkarc")
-region_enabled = true
-region_rect = Rect2(284.554, 368.705, 132.983, 128.475)
-
-[node name="Sprite2D5" type="Sprite2D" parent="gears2"]
-position = Vector2(2704.5, 1530.5)
-texture = ExtResource("79_kkarc")
-region_enabled = true
-region_rect = Rect2(132.573, 347.396, 154.02, 152.517)
-
-[node name="Sprite2D6" type="Sprite2D" parent="gears2"]
-position = Vector2(3065.5, 1317.5)
-texture = ExtResource("79_kkarc")
-region_enabled = true
-region_rect = Rect2(210.174, 210.926, 147.258, 133.734)
-
-[node name="Sprite2D7" type="Sprite2D" parent="gears2"]
-position = Vector2(1686, 632)
-texture = ExtResource("79_kkarc")
-region_enabled = true
-region_rect = Rect2(8.27368, 4.05616, 164.606, 159.738)
-
-[node name="Sprite2D8" type="Sprite2D" parent="gears2"]
-position = Vector2(2624, 1312)
-texture = ExtResource("79_kkarc")
-region_enabled = true
-region_rect = Rect2(10.8502, 377.38, 113.74, 111.32)
-
-[node name="Sprite2D9" type="Sprite2D" parent="gears2"]
-position = Vector2(2977.5, 1424.5)
-texture = ExtResource("79_kkarc")
-region_enabled = true
-region_rect = Rect2(414.532, 388.235, 88.6552, 95.417)
-
-[node name="Sprite2D12" type="Sprite2D" parent="gears2"]
-position = Vector2(2299, 1096)
-texture = ExtResource("80_lfh57")
-region_enabled = true
-region_rect = Rect2(262.838, 4.51182, 113.629, 110.524)
-
-[node name="Sprite2D13" type="Sprite2D" parent="gears2"]
-position = Vector2(2606.5, 1055)
-texture = ExtResource("80_lfh57")
-region_enabled = true
-region_rect = Rect2(378.662, 126.835, 124.992, 103.818)
-
-[node name="Sprite2D14" type="Sprite2D" parent="gears2"]
-position = Vector2(2733.5, 1038)
-texture = ExtResource("80_lfh57")
-region_enabled = true
-region_rect = Rect2(263.281, 222.267, 108.79, 118.54)
-
 [node name="spell_machine_weapon" type="Node2D" parent="."]
 
 [node name="machine_topside" type="Node2D" parent="spell_machine_weapon"]
+
+[node name="med_gear_4" type="RigidBody2D" parent="spell_machine_weapon/machine_topside"]
+position = Vector2(217, 393)
+collision_mask = 4
+mass = 0.125
+gravity_scale = 0.0
+
+[node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/med_gear_4"]
+position = Vector2(-1.5, -0.5)
+node_a = NodePath("../../../hitboxes/StaticBody2D")
+node_b = NodePath("..")
+motor_enabled = true
+motor_target_velocity = -0.511905
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spell_machine_weapon/machine_topside/med_gear_4"]
+position = Vector2(-2.5, -1.5)
+shape = SubResource("CircleShape2D_3uabp")
+
+[node name="Sprite2D13" type="Sprite2D" parent="spell_machine_weapon/machine_topside/med_gear_4"]
+position = Vector2(-4.5, -0.5)
+texture = ExtResource("79_kkarc")
+region_enabled = true
+region_rect = Rect2(18.9939, 161.744, 185.097, 187.829)
+
+[node name="Sprite2D4" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
+position = Vector2(1913.5, -1163.5)
+texture = ExtResource("79_kkarc")
+region_enabled = true
+region_rect = Rect2(18.9939, 161.744, 185.097, 187.829)
+
+[node name="Sprite2D6" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
+position = Vector2(2153.5, -1135.5)
+texture = ExtResource("79_kkarc")
+region_enabled = true
+region_rect = Rect2(18.9939, 161.744, 185.097, 187.829)
+
+[node name="med_gear_5" type="RigidBody2D" parent="spell_machine_weapon/machine_topside"]
+position = Vector2(-201, 377)
+collision_mask = 4
+mass = 0.125
+gravity_scale = 0.0
+
+[node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/med_gear_5"]
+position = Vector2(-1.5, -0.5)
+node_a = NodePath("../../../hitboxes/StaticBody2D")
+node_b = NodePath("..")
+motor_enabled = true
+motor_target_velocity = 0.511905
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spell_machine_weapon/machine_topside/med_gear_5"]
+position = Vector2(-2.5, -1.5)
+shape = SubResource("CircleShape2D_3uabp")
+
+[node name="Sprite2D13" type="Sprite2D" parent="spell_machine_weapon/machine_topside/med_gear_5"]
+position = Vector2(-4.5, -0.5)
+texture = ExtResource("79_kkarc")
+region_enabled = true
+region_rect = Rect2(18.9939, 161.744, 185.097, 187.829)
+
+[node name="Sprite2D149" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
+position = Vector2(255, 377)
+rotation = 0.919933
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(426.368, 19.082, 65.219, 258.214)
+
+[node name="Sprite2D148" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
+position = Vector2(-227, 372)
+rotation = -0.90069
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(426.368, 19.082, 65.219, 258.214)
 
 [node name="Sprite2D137" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(196.5, 199.5)
@@ -1339,6 +336,29 @@ scale = Vector2(1, 1.5)
 texture = ExtResource("60_g4q53")
 region_enabled = true
 region_rect = Rect2(389.1, 196.105, 93.17, 312.785)
+
+[node name="med_gear_1" type="RigidBody2D" parent="spell_machine_weapon/machine_topside"]
+position = Vector2(139, -244)
+collision_mask = 2
+mass = 0.125
+gravity_scale = 0.0
+
+[node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/med_gear_1"]
+position = Vector2(-1.5, -0.5)
+node_a = NodePath("../../../hitboxes/StaticBody2D")
+node_b = NodePath("..")
+motor_enabled = true
+motor_target_velocity = -0.511905
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spell_machine_weapon/machine_topside/med_gear_1"]
+position = Vector2(-2.5, -1.5)
+shape = SubResource("CircleShape2D_3uabp")
+
+[node name="Sprite2D13" type="Sprite2D" parent="spell_machine_weapon/machine_topside/med_gear_1"]
+position = Vector2(-4.5, -0.5)
+texture = ExtResource("79_kkarc")
+region_enabled = true
+region_rect = Rect2(18.9939, 161.744, 185.097, 187.829)
 
 [node name="Sprite2D138" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(197, -42.5)
@@ -1384,12 +404,6 @@ position = Vector2(-168, -50.5)
 texture = ExtResource("60_g4q53")
 region_enabled = true
 region_rect = Rect2(378.452, 5.77197, 118.459, 179.685)
-
-[node name="Sprite2D104" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(3134, 820)
-texture = ExtResource("54_ii5mf")
-region_enabled = true
-region_rect = Rect2(326.862, -1.6814, 180.377, 335.755)
 
 [node name="Sprite2D3" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-97, 89)
@@ -1437,12 +451,6 @@ texture = ExtResource("39_5y5qt")
 region_enabled = true
 region_rect = Rect2(376.787, 3.15014, 120.788, 516.974)
 
-[node name="Sprite2D105" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(3613, 1492)
-texture = ExtResource("54_ii5mf")
-region_enabled = true
-region_rect = Rect2(3.14911, 305.926, 212.587, 201.314)
-
 [node name="Sprite2D132" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-107, 369.5)
 rotation = -3.14159
@@ -1461,86 +469,7 @@ region_rect = Rect2(378.452, 5.77197, 118.459, 179.685)
 position = Vector2(7, 247)
 texture = ExtResource("83_dhs73")
 
-[node name="Sprite2D10" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(-9911.5, 999)
-rotation = -3.14159
-texture = ExtResource("82_kvsuo")
-region_enabled = true
-region_rect = Rect2(318.504, 336.118, 141.066, 163.139)
-
-[node name="Sprite2D53" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(2879, 713)
-texture = ExtResource("39_5y5qt")
-region_enabled = true
-region_rect = Rect2(148.095, 1.53963, 233.524, 513.753)
-
-[node name="Sprite2D7" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(4183.44, 920.13)
-rotation = -2.53197
-texture = ExtResource("25_s501p")
-region_enabled = true
-region_rect = Rect2(136.821, 305.961, 67.6414, 206.11)
-
-[node name="Sprite2D8" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(4194.44, 971.13)
-rotation = -2.53197
-texture = ExtResource("25_s501p")
-region_enabled = true
-region_rect = Rect2(136.821, 305.961, 67.6414, 206.11)
-
-[node name="Sprite2D9" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(4198.44, 1025.13)
-rotation = -2.53197
-texture = ExtResource("25_s501p")
-region_enabled = true
-region_rect = Rect2(136.821, 305.961, 67.6414, 206.11)
-
-[node name="Sprite2D13" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(86, -279)
-texture = ExtResource("79_kkarc")
-region_enabled = true
-region_rect = Rect2(18.9939, 161.744, 185.097, 187.829)
-
 [node name="Node2D" type="Node2D" parent="spell_machine_weapon/machine_topside"]
-
-[node name="Sprite2D62" type="Sprite2D" parent="spell_machine_weapon/machine_topside/Node2D"]
-position = Vector2(4163.29, 1298.05)
-rotation = 6.68728
-texture = ExtResource("39_5y5qt")
-region_enabled = true
-region_rect = Rect2(24.0858, 288.21, 51.5363, 223.861)
-
-[node name="Sprite2D64" type="Sprite2D" parent="spell_machine_weapon/machine_topside/Node2D"]
-position = Vector2(4161.29, 1362.05)
-rotation = 6.68728
-texture = ExtResource("39_5y5qt")
-region_enabled = true
-region_rect = Rect2(24.0858, 288.21, 51.5363, 223.861)
-
-[node name="Sprite2D63" type="Sprite2D" parent="spell_machine_weapon/machine_topside/Node2D"]
-position = Vector2(4161.29, 1426.05)
-rotation = 0.404092
-texture = ExtResource("39_5y5qt")
-region_enabled = true
-region_rect = Rect2(24.0858, 288.21, 51.5363, 223.861)
-
-[node name="Sprite2D51" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(3440, 899)
-texture = ExtResource("38_75j3m")
-region_enabled = true
-region_rect = Rect2(0, 0, 186.747, 512)
-
-[node name="Sprite2D6" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(-8953, -330.5)
-texture = ExtResource("77_m5eu4")
-region_enabled = true
-region_rect = Rect2(24.7281, -6.99789, 120.909, 337.273)
-
-[node name="Sprite2D2" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(-9722.5, 869)
-texture = ExtResource("82_kvsuo")
-region_enabled = true
-region_rect = Rect2(285.282, 0, 226.718, 342.515)
 
 [node name="Sprite2D11" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(3, -119)
@@ -1568,75 +497,1468 @@ position = Vector2(10, -300)
 texture = ExtResource("34_w4t67")
 
 [node name="Sprite2D130" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
+z_index = 11
 position = Vector2(-141, -83)
 texture = ExtResource("60_g4q53")
 region_enabled = true
 region_rect = Rect2(378.452, 5.77197, 118.459, 179.685)
 
 [node name="Sprite2D131" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
+z_index = 11
 position = Vector2(168, -73)
 texture = ExtResource("60_g4q53")
 region_enabled = true
 region_rect = Rect2(378.452, 5.77197, 118.459, 179.685)
 
-[node name="1459653703" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(-33, -60)
+[node name="tiny_wheel" type="RigidBody2D" parent="spell_machine_weapon/machine_topside"]
+position = Vector2(-9, -313)
+collision_mask = 2
+mass = 0.125
+gravity_scale = 0.0
+
+[node name="1459653703" type="Sprite2D" parent="spell_machine_weapon/machine_topside/tiny_wheel"]
+position = Vector2(-24, 253)
 texture = ExtResource("25_8haih")
 region_enabled = true
 region_rect = Rect2(132.858, 379.008, 124.184, 122.322)
 
-[node name="Sprite2D17" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(22, -224)
+[node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/tiny_wheel"]
+position = Vector2(-24, 253)
+node_a = NodePath("../../../hitboxes/StaticBody2D")
+node_b = NodePath("..")
+motor_enabled = true
+motor_target_velocity = 0.511905
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spell_machine_weapon/machine_topside/tiny_wheel"]
+position = Vector2(-25, 252)
+shape = SubResource("CircleShape2D_g3a8e")
+
+[node name="tiner_wheel" type="RigidBody2D" parent="spell_machine_weapon/machine_topside"]
+position = Vector2(-9, -313)
+collision_mask = 2
+mass = 0.125
+gravity_scale = 0.0
+
+[node name="Sprite2D17" type="Sprite2D" parent="spell_machine_weapon/machine_topside/tiner_wheel"]
+position = Vector2(31, 89)
 texture = ExtResource("80_lfh57")
 region_enabled = true
 region_rect = Rect2(372.73, 232.396, 129.152, 130.394)
 
-[node name="Sprite2D4" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(-8725, -423.5)
+[node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/tiner_wheel"]
+position = Vector2(33, 91)
+node_a = NodePath("../../../hitboxes/StaticBody2D")
+node_b = NodePath("..")
+motor_enabled = true
+motor_target_velocity = 0.511905
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spell_machine_weapon/machine_topside/tiner_wheel"]
+position = Vector2(32, 90)
+shape = SubResource("CircleShape2D_x2myk")
+
+[node name="Sprite2D12" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
+position = Vector2(1940.5, -1350.5)
 texture = ExtResource("79_kkarc")
 region_enabled = true
 region_rect = Rect2(18.9939, 161.744, 185.097, 187.829)
 
-[node name="Sprite2D12" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
+[node name="med_gear_3" type="RigidBody2D" parent="spell_machine_weapon/machine_topside"]
 position = Vector2(-48, -189)
+collision_mask = 2
+mass = 0.125
+gravity_scale = 0.0
+
+[node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/med_gear_3"]
+position = Vector2(-1.5, -0.5)
+node_a = NodePath("../../../hitboxes/StaticBody2D")
+node_b = NodePath("..")
+motor_enabled = true
+motor_target_velocity = -0.511905
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spell_machine_weapon/machine_topside/med_gear_3"]
+position = Vector2(-2.5, -1.5)
+shape = SubResource("CircleShape2D_3uabp")
+
+[node name="Sprite2D13" type="Sprite2D" parent="spell_machine_weapon/machine_topside/med_gear_3"]
+position = Vector2(-4.5, -0.5)
+texture = ExtResource("79_kkarc")
+region_enabled = true
+region_rect = Rect2(18.9939, 161.744, 185.097, 187.829)
+
+[node name="med_gear_2" type="RigidBody2D" parent="spell_machine_weapon/machine_topside"]
+position = Vector2(-8, -352)
+collision_mask = 2
+mass = 0.125
+gravity_scale = 0.0
+
+[node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/med_gear_2"]
+position = Vector2(-1.5, -0.5)
+node_a = NodePath("../../../hitboxes/StaticBody2D")
+node_b = NodePath("..")
+motor_enabled = true
+motor_target_velocity = 0.511905
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spell_machine_weapon/machine_topside/med_gear_2"]
+position = Vector2(-2.5, -1.5)
+shape = SubResource("CircleShape2D_3uabp")
+
+[node name="Sprite2D13" type="Sprite2D" parent="spell_machine_weapon/machine_topside/med_gear_2"]
+position = Vector2(-4.5, -0.5)
+rotation = -0.20008
 texture = ExtResource("79_kkarc")
 region_enabled = true
 region_rect = Rect2(18.9939, 161.744, 185.097, 187.829)
 
 [node name="Sprite2D14" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(-9, -313)
+position = Vector2(1605.5, -1289.5)
 texture = ExtResource("79_kkarc")
 region_enabled = true
 region_rect = Rect2(18.9939, 161.744, 185.097, 187.829)
 
-[node name="Sprite2D16" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(12, 3)
+[node name="central_wheel" type="RigidBody2D" parent="spell_machine_weapon/machine_topside"]
+position = Vector2(-9, -313)
+collision_mask = 2
+mass = 0.125
+gravity_scale = 0.0
+
+[node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/central_wheel"]
+position = Vector2(20, 314)
+node_a = NodePath("../../../hitboxes/StaticBody2D")
+node_b = NodePath("..")
+motor_enabled = true
+motor_target_velocity = -0.511905
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spell_machine_weapon/machine_topside/central_wheel"]
+position = Vector2(19, 313)
+shape = SubResource("CircleShape2D_3uabp")
+
+[node name="Sprite2D16" type="Sprite2D" parent="spell_machine_weapon/machine_topside/central_wheel"]
+position = Vector2(21, 316)
 texture = ExtResource("80_lfh57")
 region_enabled = true
 region_rect = Rect2(9.13069, 338.14, 170.753, 167.028)
 
 [node name="Sprite2D110" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(-194, 343)
+position = Vector2(-204, 362)
+rotation = -0.347167
 texture = ExtResource("56_rdjjb")
 region_enabled = true
 region_rect = Rect2(0, 269.925, 89.7047, 242.075)
 
-[node name="Sprite2D15" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(12, -465)
+[node name="big_gear" type="RigidBody2D" parent="spell_machine_weapon/machine_topside"]
+position = Vector2(9, -480)
+collision_mask = 2
+mass = 0.125
+gravity_scale = 0.0
+
+[node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/big_gear"]
+position = Vector2(0, -8)
+node_a = NodePath("../../../hitboxes/StaticBody2D")
+node_b = NodePath("..")
+motor_enabled = true
+motor_target_velocity = -0.511905
+
+[node name="big_gear" type="Sprite2D" parent="spell_machine_weapon/machine_topside/big_gear"]
+z_index = 12
 texture = ExtResource("82_81aby")
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spell_machine_weapon/machine_topside/big_gear"]
+position = Vector2(0, -8)
+shape = SubResource("CircleShape2D_3uabp")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="spell_machine_weapon/machine_topside/big_gear"]
+polygon = PackedVector2Array(101, -158, 101, -183, 97, -205, 82, -212, 69, -199, 59, -180, 44, -177, 24, -177, 12, -207, 2, -231, -18, -233, -24, -217, -28, -199, -32, -182, -42, -174, -60, -168, -75, -182, -95, -204, -113, -194, -116, -175, -113, -159, -112, -133, -136, -114, -163, -119, -181, -120, -192, -107, -188, -97, -181, -83, -169, -73, -158, -68, -165, -38, -169, -22, -204, -13, -215, -4, -208, 12, -191, 18, -168, 21, -156, 51, -150, 70, -168, 83, -181, 99, -178, 115, -161, 115, -129, 110, -111, 119, -95, 133, -92, 148, -100, 166, -102, 182, -84, 193, -67, 179, -60, 162, -55, 154, -30, 158, -11, 167, -10, 196, -1, 216, 18, 214, 27, 188, 22, 166, 36, 151, 67, 147, 81, 160, 88, 176, 101, 190, 116, 176, 112, 156, 100, 133, 125, 108, 139, 85, 157, 99, 174, 111, 191, 112, 197, 99, 193, 79, 177, 66, 156, 49, 169, 19, 177, 3, 197, 1, 217, -5, 224, -18, 206, -34, 179, -38, 164, -45, 159, -75, 173, -90, 186, -107, 190, -124, 182, -137, 163, -136, 146, -124, 131, -118)
+
+[node name="stained_glass3" type="Sprite2D" parent="spell_machine_weapon/machine_topside/big_gear"]
+position = Vector2(3, -11)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("41_a5nek")
+
 [node name="Label" type="Label" parent="spell_machine_weapon/machine_topside"]
-offset_left = -150.0
-offset_top = -800.0
-offset_right = 203.0
-offset_bottom = -736.0
+offset_left = 712.0
+offset_top = -564.0
+offset_right = 1065.0
+offset_bottom = -500.0
 text = "Spell Cannon"
 label_settings = ExtResource("77_vir2a")
 
 [node name="Sprite2D111" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(189, 343)
+position = Vector2(196, 362)
+rotation = 0.429187
+texture = ExtResource("56_rdjjb")
+region_enabled = true
+region_rect = Rect2(0, 269.925, 89.7047, 242.075)
+
+[node name="Sprite2D112" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
+visible = false
+position = Vector2(-197, -163)
+rotation = -0.347167
+texture = ExtResource("56_rdjjb")
+region_enabled = true
+region_rect = Rect2(0, 269.925, 89.7047, 242.075)
+
+[node name="Sprite2D113" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
+visible = false
+position = Vector2(196, -162)
+rotation = 0.429187
 texture = ExtResource("56_rdjjb")
 region_enabled = true
 region_rect = Rect2(0, 269.925, 89.7047, 242.075)
 
 [node name="hitboxes" type="Node2D" parent="spell_machine_weapon"]
+visible = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="spell_machine_weapon/hitboxes"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spell_machine_weapon/hitboxes/StaticBody2D"]
+position = Vector2(13.75, -124.5)
+shape = SubResource("RectangleShape2D_iscp3")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="spell_machine_weapon/hitboxes/StaticBody2D"]
+position = Vector2(11, -835)
+shape = SubResource("CircleShape2D_wsdct")
+
+[node name="Area2D" type="Area2D" parent="spell_machine_weapon/hitboxes"]
+
+[node name="joints" type="Node" parent="spell_machine_weapon"]
+
+[node name="gun_turret" type="Node2D" parent="spell_machine_weapon"]
+
+[node name="unused_parts" type="Node2D" parent="."]
+visible = false
+
+[node name="pipes" type="Node2D" parent="unused_parts"]
+
+[node name="Sprite2D" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2600, -2688)
+texture = ExtResource("24_wbsbf")
+region_enabled = true
+region_rect = Rect2(12.0924, 0, 108.344, 512)
+
+[node name="Sprite2D2" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(1736, -2826)
+texture = ExtResource("24_wbsbf")
+region_enabled = true
+region_rect = Rect2(119.839, 0, 125.913, 512)
+
+[node name="Sprite2D3" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3026, -2690)
+texture = ExtResource("24_wbsbf")
+region_enabled = true
+region_rect = Rect2(248.68, 0, 131.769, 512)
+
+[node name="Sprite2D4" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2163, -2730)
+texture = ExtResource("24_wbsbf")
+region_enabled = true
+region_rect = Rect2(383.377, 0, 121.521, 512)
+
+[node name="Sprite2D5" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(5481, 4310)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(0, 0, 51.7744, 102.219)
+
+[node name="Sprite2D6" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2329.5, -607)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(59.4811, 305.961, 75.694, 206.11)
+
+[node name="Sprite2D8" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(5671, 4202)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(201.242, 305.961, 38.6522, 206.11)
+
+[node name="Sprite2D9" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(5767, 4184)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(243.115, 265.698, 57.9784, 246.373)
+
+[node name="Sprite2D10" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(5875, 4227)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(297.872, 360.718, 33.8207, 151.353)
+
+[node name="Sprite2D11" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(5621, 4425)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(328.472, 293.077, 51.5363, 218.994)
+
+[node name="Sprite2D12" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(5379, 4033)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(410.608, 330.119, 51.5363, 181.953)
+
+[node name="Sprite2D13" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(5260, 4235)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(380.008, 11.2377, 70.8625, 314.049)
+
+[node name="Sprite2D14" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(5489, 4030)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(339.746, 3.15014, 41.8733, 268.955)
+
+[node name="Sprite2D15" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(5721, 4430)
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(175.474, 3.15014, 64.4204, 283.45)
+
+[node name="Sprite2D16" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2583, -1123)
+texture = ExtResource("26_a8a11")
+region_enabled = true
+region_rect = Rect2(0, 0, 148.095, 497.577)
+
+[node name="Sprite2D17" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2769, -1115)
+texture = ExtResource("26_a8a11")
+region_enabled = true
+region_rect = Rect2(138.432, 11.2027, 157.83, 483.153)
+
+[node name="Sprite2D18" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2420, -1117)
+texture = ExtResource("26_a8a11")
+region_enabled = true
+region_rect = Rect2(283.378, 0, 214.198, 497.577)
+
+[node name="Sprite2D19" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3645, -1261)
+texture = ExtResource("27_5ehyt")
+region_enabled = true
+region_rect = Rect2(7.98065, 0, 172.325, 512)
+
+[node name="Sprite2D20" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3412, -1283)
+texture = ExtResource("27_5ehyt")
+region_enabled = true
+region_rect = Rect2(178.695, 0, 165.883, 512)
+
+[node name="Sprite2D21" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3169, -1274)
+texture = ExtResource("27_5ehyt")
+region_enabled = true
+region_rect = Rect2(342.967, 0, 151.388, 512)
+
+[node name="Sprite2D22" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2100.5, 313)
+texture = ExtResource("28_4icus")
+region_enabled = true
+region_rect = Rect2(0, 0, 186.747, 512)
+
+[node name="Sprite2D23" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(1755.5, 302)
+texture = ExtResource("28_4icus")
+region_enabled = true
+region_rect = Rect2(181.916, 0, 149.777, 512)
+
+[node name="Sprite2D24" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(6654, 2397)
+texture = ExtResource("28_4icus")
+region_enabled = true
+region_rect = Rect2(330.083, 0, 148.167, 512)
+
+[node name="Sprite2D25" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(1890, -1333)
+texture = ExtResource("29_a2r46")
+region_enabled = true
+region_rect = Rect2(72.4011, 355.852, 66.0309, 122.399)
+
+[node name="Sprite2D26" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(1956.5, -488)
+texture = ExtResource("29_a2r46")
+region_enabled = true
+region_rect = Rect2(130.379, 56.297, 161.051, 428.396)
+
+[node name="Sprite2D27" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(1661, -1324)
+texture = ExtResource("29_a2r46")
+region_enabled = true
+region_rect = Rect2(293.041, 230.232, 151.388, 254.461)
+
+[node name="Sprite2D28" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3697.5, -500.5)
+texture = ExtResource("30_tl1uj")
+region_enabled = true
+region_rect = Rect2(133.6, 0, 119.178, 495.966)
+
+[node name="Sprite2D29" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3584.5, -508.5)
+texture = ExtResource("30_tl1uj")
+region_enabled = true
+region_rect = Rect2(28.9172, 0, 109.515, 495.966)
+
+[node name="Sprite2D30" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3908.5, -496.5)
+texture = ExtResource("30_tl1uj")
+region_enabled = true
+region_rect = Rect2(365.514, 0, 114.346, 495.966)
+
+[node name="Sprite2D31" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3801.5, -502.5)
+texture = ExtResource("30_tl1uj")
+region_enabled = true
+region_rect = Rect2(249.557, 0, 117.567, 495.966)
+
+[node name="Sprite2D32" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9592.5, -48)
+texture = ExtResource("31_e3bu2")
+region_enabled = true
+region_rect = Rect2(149.706, 0, 164.272, 512)
+
+[node name="Sprite2D33" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9284.5, -585)
+rotation = 1.5708
+texture = ExtResource("31_e3bu2")
+region_enabled = true
+region_rect = Rect2(408.998, 0, 96.6306, 512)
+
+[node name="Sprite2D34" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9325.5, -283)
+texture = ExtResource("31_e3bu2")
+region_enabled = true
+region_rect = Rect2(313.978, 0, 88.5781, 512)
+
+[node name="Sprite2D35" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(5285, 2453)
+texture = ExtResource("31_e3bu2")
+region_enabled = true
+region_rect = Rect2(0, 0, 144.874, 512)
+
+[node name="Sprite2D36" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-373, -2164)
+texture = ExtResource("32_r2ljp")
+region_enabled = true
+region_rect = Rect2(272.104, 0, 239.896, 512)
+
+[node name="Sprite2D37" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-655, -2157)
+texture = ExtResource("32_r2ljp")
+region_enabled = true
+region_rect = Rect2(0, 0, 254.389, 512)
+
+[node name="Sprite2D38" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3028.5, 2263)
+texture = ExtResource("33_n41ah")
+region_enabled = true
+region_rect = Rect2(0, 0, 107.832, 452.482)
+
+[node name="Sprite2D39" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3028.5, 2263)
+texture = ExtResource("33_n41ah")
+region_enabled = true
+region_rect = Rect2(0, 0, 107.832, 452.482)
+
+[node name="Sprite2D40" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3588.5, 2256)
+texture = ExtResource("33_n41ah")
+region_enabled = true
+region_rect = Rect2(0, 0, 107.832, 452.482)
+
+[node name="Sprite2D41" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3460.5, 2315)
+texture = ExtResource("33_n41ah")
+region_enabled = true
+region_rect = Rect2(383.229, 0, 104.683, 505.629)
+
+[node name="Sprite2D43" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3166.5, 2245)
+texture = ExtResource("33_n41ah")
+region_enabled = true
+region_rect = Rect2(188.358, 135.212, 77.3045, 336.597)
+
+[node name="Sprite2D46" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(6503, 1005)
+texture = ExtResource("36_1yqt0")
+
+[node name="Sprite2D47" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(5792, 1686)
+texture = ExtResource("37_urn41")
+region_enabled = true
+region_rect = Rect2(392.893, 0, 119.107, 512)
+
+[node name="Sprite2D48" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(4864, -2692)
+texture = ExtResource("37_urn41")
+region_enabled = true
+region_rect = Rect2(96.5587, 0, 299.555, 512)
+
+[node name="Sprite2D49" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9700.5, -793.5)
+texture = ExtResource("37_urn41")
+region_enabled = true
+region_rect = Rect2(0, 0, 98.1692, 512)
+
+[node name="Sprite2D50" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2212.5, -598)
+texture = ExtResource("38_75j3m")
+region_enabled = true
+region_rect = Rect2(178.695, 12.8132, 181.988, 496.037)
+
+[node name="Sprite2D52" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(6455, 1755)
+texture = ExtResource("38_75j3m")
+region_enabled = true
+region_rect = Rect2(357.461, 94.9492, 146.556, 418.733)
+
+[node name="Sprite2D56" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(4201, 569)
+texture = ExtResource("39_5y5qt")
+region_enabled = true
+region_rect = Rect2(0, 0, 82.0641, 247.948)
+
+[node name="Sprite2D57" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(4125, 624)
+texture = ExtResource("39_5y5qt")
+region_enabled = true
+region_rect = Rect2(82.0641, 72.4021, 57.9784, 156.219)
+
+[node name="Sprite2D58" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(4049, 1234.5)
+texture = ExtResource("39_5y5qt")
+region_enabled = true
+region_rect = Rect2(75.6221, 278.547, 54.7573, 236.745)
+
+[node name="Sprite2D54" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3515.5, 2973)
+texture = ExtResource("40_w3fyn")
+region_enabled = true
+region_rect = Rect2(204.463, 0, 164.272, 512)
+
+[node name="Sprite2D61" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3347.5, 2955)
+texture = ExtResource("40_w3fyn")
+region_enabled = true
+region_rect = Rect2(0, 0, 201.242, 512)
+
+[node name="Sprite2D62" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(1502, -1826)
+texture = ExtResource("41_3136r")
+
+[node name="Sprite2D63" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3912, 2298.5)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(7.98065, 6.37115, 54.7573, 202.924)
+
+[node name="Sprite2D65" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3051, 1872.5)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(90.1166, 273.716, 49.9258, 231.913)
+
+[node name="Sprite2D66" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2967, 1866.5)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(7.98065, 244.727, 59.5889, 259.292)
+
+[node name="Sprite2D67" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3985, 2295.5)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(57.9064, -1.6814, 96.6306, 275.397)
+
+[node name="Sprite2D71" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3203, 1875.5)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(450.871, 225.401, 49.9258, 278.618)
+
+[node name="Sprite2D72" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3270, 1860.5)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(425.103, 1.53963, 77.3045, 215.808)
+
+[node name="Sprite2D73" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3459, 1850.5)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(359.072, 3.15014, 53.1469, 209.366)
+
+[node name="Sprite2D74" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3376, 1848.5)
+texture = ExtResource("42_soobr")
+region_enabled = true
+region_rect = Rect2(264.052, 4.76064, 91.7991, 212.587)
+
+[node name="Sprite2D64" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2646.5, -503)
+texture = ExtResource("43_udalb")
+region_enabled = true
+region_rect = Rect2(257.61, 1.53963, 143.335, 505.7)
+
+[node name="Sprite2D68" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(4933, -3052)
+texture = ExtResource("43_udalb")
+region_enabled = true
+region_rect = Rect2(122.327, 11.2027, 132.062, 484.764)
+
+[node name="Sprite2D69" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(1902.5, -583)
+texture = ExtResource("44_2pxxk")
+region_enabled = true
+region_rect = Rect2(0, 0, 181.916, 483.082)
+
+[node name="Sprite2D75" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3894, -2840)
+texture = ExtResource("44_2pxxk")
+region_enabled = true
+region_rect = Rect2(172.253, 0, 169.104, 471.809)
+
+[node name="Sprite2D76" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2067.5, -654)
+texture = ExtResource("44_2pxxk")
+region_enabled = true
+region_rect = Rect2(342.967, 0, 141.725, 466.977)
+
+[node name="Sprite2D77" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9170, 1115.5)
+texture = ExtResource("45_ugqms")
+region_enabled = true
+region_rect = Rect2(0, 0, 186.747, 512)
+
+[node name="Sprite2D78" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-8570.5, 861)
+texture = ExtResource("45_ugqms")
+region_enabled = true
+region_rect = Rect2(341.356, 0, 151.388, 512)
+
+[node name="Sprite2D79" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-8770.5, 689)
+texture = ExtResource("45_ugqms")
+region_enabled = true
+region_rect = Rect2(188.358, 0, 146.556, 512)
+
+[node name="Sprite2D80" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2407, 1475)
+texture = ExtResource("46_v21em")
+region_enabled = true
+region_rect = Rect2(0, 0, 252.778, 512)
+
+[node name="Sprite2D81" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2048.5, 317)
+texture = ExtResource("46_v21em")
+region_enabled = true
+region_rect = Rect2(252.778, 0, 220.64, 512)
+
+[node name="Sprite2D82" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2148.5, 341)
+texture = ExtResource("47_o1la1")
+
+[node name="Sprite2D83" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2715, 172)
+texture = ExtResource("48_mhoqq")
+
+[node name="Sprite2D84" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9796.5, -779.5)
+texture = ExtResource("49_48mom")
+region_enabled = true
+region_rect = Rect2(0, 0, 120.716, 507.24)
+
+[node name="Sprite2D85" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(4383, 2508.5)
+texture = ExtResource("49_48mom")
+region_enabled = true
+region_rect = Rect2(125.548, 0, 53.1469, 388.062)
+
+[node name="Sprite2D86" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(4197, 2508.5)
+texture = ExtResource("49_48mom")
+region_enabled = true
+region_rect = Rect2(122.327, 381.62, 57.9784, 130.38)
+
+[node name="Sprite2D87" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9808.5, -857.5)
+texture = ExtResource("49_48mom")
+region_enabled = true
+region_rect = Rect2(169.032, 0, 91.7991, 512)
+
+[node name="Sprite2D88" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(4199, 2632.5)
+texture = ExtResource("49_48mom")
+region_enabled = true
+region_rect = Rect2(255.999, 408.999, 57.9784, 93.4095)
+
+[node name="Sprite2D89" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9820.5, -770.5)
+texture = ExtResource("49_48mom")
+region_enabled = true
+region_rect = Rect2(309.146, 0, 86.9675, 512)
+
+[node name="Sprite2D90" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9867.5, -810.5)
+texture = ExtResource("49_48mom")
+region_enabled = true
+region_rect = Rect2(389.672, 0, 104.683, 512)
+
+[node name="Sprite2D91" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2322, -1703)
+texture = ExtResource("50_jesr4")
+region_enabled = true
+region_rect = Rect2(143.263, 0, 212.587, 512)
+
+[node name="Sprite2D92" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2577, -1729)
+texture = ExtResource("51_mdxoy")
+
+[node name="Sprite2D93" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2236.5, 2410)
+texture = ExtResource("52_pyot7")
+region_enabled = true
+region_rect = Rect2(6.37012, 0, 66.0309, 512)
+
+[node name="Sprite2D94" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2141.5, 2413)
+texture = ExtResource("52_pyot7")
+region_enabled = true
+region_rect = Rect2(444.429, 11.2027, 57.9784, 489.595)
+
+[node name="Sprite2D96" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2724.5, 2407)
+texture = ExtResource("52_pyot7")
+region_enabled = true
+region_rect = Rect2(336.525, 0, 62.8099, 512)
+
+[node name="Sprite2D99" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2426.5, 2413)
+texture = ExtResource("52_pyot7")
+region_enabled = true
+region_rect = Rect2(131.99, 0, 62.8099, 512)
+
+[node name="Sprite2D100" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2341.5, 2419)
+texture = ExtResource("52_pyot7")
+region_enabled = true
+region_rect = Rect2(72.4011, 0, 56.3679, 512)
+
+[node name="Sprite2D101" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(2051, -2225)
+texture = ExtResource("53_t67mw")
+
+[node name="Sprite2D102" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9478.5, 1933)
+texture = ExtResource("54_ii5mf")
+region_enabled = true
+region_rect = Rect2(304.315, 334.915, 72.473, 167.493)
+
+[node name="Sprite2D103" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-8929, 947)
+texture = ExtResource("54_ii5mf")
+region_enabled = true
+region_rect = Rect2(28.9172, 0, 122.399, 302.705)
+
+[node name="Sprite2D106" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9583.5, 1772)
+texture = ExtResource("54_ii5mf")
+region_enabled = true
+region_rect = Rect2(201.242, 1.53963, 83.7465, 370.417)
+
+[node name="Sprite2D108" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(3726, 1109)
+texture = ExtResource("55_avoja")
+region_enabled = true
+region_rect = Rect2(136.821, 0, 154.609, 504.019)
+
+[node name="Sprite2D109" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(1393, 1385)
+texture = ExtResource("55_avoja")
+region_enabled = true
+region_rect = Rect2(0, 0, 138.432, 507.24)
+
+[node name="Sprite2D111" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(864, -3097)
+texture = ExtResource("56_rdjjb")
+region_enabled = true
+region_rect = Rect2(201.429, 8.43396, 158.389, 503.566)
+
+[node name="Sprite2D112" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(723, -3051)
+texture = ExtResource("56_rdjjb")
+region_enabled = true
+region_rect = Rect2(89.7047, 63.86, 110.478, 448.14)
+
+[node name="Sprite2D114" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(1174, -3040)
+texture = ExtResource("56_rdjjb")
+region_enabled = true
+region_rect = Rect2(365.142, 311.902, 135.762, 187.671)
+
+[node name="Sprite2D115" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9832.5, -1078.5)
+texture = ExtResource("57_f6icj")
+region_enabled = true
+region_rect = Rect2(0, 177.471, 86.9629, 320.771)
+
+[node name="Sprite2D116" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9668.5, -1114.5)
+texture = ExtResource("57_f6icj")
+region_enabled = true
+region_rect = Rect2(399.748, 81.639, 41.261, 413.941)
+
+[node name="Sprite2D117" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9786.5, -915.5)
+texture = ExtResource("57_f6icj")
+region_enabled = true
+region_rect = Rect2(343.846, 8.43396, 55.902, 484.484)
+
+[node name="Sprite2D118" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9747.5, -275)
+texture = ExtResource("57_f6icj")
+region_enabled = true
+region_rect = Rect2(220.063, 4.44096, 119.79, 492.47)
+
+[node name="Sprite2D119" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9697.5, -965.5)
+texture = ExtResource("57_f6icj")
+region_enabled = true
+region_rect = Rect2(84.3009, 23.075, 61.226, 475.167)
+
+[node name="Sprite2D120" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9623.5, -1044.5)
+texture = ExtResource("57_f6icj")
+region_enabled = true
+region_rect = Rect2(152.182, 4.44096, 62.557, 485.815)
+
+[node name="Sprite2D121" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9839.5, -1112.5)
+texture = ExtResource("57_f6icj")
+region_enabled = true
+region_rect = Rect2(442.34, 9.76497, 54.571, 491.139)
+
+[node name="Sprite2D123" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-1473, -2368)
+texture = ExtResource("58_6v8ah")
+region_enabled = true
+region_rect = Rect2(0, 0, 82.9699, 512)
+
+[node name="Sprite2D122" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-1825, -2039)
+texture = ExtResource("58_6v8ah")
+region_enabled = true
+region_rect = Rect2(142.865, 166.823, 82.522, 345.177)
+
+[node name="Sprite2D125" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-1701, -2008)
+texture = ExtResource("58_6v8ah")
+region_enabled = true
+region_rect = Rect2(225.387, -0.883034, 139.755, 507.111)
+
+[node name="Sprite2D126" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-1235, -2319)
+texture = ExtResource("59_p1ksm")
+
+[node name="Sprite2D131" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9040, -1295.5)
+texture = ExtResource("60_g4q53")
+region_enabled = true
+region_rect = Rect2(305.247, 45.702, 77.198, 312.785)
+
+[node name="Sprite2D133" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9247, -1370.5)
+texture = ExtResource("60_g4q53")
+region_enabled = true
+region_rect = Rect2(141.534, 9.76497, 73.205, 315.447)
+
+[node name="Sprite2D129" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9893.5, -877.5)
+texture = ExtResource("61_bg1ka")
+region_enabled = true
+region_rect = Rect2(154.844, 21.744, 121.121, 484.484)
+
+[node name="Sprite2D134" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9863.5, -784.5)
+texture = ExtResource("61_bg1ka")
+region_enabled = true
+region_rect = Rect2(0, 0, 145.527, 512)
+
+[node name="Sprite2D135" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-9999, -311.5)
+texture = ExtResource("61_bg1ka")
+region_enabled = true
+region_rect = Rect2(355.825, 23.075, 71.874, 481.822)
+
+[node name="Sprite2D136" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-10057, -302.5)
+texture = ExtResource("61_bg1ka")
+region_enabled = true
+region_rect = Rect2(274.634, 373.128, 57.233, 129.107)
+
+[node name="Sprite2D137" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-10112, -313.5)
+texture = ExtResource("61_bg1ka")
+region_enabled = true
+region_rect = Rect2(434.354, 4.44096, 66.55, 501.787)
+
+[node name="Sprite2D138" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-772, -2865)
+texture = ExtResource("62_j18h8")
+region_enabled = true
+region_rect = Rect2(261.324, 0, 250.676, 512)
+
+[node name="Sprite2D139" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-1055, -2874)
+texture = ExtResource("62_j18h8")
+region_enabled = true
+region_rect = Rect2(0, 0, 254.669, 512.883)
+
+[node name="Sprite2D140" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-1927, -2752)
+texture = ExtResource("63_1mxve")
+region_enabled = true
+region_rect = Rect2(374.459, 299.034, 93.17, 202.312)
+
+[node name="Sprite2D141" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-2254, -2749)
+texture = ExtResource("63_1mxve")
+region_enabled = true
+region_rect = Rect2(24.4059, 186.788, 162.382, 328.757)
+
+[node name="Sprite2D142" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-2090, -2754)
+texture = ExtResource("63_1mxve")
+region_enabled = true
+region_rect = Rect2(190.781, 6.21396, 162.382, 493.801)
+
+[node name="Sprite2D143" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-1246, -2640)
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(0, 0, 149.52, 479.608)
+
+[node name="Sprite2D144" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-703.5, -348)
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(414.389, 301.254, 89.177, 178.354)
+
+[node name="Sprite2D145" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-1079.5, -241)
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(343.846, 337.191, 71.874, 145.079)
+
+[node name="Sprite2D146" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-831.5, -328)
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(246.683, 285.282, 89.177, 190.333)
+
+[node name="Sprite2D147" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-967.5, -226)
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(145.527, 299.923, 102.487, 183.678)
+
+[node name="Sprite2D149" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-607, -77)
+rotation = -0.794637
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(342.515, 27.068, 78.529, 256.883)
+
+[node name="Sprite2D150" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-888.5, -117)
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(259.993, 41.709, 55.902, 199.65)
+
+[node name="Sprite2D151" type="Sprite2D" parent="unused_parts/pipes"]
+position = Vector2(-809.5, -116)
+texture = ExtResource("64_op13p")
+region_enabled = true
+region_rect = Rect2(177.471, 20.413, 73.205, 227.601)
+
+[node name="gears" type="Node2D" parent="unused_parts"]
+position = Vector2(3506, -753)
+
+[node name="1459653689" type="Sprite2D" parent="unused_parts/gears"]
+position = Vector2(-12289.5, -1309)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(16.3374, 8.59092, 107.445, 114.545)
+
+[node name="1459653691" type="Sprite2D" parent="unused_parts/gears"]
+position = Vector2(-12000.5, -1408)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(274.875, 6.12377, 106.121, 119.669)
+
+[node name="1459653692" type="Sprite2D" parent="unused_parts/gears"]
+position = Vector2(-11936.5, -1292)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(384.488, -1.6829, 117.957, 135.988)
+
+[node name="1459653693" type="Sprite2D" parent="unused_parts/gears"]
+position = Vector2(-11824.5, -1420)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(5.06129, 122.176, 135.237, 132.983)
+
+[node name="1459653694" type="Sprite2D" parent="unused_parts/gears"]
+position = Vector2(-11803.5, -1279)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(147.06, 132.033, 119.459, 118.708)
+
+[node name="1459653695" type="Sprite2D" parent="unused_parts/gears"]
+position = Vector2(-11690.5, -1364)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(268.773, 129.027, 118.708, 123.967)
+
+[node name="1459653696" type="Sprite2D" parent="unused_parts/gears"]
+position = Vector2(-11961.5, -1186)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(268.773, 129.779, 122.464, 125.47)
+
+[node name="1459653697" type="Sprite2D" parent="unused_parts/gears"]
+position = Vector2(-11671.5, -1213)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(391.237, 141.8, 109.692, 110.443)
+
+[node name="1459653698" type="Sprite2D" parent="unused_parts/gears"]
+position = Vector2(-12114.5, -1194)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(8.81786, 259.005, 115.703, 116.454)
+
+[node name="1459653699" type="Sprite2D" parent="unused_parts/gears"]
+position = Vector2(-1429, 2459)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(138.044, 249.989, 133.734, 131.48)
+
+[node name="1459653700" type="Sprite2D" parent="unused_parts/gears"]
+position = Vector2(-12220.5, -1425)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(277.789, 263.513, 103.682, 111.946)
+
+[node name="1459653701" type="Sprite2D" parent="unused_parts/gears"]
+position = Vector2(-12098.5, -1478)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(393.491, 265.015, 102.93, 102.93)
+
+[node name="1459653702" type="Sprite2D" parent="unused_parts/gears"]
+position = Vector2(-11574.5, -1297)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(11.2177, 378.407, 118.161, 121.577)
+
+[node name="1459653704" type="Sprite2D" parent="unused_parts/gears"]
+position = Vector2(-11540.5, -1153)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(262.5, 383.895, 112.33, 114.588)
+
+[node name="1459653705" type="Sprite2D" parent="unused_parts/gears"]
+position = Vector2(-11803.5, -1150)
+texture = ExtResource("25_8haih")
+region_enabled = true
+region_rect = Rect2(382.41, 375.396, 116.846, 123.056)
+
+[node name="pipes2" type="Node2D" parent="unused_parts"]
+
+[node name="Sprite2D" type="Sprite2D" parent="unused_parts/pipes2"]
+position = Vector2(-10020.5, -1261.5)
+texture = ExtResource("68_7fya6")
+region_enabled = true
+region_rect = Rect2(154.844, 16.42, 106.48, 451.209)
+
+[node name="Sprite2D2" type="Sprite2D" parent="unused_parts/pipes2"]
+position = Vector2(-8523, -79.5)
+texture = ExtResource("68_7fya6")
+region_enabled = true
+region_rect = Rect2(289.275, 37.716, 77.1981, 423.258)
+
+[node name="Sprite2D4" type="Sprite2D" parent="unused_parts/pipes2"]
+position = Vector2(-8760, -83.5)
+texture = ExtResource("68_7fya6")
+region_enabled = true
+region_rect = Rect2(37.7159, 0, 106.48, 467.629)
+
+[node name="Sprite2D5" type="Sprite2D" parent="unused_parts/pipes2"]
+position = Vector2(-8627, -61)
+texture = ExtResource("68_7fya6")
+region_enabled = true
+region_rect = Rect2(383.776, 9.76497, 94.501, 455.202)
+
+[node name="Sprite2D6" type="Sprite2D" parent="unused_parts/pipes2"]
+position = Vector2(-743, -3464)
+texture = ExtResource("69_4nody")
+region_enabled = true
+region_rect = Rect2(23.0749, 90.956, 119.79, 420.596)
+
+[node name="Sprite2D7" type="Sprite2D" parent="unused_parts/pipes2"]
+position = Vector2(-482, -3405)
+texture = ExtResource("69_4nody")
+region_enabled = true
+region_rect = Rect2(375.79, 261.324, 130.438, 251.559)
+
+[node name="Sprite2D8" type="Sprite2D" parent="unused_parts/pipes2"]
+position = Vector2(278, -3888)
+texture = ExtResource("70_olqg8")
+
+[node name="Sprite2D9" type="Sprite2D" parent="unused_parts/pipes2"]
+position = Vector2(2212, -3882)
+texture = ExtResource("71_kcc2f")
+
+[node name="useful_parts" type="Node2D" parent="unused_parts"]
+
+[node name="Sprite2D4" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(1939, 776)
+texture = ExtResource("75_t3a04")
+region_enabled = true
+region_rect = Rect2(6.29993, 6.3, 222.2, 262.9)
+
+[node name="Sprite2D5" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(3032, 3776)
+texture = ExtResource("76_0i0t1")
+region_enabled = true
+region_rect = Rect2(5.80396, 410.031, 129.977, 106.687)
+
+[node name="Sprite2D7" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(4685, 291)
+texture = ExtResource("78_5amxl")
+
+[node name="Sprite2D11" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(3072.5, 3456)
+texture = ExtResource("73_svgxs")
+region_enabled = true
+region_rect = Rect2(171.853, 5, 92.1466, 188)
+
+[node name="Sprite2D12" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(2942.5, 3545.5)
+texture = ExtResource("73_svgxs")
+region_enabled = true
+region_rect = Rect2(356.1, 5.2, 152.9, 190.3)
+
+[node name="Sprite2D8" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(1901, -69)
+texture = ExtResource("75_t3a04")
+region_enabled = true
+region_rect = Rect2(4.09991, 318.7, 133.1, 193.6)
+
+[node name="Sprite2D13" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(5577, 3787)
+texture = ExtResource("75_t3a04")
+region_enabled = true
+region_rect = Rect2(336.3, 8.5, 156.2, 193.6)
+
+[node name="Sprite2D14" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(5770, 3716)
+texture = ExtResource("75_t3a04")
+region_enabled = true
+region_rect = Rect2(418.95, 203.9, 93.35, 309.5)
+
+[node name="Sprite2D15" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(5758, 3469)
+texture = ExtResource("75_t3a04")
+region_enabled = true
+region_rect = Rect2(236.2, 403.4, 184.8, 111.1)
+
+[node name="Sprite2D16" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(5828, 3443)
+texture = ExtResource("75_t3a04")
+region_enabled = true
+region_rect = Rect2(406.7, 274.7, 11, 85.8)
+
+[node name="Sprite2D17" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(3208, 3563)
+rotation = 4.71239
+texture = ExtResource("76_0i0t1")
+region_enabled = true
+region_rect = Rect2(161.4, 10.7, 181.5, 163.9)
+
+[node name="Sprite2D18" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(2973, 3352)
+texture = ExtResource("76_0i0t1")
+region_enabled = true
+region_rect = Rect2(89.0774, 181.2, 96.5226, 102.3)
+
+[node name="Sprite2D20" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(2934, 3176)
+texture = ExtResource("76_0i0t1")
+region_enabled = true
+region_rect = Rect2(0, 0, 141.6, 182.3)
+
+[node name="Sprite2D21" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(2737, 3771)
+texture = ExtResource("76_0i0t1")
+region_enabled = true
+region_rect = Rect2(4.30518, 283.8, 138.242, 90.9091)
+
+[node name="Sprite2D22" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(2778.5, 3243)
+rotation = 3.14159
+texture = ExtResource("76_0i0t1")
+region_enabled = true
+region_rect = Rect2(367.1, 7.4, 110, 194.7)
+
+[node name="Sprite2D24" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(2889, 3863)
+texture = ExtResource("76_0i0t1")
+region_enabled = true
+region_rect = Rect2(129.028, 383.73, 126.972, 123.967)
+
+[node name="Sprite2D25" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(3159, 3740)
+texture = ExtResource("76_0i0t1")
+region_enabled = true
+region_rect = Rect2(371.711, 240.222, 131.48, 134.485)
+
+[node name="Sprite2D26" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(3816, 3757)
+texture = ExtResource("77_m5eu4")
+region_enabled = true
+region_rect = Rect2(5, 332, 172, 179)
+
+[node name="Sprite2D27" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(4006, 3803)
+texture = ExtResource("77_m5eu4")
+region_enabled = true
+region_rect = Rect2(309.24, 223.219, 192.995, 295.482)
+
+[node name="Sprite2D28" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(3812, 3569)
+texture = ExtResource("77_m5eu4")
+region_enabled = true
+region_rect = Rect2(309.24, 19.5761, 200.981, 216.953)
+
+[node name="Sprite2D107" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(-8920, 1344.5)
+texture = ExtResource("55_avoja")
+region_enabled = true
+region_rect = Rect2(291.43, 0, 201.314, 512)
+
+[node name="Sprite2D23" type="Sprite2D" parent="unused_parts/useful_parts"]
+position = Vector2(3183.5, 3267)
+texture = ExtResource("76_0i0t1")
+region_enabled = true
+region_rect = Rect2(274.788, 385.984, 235.162, 128.475)
+
+[node name="basic_machine" type="Node2D" parent="unused_parts"]
+
+[node name="long_pipe" type="Node2D" parent="unused_parts/basic_machine"]
+
+[node name="gears2" type="Node2D" parent="unused_parts"]
+
+[node name="Sprite2D" type="Sprite2D" parent="unused_parts/gears2"]
+position = Vector2(2895.5, 1295.5)
+texture = ExtResource("79_kkarc")
+region_enabled = true
+region_rect = Rect2(170.622, 10.8001, 157.093, 171.436)
+
+[node name="Sprite2D2" type="Sprite2D" parent="unused_parts/gears2"]
+position = Vector2(3097.5, 1478.5)
+texture = ExtResource("79_kkarc")
+region_enabled = true
+region_rect = Rect2(331.138, 13.3282, 169.046, 193.088)
+
+[node name="Sprite2D3" type="Sprite2D" parent="unused_parts/gears2"]
+position = Vector2(2870.5, 1470.5)
+texture = ExtResource("79_kkarc")
+region_enabled = true
+region_rect = Rect2(284.554, 368.705, 132.983, 128.475)
+
+[node name="Sprite2D5" type="Sprite2D" parent="unused_parts/gears2"]
+position = Vector2(2704.5, 1530.5)
+texture = ExtResource("79_kkarc")
+region_enabled = true
+region_rect = Rect2(132.573, 347.396, 154.02, 152.517)
+
+[node name="Sprite2D6" type="Sprite2D" parent="unused_parts/gears2"]
+position = Vector2(3065.5, 1317.5)
+texture = ExtResource("79_kkarc")
+region_enabled = true
+region_rect = Rect2(210.174, 210.926, 147.258, 133.734)
+
+[node name="Sprite2D7" type="Sprite2D" parent="unused_parts/gears2"]
+position = Vector2(1686, 632)
+texture = ExtResource("79_kkarc")
+region_enabled = true
+region_rect = Rect2(8.27368, 4.05616, 164.606, 159.738)
+
+[node name="Sprite2D8" type="Sprite2D" parent="unused_parts/gears2"]
+position = Vector2(2624, 1312)
+texture = ExtResource("79_kkarc")
+region_enabled = true
+region_rect = Rect2(10.8502, 377.38, 113.74, 111.32)
+
+[node name="Sprite2D9" type="Sprite2D" parent="unused_parts/gears2"]
+position = Vector2(2977.5, 1424.5)
+texture = ExtResource("79_kkarc")
+region_enabled = true
+region_rect = Rect2(414.532, 388.235, 88.6552, 95.417)
+
+[node name="Sprite2D12" type="Sprite2D" parent="unused_parts/gears2"]
+position = Vector2(2299, 1096)
+texture = ExtResource("80_lfh57")
+region_enabled = true
+region_rect = Rect2(262.838, 4.51182, 113.629, 110.524)
+
+[node name="Sprite2D13" type="Sprite2D" parent="unused_parts/gears2"]
+position = Vector2(2606.5, 1055)
+texture = ExtResource("80_lfh57")
+region_enabled = true
+region_rect = Rect2(378.662, 126.835, 124.992, 103.818)
+
+[node name="Sprite2D14" type="Sprite2D" parent="unused_parts/gears2"]
+position = Vector2(2733.5, 1038)
+texture = ExtResource("80_lfh57")
+region_enabled = true
+region_rect = Rect2(263.281, 222.267, 108.79, 118.54)
+
+[node name="Sprite2D53" type="Sprite2D" parent="unused_parts"]
+position = Vector2(3418, 192)
+texture = ExtResource("39_5y5qt")
+region_enabled = true
+region_rect = Rect2(148.095, 1.53963, 233.524, 513.753)
+
+[node name="Sprite2D104" type="Sprite2D" parent="unused_parts"]
+position = Vector2(3134, 820)
+texture = ExtResource("54_ii5mf")
+region_enabled = true
+region_rect = Rect2(326.862, -1.6814, 180.377, 335.755)
+
+[node name="Sprite2D105" type="Sprite2D" parent="unused_parts"]
+position = Vector2(3613, 1492)
+texture = ExtResource("54_ii5mf")
+region_enabled = true
+region_rect = Rect2(3.14911, 305.926, 212.587, 201.314)
+
+[node name="Sprite2D7" type="Sprite2D" parent="unused_parts"]
+position = Vector2(4183.44, 920.13)
+rotation = -2.53197
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(136.821, 305.961, 67.6414, 206.11)
+
+[node name="Sprite2D8" type="Sprite2D" parent="unused_parts"]
+position = Vector2(4194.44, 971.13)
+rotation = -2.53197
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(136.821, 305.961, 67.6414, 206.11)
+
+[node name="Sprite2D9" type="Sprite2D" parent="unused_parts"]
+position = Vector2(4198.44, 1025.13)
+rotation = -2.53197
+texture = ExtResource("25_s501p")
+region_enabled = true
+region_rect = Rect2(136.821, 305.961, 67.6414, 206.11)
+
+[node name="Sprite2D62" type="Sprite2D" parent="unused_parts"]
+position = Vector2(4163.29, 1298.05)
+rotation = 0.404095
+texture = ExtResource("39_5y5qt")
+region_enabled = true
+region_rect = Rect2(24.0858, 288.21, 51.5363, 223.861)
+
+[node name="Sprite2D64" type="Sprite2D" parent="unused_parts"]
+position = Vector2(4161.29, 1362.05)
+rotation = 0.404095
+texture = ExtResource("39_5y5qt")
+region_enabled = true
+region_rect = Rect2(24.0858, 288.21, 51.5363, 223.861)
+
+[node name="Sprite2D63" type="Sprite2D" parent="unused_parts"]
+position = Vector2(4161.29, 1426.05)
+rotation = 0.404092
+scale = Vector2(1, 1)
+texture = ExtResource("39_5y5qt")
+region_enabled = true
+region_rect = Rect2(24.0858, 288.21, 51.5363, 223.861)
+
+[node name="Sprite2D51" type="Sprite2D" parent="unused_parts"]
+position = Vector2(3440, 899)
+texture = ExtResource("38_75j3m")
+region_enabled = true
+region_rect = Rect2(0, 0, 186.747, 512)
+
+[node name="Sprite2D10" type="Sprite2D" parent="unused_parts"]
+position = Vector2(-9911.5, 999)
+rotation = -3.14159
+texture = ExtResource("82_kvsuo")
+region_enabled = true
+region_rect = Rect2(318.504, 336.118, 141.066, 163.139)
+
+[node name="Sprite2D6" type="Sprite2D" parent="unused_parts"]
+position = Vector2(-8953, -330.5)
+texture = ExtResource("77_m5eu4")
+region_enabled = true
+region_rect = Rect2(24.7281, -6.99789, 120.909, 337.273)
+
+[node name="Sprite2D2" type="Sprite2D" parent="unused_parts"]
+position = Vector2(-9722.5, 869)
+texture = ExtResource("82_kvsuo")
+region_enabled = true
+region_rect = Rect2(285.282, 0, 226.718, 342.515)
+
+[node name="Sprite2D4" type="Sprite2D" parent="unused_parts"]
+position = Vector2(-1361, 99)
+texture = ExtResource("79_kkarc")
+region_enabled = true
+region_rect = Rect2(18.9939, 161.744, 185.097, 187.829)
+
+[node name="slime_dome" type="Node2D" parent="."]
+z_index = -1
+
+[node name="Sprite2D126" type="Sprite2D" parent="slime_dome"]
+position = Vector2(18, -476)
+texture = ExtResource("58_6v8ah")
+region_enabled = true
+region_rect = Rect2(0, 0, 82.9699, 512)
+
+[node name="Sprite2D124" type="Sprite2D" parent="slime_dome"]
+z_index = 10
+position = Vector2(-139, -421.92)
+scale = Vector2(1, 1.18)
+texture = ExtResource("58_6v8ah")
+region_enabled = true
+region_rect = Rect2(0, 0, 82.9699, 512)
+
+[node name="Sprite2D125" type="Sprite2D" parent="slime_dome"]
+z_index = 10
+position = Vector2(173, -417.92)
+scale = Vector2(1, 1.18)
+texture = ExtResource("58_6v8ah")
+region_enabled = true
+region_rect = Rect2(0, 0, 82.9699, 512)
+
+[node name="dome_1" type="Sprite2D" parent="slime_dome"]
+visible = false
+position = Vector2(15, -771)
+texture = ExtResource("82_xhmt1")
+
+[node name="dome_2" type="Sprite2D" parent="slime_dome"]
+z_index = 11
+position = Vector2(16, -869)
+texture = ExtResource("83_xbyte")
+
+[node name="Sprite2D127" type="Sprite2D" parent="slime_dome"]
+position = Vector2(99, -451)
+texture = ExtResource("58_6v8ah")
+region_enabled = true
+region_rect = Rect2(0, 0, 82.9699, 512)
+
+[node name="Sprite2D128" type="Sprite2D" parent="slime_dome"]
+position = Vector2(-59, -463)
+texture = ExtResource("58_6v8ah")
+region_enabled = true
+region_rect = Rect2(0, 0, 82.9699, 512)
