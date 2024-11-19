@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bi4cvrfd70x7m"
+path="res://.godot/imported/Sun Tribe.ogg-a2e00ac1450ea15e161c56006b240ae3.oggvorbisstr"
+
+[deps]
+
+source_file="res://background/parallax_backgrounds/Legacy Collection/Legacy Collection/Assets/Packs/Meta data assets files/sounds/music/Sun Tribe.ogg"
+dest_files=["res://.godot/imported/Sun Tribe.ogg-a2e00ac1450ea15e161c56006b240ae3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

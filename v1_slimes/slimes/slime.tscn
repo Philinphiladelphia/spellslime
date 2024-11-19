@@ -234,6 +234,8 @@ damping = 0.21
 radius = 25
 shape_type = "Circle"
 margin_offset_edge = 14.0
+collision_layer = 9
+collision_mask = 9
 
 [node name="Skeleton2D" type="Skeleton2D" parent="SoftBody2D"]
 visible = false
@@ -270,6 +272,7 @@ metadata/_local_pose_override_enabled_ = true
 [node name="Bone-2" type="Bone2D" parent="SoftBody2D/Skeleton2D"]
 position = Vector2(131.189, 102.88)
 rotation = 0.175721
+scale = Vector2(1, 1)
 rest = Transform2D(0.984601, 0.174818, -0.174818, 0.984601, 131.189, 102.88)
 auto_calculate_length_and_angle = false
 length = 72.0
@@ -589,6 +592,8 @@ metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-0" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(92.9081, 178.602)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 0
 metadata/bone_name = &"Bone-0"
@@ -645,6 +650,8 @@ metadata/joint_distance = 45.8832
 
 [node name="Bone-1" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(92.4484, 245.109)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 1
 metadata/bone_name = &"Bone-1"
@@ -701,6 +708,8 @@ metadata/joint_distance = 42.3295
 
 [node name="Bone-2" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(131.189, 102.88)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 2
 metadata/bone_name = &"Bone-2"
@@ -767,6 +776,8 @@ metadata/joint_distance = 48.2781
 
 [node name="Bone-3" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(146.813, 179.284)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 3
 metadata/bone_name = &"Bone-3"
@@ -853,6 +864,8 @@ metadata/joint_distance = 49.8232
 
 [node name="Bone-4" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(145.929, 243.63)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 4
 metadata/bone_name = &"Bone-4"
@@ -939,6 +952,8 @@ metadata/joint_distance = 50.9101
 
 [node name="Bone-5" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(128.94, 313.81)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 5
 metadata/bone_name = &"Bone-5"
@@ -995,6 +1010,8 @@ metadata/joint_distance = 45.2784
 
 [node name="Bone-6" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(209.697, 64.6885)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 6
 metadata/bone_name = &"Bone-6"
@@ -1051,6 +1068,8 @@ metadata/joint_distance = 46.1709
 
 [node name="Bone-7" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(211.861, 117.204)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 7
 metadata/bone_name = &"Bone-7"
@@ -1137,6 +1156,8 @@ metadata/joint_distance = 48.7087
 
 [node name="Bone-8" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(218.024, 182.135)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 8
 metadata/bone_name = &"Bone-8"
@@ -1233,6 +1254,8 @@ metadata/joint_distance = 41.7706
 
 [node name="Bone-9" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(214.947, 239.148)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 9
 metadata/bone_name = &"Bone-9"
@@ -1329,6 +1352,8 @@ metadata/joint_distance = 50.6121
 
 [node name="Bone-10" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(210.341, 310.559)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 10
 metadata/bone_name = &"Bone-10"
@@ -1395,6 +1420,8 @@ metadata/joint_distance = 35.8341
 
 [node name="Bone-11" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(275.106, 64.8713)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 11
 metadata/bone_name = &"Bone-11"
@@ -1461,6 +1488,8 @@ metadata/joint_distance = 44.7105
 
 [node name="Bone-12" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(274.041, 118.684)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 12
 metadata/bone_name = &"Bone-12"
@@ -1557,6 +1586,8 @@ metadata/joint_distance = 47.559
 
 [node name="Bone-13" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(267.223, 187.021)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 13
 metadata/bone_name = &"Bone-13"
@@ -1653,6 +1684,8 @@ metadata/joint_distance = 48.8272
 
 [node name="Bone-14" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(271.932, 235.95)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 14
 metadata/bone_name = &"Bone-14"
@@ -1749,6 +1782,8 @@ metadata/joint_distance = 55.8041
 
 [node name="Bone-15" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(274.805, 309.673)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 15
 metadata/bone_name = &"Bone-15"
@@ -1815,6 +1850,8 @@ metadata/joint_distance = 36.6329
 
 [node name="Bone-16" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(348.617, 63.0346)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 16
 metadata/bone_name = &"Bone-16"
@@ -1871,6 +1908,8 @@ metadata/joint_distance = 40.5773
 
 [node name="Bone-17" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(339.127, 114.926)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 17
 metadata/bone_name = &"Bone-17"
@@ -1957,6 +1996,8 @@ metadata/joint_distance = 50.3657
 
 [node name="Bone-18" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(335.335, 180.045)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 18
 metadata/bone_name = &"Bone-18"
@@ -2053,6 +2094,8 @@ metadata/joint_distance = 52.1514
 
 [node name="Bone-19" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(336.784, 242.162)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 19
 metadata/bone_name = &"Bone-19"
@@ -2149,6 +2192,8 @@ metadata/joint_distance = 50.4819
 
 [node name="Bone-20" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(340.697, 311.134)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 20
 metadata/bone_name = &"Bone-20"
@@ -2215,6 +2260,8 @@ metadata/joint_distance = 33.122
 
 [node name="Bone-21" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(403.899, 112.04)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 21
 metadata/bone_name = &"Bone-21"
@@ -2271,6 +2318,8 @@ metadata/joint_distance = 52.9612
 
 [node name="Bone-22" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(405.111, 178.758)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 22
 metadata/bone_name = &"Bone-22"
@@ -2337,6 +2386,8 @@ metadata/joint_distance = 35.684
 
 [node name="Bone-23" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(404.914, 244.741)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 23
 metadata/bone_name = &"Bone-23"
@@ -2403,6 +2454,8 @@ metadata/joint_distance = 34.8132
 
 [node name="Bone-24" type="RigidBody2D" parent="SoftBody2D"]
 position = Vector2(400.25, 308.935)
+collision_layer = 9
+collision_mask = 9
 mass = 0.1
 metadata/idx = 24
 metadata/bone_name = &"Bone-24"

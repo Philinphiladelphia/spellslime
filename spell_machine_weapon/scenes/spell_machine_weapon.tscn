@@ -1,4 +1,4 @@
-[gd_scene load_steps=91 format=3 uid="uid://dd32qqj6y33t2"]
+[gd_scene load_steps=93 format=3 uid="uid://dd32qqj6y33t2"]
 
 [ext_resource type="Texture2D" uid="uid://bdg78nkkgj4j3" path="res://spell_machine_weapon/assets/stone/637059872.png" id="1_hfikh"]
 [ext_resource type="Texture2D" uid="uid://81ljjbnoxjkm" path="res://spell_machine_weapon/assets/stone/22343422.png" id="13_e33m8"]
@@ -37,7 +37,11 @@
 [ext_resource type="Texture2D" uid="uid://dgggahwa6cgi1" path="res://spell_machine_weapon/assets/stone/2064920276.png" id="35_ir2kl"]
 [ext_resource type="Texture2D" uid="uid://dd0kgw8k0mkrs" path="res://spell_machine_weapon/assets/pipes/415952676.png" id="36_1yqt0"]
 [ext_resource type="Texture2D" uid="uid://bf0enocyohsux" path="res://spell_machine_weapon/assets/pipes/443267854.png" id="37_urn41"]
+[ext_resource type="Script" path="res://spell_machine_weapon/scripts/main_gun.gd" id="38_3sr10"]
 [ext_resource type="Texture2D" uid="uid://whkew3a7x4mn" path="res://spell_machine_weapon/assets/pipes/476695579.png" id="38_75j3m"]
+[ext_resource type="Texture2D" uid="uid://deqynrtg8b57u" path="res://spell_machine_weapon/assets/pipes/541219343.png" id="38_hh2mg"]
+[ext_resource type="Texture2D" uid="uid://bsn5gm2nqsy42" path="res://spell_machine_weapon/assets/gun_pieces/509133326.png" id="38_jq1rc"]
+[ext_resource type="Texture2D" uid="uid://o7wu6lbag6x6" path="res://spell_machine_weapon/assets/gears/big_gear.png" id="38_mu7si"]
 [ext_resource type="Texture2D" uid="uid://ukum4f3k4sb0" path="res://spell_machine_weapon/assets/pipes/477295555.png" id="39_5y5qt"]
 [ext_resource type="Texture2D" uid="uid://c4dvcexgx2m0p" path="res://spell_machine_weapon/assets/pipes/497710787.png" id="40_w3fyn"]
 [ext_resource type="Texture2D" uid="uid://bxq1xfb7rugje" path="res://spell_machine_weapon/assets/pipes/513768687.png" id="41_3136r"]
@@ -79,9 +83,7 @@
 [ext_resource type="Texture2D" uid="uid://86covl51pnwi" path="res://spell_machine_weapon/assets/useful_parts/265614735.png" id="78_5amxl"]
 [ext_resource type="Texture2D" uid="uid://dkxnnxp8mv4t4" path="res://spell_machine_weapon/assets/gears/510281256.png" id="79_kkarc"]
 [ext_resource type="Texture2D" uid="uid://ca2ixsdhdp7xd" path="res://spell_machine_weapon/assets/gears/656772755.png" id="80_lfh57"]
-[ext_resource type="Texture2D" uid="uid://dfa0ncskfplmc" path="res://spell_machine_weapon/assets/gears/1589236748.png" id="82_81aby"]
 [ext_resource type="Texture2D" uid="uid://brxbrjc5y7dem" path="res://spell_machine_weapon/assets/useful_parts/365265507.png" id="82_kvsuo"]
-[ext_resource type="Texture2D" uid="uid://kv1nh0sitqdb" path="res://spell_machine_weapon/assets/slime_dome/38993119.png" id="82_xhmt1"]
 [ext_resource type="Texture2D" uid="uid://lecre010pu7y" path="res://spell_machine_weapon/assets/useful_parts/1837649480.png" id="83_dhs73"]
 [ext_resource type="Texture2D" uid="uid://c5gv2bpsap7wy" path="res://spell_machine_weapon/assets/slime_dome/slime_dome.png" id="83_xbyte"]
 
@@ -248,7 +250,7 @@ scale = Vector2(4, 2)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(36, -149)
-zoom = Vector2(0.3, 0.3)
+zoom = Vector2(0.35, 0.35)
 
 [node name="slime_spawner" type="Node2D" parent="."]
 z_index = 5
@@ -266,7 +268,7 @@ gravity_scale = 0.0
 
 [node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/med_gear_4"]
 position = Vector2(-1.5, -0.5)
-node_a = NodePath("../../../hitboxes/StaticBody2D")
+node_a = NodePath("../../../hitboxes/tower_body")
 node_b = NodePath("..")
 motor_enabled = true
 motor_target_velocity = -0.511905
@@ -282,7 +284,7 @@ region_enabled = true
 region_rect = Rect2(18.9939, 161.744, 185.097, 187.829)
 
 [node name="Sprite2D4" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(1913.5, -1163.5)
+position = Vector2(2503, -1477)
 texture = ExtResource("79_kkarc")
 region_enabled = true
 region_rect = Rect2(18.9939, 161.744, 185.097, 187.829)
@@ -301,7 +303,7 @@ gravity_scale = 0.0
 
 [node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/med_gear_5"]
 position = Vector2(-1.5, -0.5)
-node_a = NodePath("../../../hitboxes/StaticBody2D")
+node_a = NodePath("../../../hitboxes/tower_body")
 node_b = NodePath("..")
 motor_enabled = true
 motor_target_velocity = 0.511905
@@ -345,7 +347,7 @@ gravity_scale = 0.0
 
 [node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/med_gear_1"]
 position = Vector2(-1.5, -0.5)
-node_a = NodePath("../../../hitboxes/StaticBody2D")
+node_a = NodePath("../../../hitboxes/tower_body")
 node_b = NodePath("..")
 motor_enabled = true
 motor_target_velocity = -0.511905
@@ -524,7 +526,7 @@ region_rect = Rect2(132.858, 379.008, 124.184, 122.322)
 
 [node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/tiny_wheel"]
 position = Vector2(-24, 253)
-node_a = NodePath("../../../hitboxes/StaticBody2D")
+node_a = NodePath("../../../hitboxes/tower_body")
 node_b = NodePath("..")
 motor_enabled = true
 motor_target_velocity = 0.511905
@@ -547,7 +549,7 @@ region_rect = Rect2(372.73, 232.396, 129.152, 130.394)
 
 [node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/tiner_wheel"]
 position = Vector2(33, 91)
-node_a = NodePath("../../../hitboxes/StaticBody2D")
+node_a = NodePath("../../../hitboxes/tower_body")
 node_b = NodePath("..")
 motor_enabled = true
 motor_target_velocity = 0.511905
@@ -570,7 +572,7 @@ gravity_scale = 0.0
 
 [node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/med_gear_3"]
 position = Vector2(-1.5, -0.5)
-node_a = NodePath("../../../hitboxes/StaticBody2D")
+node_a = NodePath("../../../hitboxes/tower_body")
 node_b = NodePath("..")
 motor_enabled = true
 motor_target_velocity = -0.511905
@@ -593,7 +595,7 @@ gravity_scale = 0.0
 
 [node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/med_gear_2"]
 position = Vector2(-1.5, -0.5)
-node_a = NodePath("../../../hitboxes/StaticBody2D")
+node_a = NodePath("../../../hitboxes/tower_body")
 node_b = NodePath("..")
 motor_enabled = true
 motor_target_velocity = 0.511905
@@ -623,7 +625,7 @@ gravity_scale = 0.0
 
 [node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/central_wheel"]
 position = Vector2(20, 314)
-node_a = NodePath("../../../hitboxes/StaticBody2D")
+node_a = NodePath("../../../hitboxes/tower_body")
 node_b = NodePath("..")
 motor_enabled = true
 motor_target_velocity = -0.511905
@@ -650,17 +652,42 @@ position = Vector2(9, -480)
 collision_mask = 2
 mass = 0.125
 gravity_scale = 0.0
+script = ExtResource("38_3sr10")
 
 [node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/big_gear"]
 position = Vector2(0, -8)
-node_a = NodePath("../../../hitboxes/StaticBody2D")
+node_a = NodePath("../../../hitboxes/tower_body")
 node_b = NodePath("..")
 motor_enabled = true
 motor_target_velocity = -0.511905
 
+[node name="Sprite2D67" type="Sprite2D" parent="spell_machine_weapon/machine_topside/big_gear"]
+z_index = 16
+position = Vector2(9, 264)
+rotation = 3.14159
+texture = ExtResource("38_hh2mg")
+region_enabled = true
+region_rect = Rect2(146.484, 359.073, 91.7991, 146.556)
+
+[node name="Sprite2D" type="Sprite2D" parent="spell_machine_weapon/machine_topside/big_gear"]
+z_index = 20
+position = Vector2(3, -8)
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("38_jq1rc")
+region_enabled = true
+region_rect = Rect2(249.888, 71.6183, 148.214, 140.701)
+
+[node name="Sprite2D2" type="Sprite2D" parent="spell_machine_weapon/machine_topside/big_gear"]
+z_index = 19
+position = Vector2(8, 103)
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("38_jq1rc")
+region_enabled = true
+region_rect = Rect2(406.143, 106.089, 93.9143, 130.729)
+
 [node name="big_gear" type="Sprite2D" parent="spell_machine_weapon/machine_topside/big_gear"]
-z_index = 12
-texture = ExtResource("82_81aby")
+z_index = 13
+texture = ExtResource("38_mu7si")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="spell_machine_weapon/machine_topside/big_gear"]
 position = Vector2(0, -8)
@@ -673,6 +700,34 @@ polygon = PackedVector2Array(101, -158, 101, -183, 97, -205, 82, -212, 69, -199,
 position = Vector2(3, -11)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("41_a5nek")
+
+[node name="Sprite2D4" type="Sprite2D" parent="spell_machine_weapon/machine_topside/big_gear"]
+z_index = 15
+position = Vector2(6, 170)
+rotation = 3.14159
+texture = ExtResource("38_jq1rc")
+region_enabled = true
+region_rect = Rect2(127.273, 271, 106.364, 127.273)
+
+[node name="Sprite2D5" type="Sprite2D" parent="spell_machine_weapon/machine_topside/big_gear"]
+z_index = 16
+position = Vector2(-74, 145)
+rotation = 5.14371
+texture = ExtResource("38_jq1rc")
+region_enabled = true
+region_rect = Rect2(334.65, 351.59, 70.1801, 146.41)
+
+[node name="Sprite2D7" type="Sprite2D" parent="spell_machine_weapon/machine_topside/big_gear"]
+z_index = 16
+position = Vector2(85, 144)
+rotation = 4.27031
+texture = ExtResource("38_jq1rc")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(334.65, 351.59, 70.1801, 146.41)
+
+[node name="ProjectileSpawnPoint" type="Marker2D" parent="spell_machine_weapon/machine_topside/big_gear"]
+position = Vector2(8, 328)
 
 [node name="Label" type="Label" parent="spell_machine_weapon/machine_topside"]
 offset_left = 712.0
@@ -689,36 +744,22 @@ texture = ExtResource("56_rdjjb")
 region_enabled = true
 region_rect = Rect2(0, 269.925, 89.7047, 242.075)
 
-[node name="Sprite2D112" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-visible = false
-position = Vector2(-197, -163)
-rotation = -0.347167
-texture = ExtResource("56_rdjjb")
-region_enabled = true
-region_rect = Rect2(0, 269.925, 89.7047, 242.075)
-
-[node name="Sprite2D113" type="Sprite2D" parent="spell_machine_weapon/machine_topside"]
-visible = false
-position = Vector2(196, -162)
-rotation = 0.429187
-texture = ExtResource("56_rdjjb")
-region_enabled = true
-region_rect = Rect2(0, 269.925, 89.7047, 242.075)
-
 [node name="hitboxes" type="Node2D" parent="spell_machine_weapon"]
-visible = false
 
-[node name="StaticBody2D" type="StaticBody2D" parent="spell_machine_weapon/hitboxes"]
+[node name="tower_body" type="StaticBody2D" parent="spell_machine_weapon/hitboxes"]
+collision_layer = 4
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="spell_machine_weapon/hitboxes/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spell_machine_weapon/hitboxes/tower_body"]
 position = Vector2(13.75, -124.5)
 shape = SubResource("RectangleShape2D_iscp3")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="spell_machine_weapon/hitboxes/StaticBody2D"]
+[node name="slime_dome" type="StaticBody2D" parent="spell_machine_weapon/hitboxes"]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="spell_machine_weapon/hitboxes/slime_dome"]
 position = Vector2(11, -835)
 shape = SubResource("CircleShape2D_wsdct")
-
-[node name="Area2D" type="Area2D" parent="spell_machine_weapon/hitboxes"]
 
 [node name="joints" type="Node" parent="spell_machine_weapon"]
 
@@ -1172,23 +1213,11 @@ texture = ExtResource("49_48mom")
 region_enabled = true
 region_rect = Rect2(125.548, 0, 53.1469, 388.062)
 
-[node name="Sprite2D86" type="Sprite2D" parent="unused_parts/pipes"]
-position = Vector2(4197, 2508.5)
-texture = ExtResource("49_48mom")
-region_enabled = true
-region_rect = Rect2(122.327, 381.62, 57.9784, 130.38)
-
 [node name="Sprite2D87" type="Sprite2D" parent="unused_parts/pipes"]
 position = Vector2(-9808.5, -857.5)
 texture = ExtResource("49_48mom")
 region_enabled = true
 region_rect = Rect2(169.032, 0, 91.7991, 512)
-
-[node name="Sprite2D88" type="Sprite2D" parent="unused_parts/pipes"]
-position = Vector2(4199, 2632.5)
-texture = ExtResource("49_48mom")
-region_enabled = true
-region_rect = Rect2(255.999, 408.999, 57.9784, 93.4095)
 
 [node name="Sprite2D89" type="Sprite2D" parent="unused_parts/pipes"]
 position = Vector2(-9820.5, -770.5)
@@ -1880,7 +1909,6 @@ region_rect = Rect2(24.0858, 288.21, 51.5363, 223.861)
 [node name="Sprite2D63" type="Sprite2D" parent="unused_parts"]
 position = Vector2(4161.29, 1426.05)
 rotation = 0.404092
-scale = Vector2(1, 1)
 texture = ExtResource("39_5y5qt")
 region_enabled = true
 region_rect = Rect2(24.0858, 288.21, 51.5363, 223.861)
@@ -1941,11 +1969,6 @@ texture = ExtResource("58_6v8ah")
 region_enabled = true
 region_rect = Rect2(0, 0, 82.9699, 512)
 
-[node name="dome_1" type="Sprite2D" parent="slime_dome"]
-visible = false
-position = Vector2(15, -771)
-texture = ExtResource("82_xhmt1")
-
 [node name="dome_2" type="Sprite2D" parent="slime_dome"]
 z_index = 11
 position = Vector2(16, -869)
@@ -1962,3 +1985,15 @@ position = Vector2(-59, -463)
 texture = ExtResource("58_6v8ah")
 region_enabled = true
 region_rect = Rect2(0, 0, 82.9699, 512)
+
+[node name="Sprite2D88" type="Sprite2D" parent="."]
+position = Vector2(9214, 1774)
+texture = ExtResource("49_48mom")
+region_enabled = true
+region_rect = Rect2(255.999, 408.999, 57.9784, 93.4095)
+
+[node name="Sprite2D86" type="Sprite2D" parent="."]
+position = Vector2(9087.5, 1861)
+texture = ExtResource("49_48mom")
+region_enabled = true
+region_rect = Rect2(122.327, 381.62, 57.9784, 130.38)

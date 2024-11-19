@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://sscqdbwybhwp"]
+
+[ext_resource type="Script" path="res://powder_toy/scenes/powder_toy_controller.gd" id="1_2olq7"]
+[ext_resource type="Script" path="res://addons/powder_toy_godot/run_powder_toy.gd" id="1_gibdm"]
+
+[node name="PowderToy" type="Node2D"]
+position = Vector2(625, 352)
+script = ExtResource("1_2olq7")
+
+[node name="PowderToyGodot" type="PowderToyGodot" parent="."]
+script = ExtResource("1_gibdm")
