@@ -26,6 +26,16 @@ offset_bottom = 1994.5
 text = "Sword tree"
 label_settings = ExtResource("4_lj4cm")
 
+[node name="Label" type="Label" parent="labels/Label"]
+layout_mode = 0
+offset_left = 291.0
+offset_top = 322.5
+offset_right = 1065.0
+offset_bottom = 460.5
+text = "Hollow swords full of magical energy. Strike en enemy to unleash it upon them."
+label_settings = ExtResource("5_5pkrp")
+autowrap_mode = 3
+
 [node name="Label2" type="Label" parent="labels"]
 offset_left = -1886.0
 offset_top = 225.0
@@ -75,7 +85,7 @@ layout_mode = 0
 offset_top = 149.0
 offset_right = 894.0
 offset_bottom = 334.0
-text = "This combines the targeting systems of the sniper rifle with the destructive payload of the cannon. Select a location and a guided missle will strike there."
+text = "This combines the targeting systems of the sniper rifle with the destructive payload of the cannon. Select a location and a guided missle will strike there. Middle one is a cluster, last one is a nuke."
 label_settings = ExtResource("5_5pkrp")
 autowrap_mode = 3
 metadata/_edit_use_anchors_ = true
@@ -127,7 +137,7 @@ offset_left = 130.0
 offset_top = 161.0
 offset_right = 904.0
 offset_bottom = 299.0
-text = "This connects the gatling gun barrel to the sword blade. Destructive magical energy will pulse outwards from the blade."
+text = "This connects the gatling gun barrel to the hollow sword blade. Destructive magical energy will pulse outwards from the blade."
 label_settings = ExtResource("5_5pkrp")
 autowrap_mode = 3
 
@@ -294,6 +304,8 @@ region_rect = Rect2(9.59113, 297.874, 136.893, 204.535)
 position = Vector2(109, 886)
 texture = ExtResource("7_kbt7v")
 
+[node name="Ammo" type="Node" parent="gatlings"]
+
 [node name="snipers" type="Node" parent="."]
 
 [node name="Sprite2D64" type="Sprite2D" parent="snipers"]
@@ -350,6 +362,8 @@ texture = ExtResource("3_udvri")
 region_enabled = true
 region_rect = Rect2(0, 0, 105.151, 234.122)
 
+[node name="Ammo" type="Node" parent="snipers"]
+
 [node name="cannons" type="Node" parent="."]
 
 [node name="Sprite2D69" type="Sprite2D" parent="cannons"]
@@ -370,6 +384,8 @@ texture = ExtResource("10_cy2wi")
 position = Vector2(131, -38)
 texture = ExtResource("11_2vslu")
 
+[node name="Ammo" type="Node" parent="cannons"]
+
 [node name="basic" type="Node" parent="."]
 
 [node name="Sprite2D67" type="Sprite2D" parent="basic"]
@@ -381,3 +397,5 @@ region_rect = Rect2(146.484, 359.073, 91.7991, 146.556)
 [node name="Sprite2D" type="Sprite2D" parent="basic"]
 position = Vector2(-1537, 1050)
 texture = ExtResource("12_a6q4h")
+
+[node name="Ammo" type="Node" parent="basic"]

@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://csgifsasipgj"]
+
+[ext_resource type="Texture2D" uid="uid://bobun5wip4t3q" path="res://icon.svg" id="1_i56c8"]
+[ext_resource type="Script" path="res://spell_machine_weapon/scenes/projectile.gd" id="1_l8qgp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_od1rp"]
+radius = 24.4
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o77uf"]
+radius = 50.636
+
+[node name="SpellProjectile" type="Node2D"]
+
+[node name="projectile" type="RigidBody2D" parent="."]
+collision_layer = 7
+collision_mask = 3
+script = ExtResource("1_l8qgp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="projectile"]
+shape = SubResource("CircleShape2D_od1rp")
+
+[node name="Sprite2D" type="Sprite2D" parent="projectile"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_i56c8")
+
+[node name="Area2D" type="Area2D" parent="projectile"]
+collision_layer = 9
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="projectile/Area2D"]
+shape = SubResource("CircleShape2D_o77uf")
+
+[connection signal="body_shape_entered" from="projectile/Area2D" to="projectile" method="_on_area_2d_body_shape_entered"]
