@@ -1,13 +1,15 @@
 extends RigidBody2D
 
 var projectile_scene : PackedScene
+var slime_scene : PackedScene
 var rotation_offset : float = 4.75
 var rotation_speed : float = 1.3 # Increase the rotation speed for fast turning
 var deadzone : float = 0.05 # Define a small deadzone
 
 func _ready() -> void:
-	# Load the projectile scene
+	# Load the projectile and slime scenes
 	projectile_scene = preload("res://spell_machine_weapon/scenes/spell_projectile.tscn")
+	slime_scene = preload("res://v1_slimes/slimes/slime.tscn")
 
 func _process(delta: float) -> void:
 	# Get the global mouse position
@@ -32,8 +34,25 @@ func _process(delta: float) -> void:
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
+		var node_to_fire
 		if event.button_index == MOUSE_BUTTON_LEFT:
-			fire_projectile(event.position)
+			node_to_fire = projectile_scene.instantiate()
+		elif event.button_index == MOUSE_BUTTON_RIGHT:
+			node_to_fire = slime_scene.instantiate()
+		
+		# Set the node's position to the marker's position
+		node_to_fire.transform = $ProjectileSpawnPoint.global_transform
+		node_to_fire.rotation = rotation + PI
+		
+		# Add the node to the scene
+		get_parent().add_child(node_to_fire)
+		
+		# Apply firing velocity to the node
+		apply_firing_velocity(node_to_fire)
+
+func apply_firing_velocity(node):
+	var local_move_direction = Vector2(0, 1).rotated(get_global_transform().get_rotation())
+	node.get_child(0).apply_impulse(local_move_direction * 2000)
 
 func fire_projectile(target_position: Vector2) -> void:
 	# Create an instance of the projectile
@@ -45,3 +64,5 @@ func fire_projectile(target_position: Vector2) -> void:
 	
 	# Add the projectile to the scene
 	get_parent().add_child(projectile)
+	
+	apply_firing_velocity(projectile)

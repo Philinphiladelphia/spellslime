@@ -4,6 +4,9 @@ signal insert_powder_circle(x: int, y: int, type: int, size: int)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	pass
+
+func apply_firing_velocity():
 	var local_move_direction = Vector2(0, -1).rotated(get_global_transform().get_rotation())
 	apply_impulse(local_move_direction * 2000)
 	
