@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://dod8ieervu1pf"]
+
+[ext_resource type="Script" path="res://addons/powder_toy_godot/load_powder.gd" id="1_by4f0"]
+[ext_resource type="Shader" uid="uid://d5u0us211jwd" path="res://shaders/scripts/color_glow.tres" id="1_maven"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_f54hy"]
+shader = ExtResource("1_maven")
+
+[node name="PowderViewport" type="Node2D"]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+material = SubResource("ShaderMaterial_f54hy")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 189.0
+offset_top = -112.0
+offset_right = 1189.0
+offset_bottom = 888.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1000, 1000)
+render_target_update_mode = 4
+
+[node name="Node" type="Node" parent="SubViewportContainer/SubViewport"]
+script = ExtResource("1_by4f0")

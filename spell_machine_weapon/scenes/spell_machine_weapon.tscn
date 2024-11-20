@@ -1,4 +1,4 @@
-[gd_scene load_steps=93 format=3 uid="uid://dd32qqj6y33t2"]
+[gd_scene load_steps=94 format=3 uid="uid://dd32qqj6y33t2"]
 
 [ext_resource type="Texture2D" uid="uid://bdg78nkkgj4j3" path="res://spell_machine_weapon/assets/stone/637059872.png" id="1_hfikh"]
 [ext_resource type="Texture2D" uid="uid://81ljjbnoxjkm" path="res://spell_machine_weapon/assets/stone/22343422.png" id="13_e33m8"]
@@ -74,7 +74,6 @@
 [ext_resource type="Texture2D" uid="uid://b13mpllycyvye" path="res://spell_machine_weapon/assets/pipes/2096440132.png" id="70_olqg8"]
 [ext_resource type="Texture2D" uid="uid://j0lyj8ummo6s" path="res://spell_machine_weapon/assets/pipes/2110537216.png" id="71_kcc2f"]
 [ext_resource type="PackedScene" uid="uid://82i5w8p42hu" path="res://v1_slimes/environment/foreground/basic_platform.tscn" id="72_cyhoc"]
-[ext_resource type="Script" path="res://v1_slimes/spawn_slime.gd" id="73_2v13q"]
 [ext_resource type="Texture2D" uid="uid://djon1eeigry4" path="res://spell_machine_weapon/assets/useful_parts/1129941675(1).png" id="73_svgxs"]
 [ext_resource type="Texture2D" uid="uid://b4e77xmja2vxb" path="res://spell_machine_weapon/assets/useful_parts/889998723.png" id="75_t3a04"]
 [ext_resource type="Texture2D" uid="uid://dgjag7auc4m7n" path="res://spell_machine_weapon/assets/useful_parts/594464323(1).png" id="76_0i0t1"]
@@ -86,6 +85,7 @@
 [ext_resource type="Texture2D" uid="uid://brxbrjc5y7dem" path="res://spell_machine_weapon/assets/useful_parts/365265507.png" id="82_kvsuo"]
 [ext_resource type="Texture2D" uid="uid://lecre010pu7y" path="res://spell_machine_weapon/assets/useful_parts/1837649480.png" id="83_dhs73"]
 [ext_resource type="Texture2D" uid="uid://c5gv2bpsap7wy" path="res://spell_machine_weapon/assets/slime_dome/slime_dome.png" id="83_xbyte"]
+[ext_resource type="PackedScene" uid="uid://dod8ieervu1pf" path="res://addons/powder_toy_godot/powder_viewport.tscn" id="86_qet3t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n5dwq"]
 size = Vector2(352.5, 148.5)
@@ -98,6 +98,51 @@ radius = 46.6154
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x2myk"]
 radius = 36.2215
+
+[sub_resource type="GDScript" id="GDScript_5enuy"]
+script/source = "extends Node2D
+#
+#var small_slime = preload(\"res://stealing_from_myself/Scenes/slimes/small_slime.tscn\")
+#
+#var clear_shader = preload(\"res://stealing_from_myself/Shaders/clear.tscn\")
+#var rainbow_shader = preload(\"res://stealing_from_myself/Shaders/rainbow.tscn\")
+#var color_glow_shader = preload(\"res://stealing_from_myself/Shaders/color_glow.tscn\")
+#
+#var shaders = [clear_shader, rainbow_shader]
+#
+## Called when the node enters the scene tree for the first time.
+#func _ready() -> void:
+	#pass
+#
+#func gen_color():
+	#return Color.from_hsv(randf_range(0.0, 1.0), 1.0, 1.0)
+#
+#func random_colored_slime():
+	#var glow = color_glow_shader.instantiate()
+	#glow.material.set_shader_parameter(\"glow_color\", gen_color())
+	#return apply_shader(small_slime.instantiate(), glow)
+	#
+#func random_shader_slime():
+	#randomize()
+	#var random_index = randi() % shaders.size()
+	#var chosen_shader = shaders[random_index]
+	#
+	#return apply_shader(small_slime.instantiate(), chosen_shader.instantiate())
+#
+#func spawn_random_shader_slime(pos):
+	#var slime = random_shader_slime()
+	#slime.position = pos
+	#add_child(slime)
+	#
+#func spawn_random_colored_slime(pos):
+	#var slime = random_colored_slime()
+	#slime.position = pos
+	#add_child(slime)
+	#
+#func apply_shader(slime, shader):
+	#shader.add_child(slime)
+	#return shader
+"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iscp3"]
 size = Vector2(344.5, 1191)
@@ -251,10 +296,6 @@ scale = Vector2(4, 2)
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(36, -149)
 zoom = Vector2(0.35, 0.35)
-
-[node name="slime_spawner" type="Node2D" parent="."]
-z_index = 5
-script = ExtResource("73_2v13q")
 
 [node name="spell_machine_weapon" type="Node2D" parent="."]
 
@@ -733,6 +774,11 @@ region_rect = Rect2(334.65, 351.59, 70.1801, 146.41)
 
 [node name="ProjectileSpawnPoint" type="Marker2D" parent="spell_machine_weapon/machine_topside/big_gear"]
 position = Vector2(8, 328)
+
+[node name="slime_spawner" type="Node2D" parent="spell_machine_weapon/machine_topside/big_gear"]
+position = Vector2(8, 328)
+scale = Vector2(1.0045, 0.995091)
+script = SubResource("GDScript_5enuy")
 
 [node name="Label" type="Label" parent="spell_machine_weapon/machine_topside"]
 offset_left = 712.0
@@ -2002,3 +2048,6 @@ position = Vector2(9087.5, 1861)
 texture = ExtResource("49_48mom")
 region_enabled = true
 region_rect = Rect2(122.327, 381.62, 57.9784, 130.38)
+
+[node name="PowderViewport" parent="." instance=ExtResource("86_qet3t")]
+position = Vector2(-1179, -750)
