@@ -1,15 +1,32 @@
 extends PowderToyGodot
 
 # this controls simulation speed
-var sim_frames_per_godot_frame = 1
+var sim_speed = 2.0
 var accumulated_fractional_frame = 0.0
 
+# Define configurable resolution
+var x_resolution = 50
+var y_resolution = 50
+
+# Define configurable display scale
+var display_scale = 1
+
+# Buffer for powder manifestation requests
+var powder_manifestation_buffer = []
+
+# at the end of the day, this is just sampling resolution.
+# we will only sample the array we have up to the specified extent.
+
 func _ready() -> void:
-	pass
+	var area2d = $Area2D
+	if area2d != null:
+		area2d.powder_toy_script = self
+	else:
+		print("Error: Area2D node not found")
 
 func _process(delta: float) -> void:
-	var frames_to_run = int(sim_frames_per_godot_frame)
-	var fractional_frame = sim_frames_per_godot_frame - frames_to_run
+	var frames_to_run = int(sim_speed)
+	var fractional_frame = sim_speed - frames_to_run
 
 	for i in range(frames_to_run):
 		run_powder_toy_frame()
@@ -19,16 +36,31 @@ func _process(delta: float) -> void:
 		run_powder_toy_frame()
 		accumulated_fractional_frame -= 1.0
 
+	if sim_speed < 1.0:
+		accumulated_fractional_frame += sim_speed
+		if accumulated_fractional_frame >= 1.0:
+			run_powder_toy_frame()
+			accumulated_fractional_frame -= 1.0
+
+	# Process buffered powder manifestation requests
+	for request in powder_manifestation_buffer:
+		manifest_powder_circle_wrapper(request.x, request.y, request.type, request.size)
+	powder_manifestation_buffer.clear()
+
 	get_particles_from_powder_toy()
 	queue_redraw()
 
 func _draw() -> void:
 	var stored_array = get_stored_array()
+	var node_position = get_global_position()
 	for y in range(stored_array.size()):
 		for x in range(stored_array[y].size()):
 			var color_index = stored_array[y][x]
 			var color = get_color_from_index(color_index)
-			draw_rect(Rect2((x * 5) - 500, (y * 5) - 500, 5, 5), color)
+			draw_rect(Rect2(
+				node_position.x + (x * display_scale) - (x_resolution * display_scale / 2),
+				node_position.y + (y * display_scale) - (y_resolution * display_scale / 2),
+				display_scale, display_scale), color)
 
 func get_color_from_index(index: int) -> Color:
 	if index == 0:
@@ -44,21 +76,10 @@ func get_color_from_index(index: int) -> Color:
 	return colors[index % colors.size()]
 
 func manifest_powder_circle_wrapper(x: int, y: int, type: int, size: int) -> void:
-	# Translate coordinates from [-100, 100] to [0, 199]
-	var translated_x = x + 100
-	var translated_y = y + 100
+	# Translate coordinates from [0, x_resolution] to [0, x_resolution - 1]
+	var translated_x = x
+	var translated_y = y
 	manifest_powder_circle(translated_x, translated_y, type, size)
 
-func _input(event):
-	if event is InputEventMouseButton and event.pressed:
-		var mouse_pos = event.position
-		# Convert mouse position to the coordinate system used by manifest_powder_circle_wrapper
-		var x = int(mouse_pos.x / 5) - 100
-		var y = int(mouse_pos.y / 5) - 100
-		
-		if event.button_index == MOUSE_BUTTON_LEFT:
-			# Left click
-			manifest_powder_circle_wrapper(x, y, 10, 17)
-		elif event.button_index == MOUSE_BUTTON_RIGHT:
-			# Right click - do something different
-			manifest_powder_circle_wrapper(x, y, 10, 87) # Example: different type and size
+func powder_circle(x, y, type, size):
+	powder_manifestation_buffer.append({"x": x, "y": y, "type": type, "size": size}) # Example: different type and size
