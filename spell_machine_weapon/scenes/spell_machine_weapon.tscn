@@ -93,12 +93,6 @@ size = Vector2(352.5, 148.5)
 [sub_resource type="CircleShape2D" id="CircleShape2D_3uabp"]
 radius = 60.1332
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_g3a8e"]
-radius = 46.6154
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_x2myk"]
-radius = 36.2215
-
 [sub_resource type="GDScript" id="GDScript_5enuy"]
 script/source = "extends Node2D
 #
@@ -143,6 +137,12 @@ script/source = "extends Node2D
 	#shader.add_child(slime)
 	#return shader
 "
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g3a8e"]
+radius = 46.6154
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x2myk"]
+radius = 36.2215
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iscp3"]
 size = Vector2(344.5, 1191)
@@ -298,6 +298,94 @@ position = Vector2(36, -149)
 zoom = Vector2(0.35, 0.35)
 
 [node name="spell_machine_weapon" type="Node2D" parent="."]
+
+[node name="big_gear" type="RigidBody2D" parent="spell_machine_weapon"]
+z_index = 17
+position = Vector2(9, -480)
+collision_mask = 2
+mass = 0.125
+gravity_scale = 0.0
+script = ExtResource("38_3sr10")
+
+[node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/big_gear"]
+position = Vector2(0, -8)
+node_a = NodePath("../../hitboxes/tower_body")
+node_b = NodePath("..")
+motor_enabled = true
+motor_target_velocity = -0.511905
+
+[node name="Sprite2D67" type="Sprite2D" parent="spell_machine_weapon/big_gear"]
+z_index = 16
+position = Vector2(9, 264)
+rotation = 3.14159
+texture = ExtResource("38_hh2mg")
+region_enabled = true
+region_rect = Rect2(146.484, 359.073, 91.7991, 146.556)
+
+[node name="Sprite2D" type="Sprite2D" parent="spell_machine_weapon/big_gear"]
+z_index = 20
+position = Vector2(3, -8)
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("38_jq1rc")
+region_enabled = true
+region_rect = Rect2(249.888, 71.6183, 148.214, 140.701)
+
+[node name="Sprite2D2" type="Sprite2D" parent="spell_machine_weapon/big_gear"]
+z_index = 19
+position = Vector2(8, 103)
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("38_jq1rc")
+region_enabled = true
+region_rect = Rect2(406.143, 106.089, 93.9143, 130.729)
+
+[node name="big_gear" type="Sprite2D" parent="spell_machine_weapon/big_gear"]
+z_index = 13
+texture = ExtResource("38_mu7si")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spell_machine_weapon/big_gear"]
+position = Vector2(0, -8)
+shape = SubResource("CircleShape2D_3uabp")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="spell_machine_weapon/big_gear"]
+polygon = PackedVector2Array(101, -158, 101, -183, 97, -205, 82, -212, 69, -199, 59, -180, 44, -177, 24, -177, 12, -207, 2, -231, -18, -233, -24, -217, -28, -199, -32, -182, -42, -174, -60, -168, -75, -182, -95, -204, -113, -194, -116, -175, -113, -159, -112, -133, -136, -114, -163, -119, -181, -120, -192, -107, -188, -97, -181, -83, -169, -73, -158, -68, -165, -38, -169, -22, -204, -13, -215, -4, -208, 12, -191, 18, -168, 21, -156, 51, -150, 70, -168, 83, -181, 99, -178, 115, -161, 115, -129, 110, -111, 119, -95, 133, -92, 148, -100, 166, -102, 182, -84, 193, -67, 179, -60, 162, -55, 154, -30, 158, -11, 167, -10, 196, -1, 216, 18, 214, 27, 188, 22, 166, 36, 151, 67, 147, 81, 160, 88, 176, 101, 190, 116, 176, 112, 156, 100, 133, 125, 108, 139, 85, 157, 99, 174, 111, 191, 112, 197, 99, 193, 79, 177, 66, 156, 49, 169, 19, 177, 3, 197, 1, 217, -5, 224, -18, 206, -34, 179, -38, 164, -45, 159, -75, 173, -90, 186, -107, 190, -124, 182, -137, 163, -136, 146, -124, 131, -118)
+
+[node name="stained_glass3" type="Sprite2D" parent="spell_machine_weapon/big_gear"]
+position = Vector2(3, -11)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("41_a5nek")
+
+[node name="Sprite2D4" type="Sprite2D" parent="spell_machine_weapon/big_gear"]
+z_index = 15
+position = Vector2(6, 170)
+rotation = 3.14159
+texture = ExtResource("38_jq1rc")
+region_enabled = true
+region_rect = Rect2(127.273, 271, 106.364, 127.273)
+
+[node name="Sprite2D5" type="Sprite2D" parent="spell_machine_weapon/big_gear"]
+z_index = 16
+position = Vector2(-74, 145)
+rotation = 5.14371
+texture = ExtResource("38_jq1rc")
+region_enabled = true
+region_rect = Rect2(334.65, 351.59, 70.1801, 146.41)
+
+[node name="Sprite2D7" type="Sprite2D" parent="spell_machine_weapon/big_gear"]
+z_index = 16
+position = Vector2(85, 144)
+rotation = 4.27031
+texture = ExtResource("38_jq1rc")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(334.65, 351.59, 70.1801, 146.41)
+
+[node name="ProjectileSpawnPoint" type="Marker2D" parent="spell_machine_weapon/big_gear"]
+position = Vector2(8, 328)
+
+[node name="slime_spawner" type="Node2D" parent="spell_machine_weapon/big_gear"]
+position = Vector2(8, 328)
+scale = Vector2(1.0045, 0.995091)
+script = SubResource("GDScript_5enuy")
 
 [node name="machine_topside" type="Node2D" parent="spell_machine_weapon"]
 
@@ -692,93 +780,6 @@ rotation = -0.347167
 texture = ExtResource("56_rdjjb")
 region_enabled = true
 region_rect = Rect2(0, 269.925, 89.7047, 242.075)
-
-[node name="big_gear" type="RigidBody2D" parent="spell_machine_weapon/machine_topside"]
-position = Vector2(9, -480)
-collision_mask = 2
-mass = 0.125
-gravity_scale = 0.0
-script = ExtResource("38_3sr10")
-
-[node name="PinJoint2D" type="PinJoint2D" parent="spell_machine_weapon/machine_topside/big_gear"]
-position = Vector2(0, -8)
-node_a = NodePath("../../../hitboxes/tower_body")
-node_b = NodePath("..")
-motor_enabled = true
-motor_target_velocity = -0.511905
-
-[node name="Sprite2D67" type="Sprite2D" parent="spell_machine_weapon/machine_topside/big_gear"]
-z_index = 16
-position = Vector2(9, 264)
-rotation = 3.14159
-texture = ExtResource("38_hh2mg")
-region_enabled = true
-region_rect = Rect2(146.484, 359.073, 91.7991, 146.556)
-
-[node name="Sprite2D" type="Sprite2D" parent="spell_machine_weapon/machine_topside/big_gear"]
-z_index = 20
-position = Vector2(3, -8)
-scale = Vector2(1.1, 1.1)
-texture = ExtResource("38_jq1rc")
-region_enabled = true
-region_rect = Rect2(249.888, 71.6183, 148.214, 140.701)
-
-[node name="Sprite2D2" type="Sprite2D" parent="spell_machine_weapon/machine_topside/big_gear"]
-z_index = 19
-position = Vector2(8, 103)
-scale = Vector2(1.1, 1.1)
-texture = ExtResource("38_jq1rc")
-region_enabled = true
-region_rect = Rect2(406.143, 106.089, 93.9143, 130.729)
-
-[node name="big_gear" type="Sprite2D" parent="spell_machine_weapon/machine_topside/big_gear"]
-z_index = 13
-texture = ExtResource("38_mu7si")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="spell_machine_weapon/machine_topside/big_gear"]
-position = Vector2(0, -8)
-shape = SubResource("CircleShape2D_3uabp")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="spell_machine_weapon/machine_topside/big_gear"]
-polygon = PackedVector2Array(101, -158, 101, -183, 97, -205, 82, -212, 69, -199, 59, -180, 44, -177, 24, -177, 12, -207, 2, -231, -18, -233, -24, -217, -28, -199, -32, -182, -42, -174, -60, -168, -75, -182, -95, -204, -113, -194, -116, -175, -113, -159, -112, -133, -136, -114, -163, -119, -181, -120, -192, -107, -188, -97, -181, -83, -169, -73, -158, -68, -165, -38, -169, -22, -204, -13, -215, -4, -208, 12, -191, 18, -168, 21, -156, 51, -150, 70, -168, 83, -181, 99, -178, 115, -161, 115, -129, 110, -111, 119, -95, 133, -92, 148, -100, 166, -102, 182, -84, 193, -67, 179, -60, 162, -55, 154, -30, 158, -11, 167, -10, 196, -1, 216, 18, 214, 27, 188, 22, 166, 36, 151, 67, 147, 81, 160, 88, 176, 101, 190, 116, 176, 112, 156, 100, 133, 125, 108, 139, 85, 157, 99, 174, 111, 191, 112, 197, 99, 193, 79, 177, 66, 156, 49, 169, 19, 177, 3, 197, 1, 217, -5, 224, -18, 206, -34, 179, -38, 164, -45, 159, -75, 173, -90, 186, -107, 190, -124, 182, -137, 163, -136, 146, -124, 131, -118)
-
-[node name="stained_glass3" type="Sprite2D" parent="spell_machine_weapon/machine_topside/big_gear"]
-position = Vector2(3, -11)
-scale = Vector2(0.75, 0.75)
-texture = ExtResource("41_a5nek")
-
-[node name="Sprite2D4" type="Sprite2D" parent="spell_machine_weapon/machine_topside/big_gear"]
-z_index = 15
-position = Vector2(6, 170)
-rotation = 3.14159
-texture = ExtResource("38_jq1rc")
-region_enabled = true
-region_rect = Rect2(127.273, 271, 106.364, 127.273)
-
-[node name="Sprite2D5" type="Sprite2D" parent="spell_machine_weapon/machine_topside/big_gear"]
-z_index = 16
-position = Vector2(-74, 145)
-rotation = 5.14371
-texture = ExtResource("38_jq1rc")
-region_enabled = true
-region_rect = Rect2(334.65, 351.59, 70.1801, 146.41)
-
-[node name="Sprite2D7" type="Sprite2D" parent="spell_machine_weapon/machine_topside/big_gear"]
-z_index = 16
-position = Vector2(85, 144)
-rotation = 4.27031
-texture = ExtResource("38_jq1rc")
-flip_v = true
-region_enabled = true
-region_rect = Rect2(334.65, 351.59, 70.1801, 146.41)
-
-[node name="ProjectileSpawnPoint" type="Marker2D" parent="spell_machine_weapon/machine_topside/big_gear"]
-position = Vector2(8, 328)
-
-[node name="slime_spawner" type="Node2D" parent="spell_machine_weapon/machine_topside/big_gear"]
-position = Vector2(8, 328)
-scale = Vector2(1.0045, 0.995091)
-script = SubResource("GDScript_5enuy")
 
 [node name="Label" type="Label" parent="spell_machine_weapon/machine_topside"]
 offset_left = 712.0
@@ -2050,4 +2051,5 @@ region_enabled = true
 region_rect = Rect2(122.327, 381.62, 57.9784, 130.38)
 
 [node name="PowderViewport" parent="." instance=ExtResource("86_qet3t")]
-position = Vector2(-1179, -750)
+position = Vector2(-1251, -224)
+scale = Vector2(2.5, 2.5)

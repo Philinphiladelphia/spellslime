@@ -51,6 +51,8 @@ class PowderToyInterface {
 public:
     PowderToyInterface();
 
+    void SetPrettyPowder(int prettyPowder);
+    void SetSimEdgeMode(int edgeMode);
     void MakeCircle(PowderCircle &circle);
     bool RequestsBuffered();
     void SetSimFramerate(int framerate);
@@ -58,6 +60,7 @@ public:
     void RunSimFrame();
 
     void GetParticles(int* particles);
+    void GetParticleColors(int* particle_colors);
 
     void InitializeSingletons();
 

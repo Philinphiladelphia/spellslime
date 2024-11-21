@@ -1,7 +1,7 @@
 extends PowderToyGodot
 
 # this controls simulation speed
-var sim_speed = 2.0
+var sim_speed = 0.1
 var accumulated_fractional_frame = 0.0
 
 # Define configurable resolution
@@ -11,6 +11,8 @@ var y_resolution = 50
 # Define configurable display scale
 var display_scale = 1
 
+var draw_rect_size_boost = 2.5
+
 # Buffer for powder manifestation requests
 var powder_manifestation_buffer = []
 
@@ -18,11 +20,10 @@ var powder_manifestation_buffer = []
 # we will only sample the array we have up to the specified extent.
 
 func _ready() -> void:
-	var area2d = $Area2D
-	if area2d != null:
-		area2d.powder_toy_script = self
-	else:
-		print("Error: Area2D node not found")
+	# powder toy settings
+	set_edge_mode(2)
+	set_pretty_powder(0)
+	
 
 func _process(delta: float) -> void:
 	var frames_to_run = int(sim_speed)
@@ -52,15 +53,14 @@ func _process(delta: float) -> void:
 
 func _draw() -> void:
 	var stored_array = get_stored_array()
-	var node_position = get_global_position()
 	for y in range(stored_array.size()):
 		for x in range(stored_array[y].size()):
 			var color_index = stored_array[y][x]
 			var color = get_color_from_index(color_index)
 			draw_rect(Rect2(
-				node_position.x + (x * display_scale) - (x_resolution * display_scale / 2),
-				node_position.y + (y * display_scale) - (y_resolution * display_scale / 2),
-				display_scale, display_scale), color)
+				x * display_scale,
+				y * display_scale,
+				display_scale+draw_rect_size_boost, display_scale+draw_rect_size_boost), color)
 
 func get_color_from_index(index: int) -> Color:
 	if index == 0:
