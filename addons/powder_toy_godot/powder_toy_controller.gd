@@ -1,14 +1,16 @@
 extends Node2D
 
 @onready var powder_toy = $PowderToyGodot
+var current_x = 0.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	powder_toy.sim_speed = 2.0
+	powder_toy.sim_speed = 0.5
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	powder_toy.powder_circle(50, 100, 5, 4)
+	powder_toy.powder_circle(80, 70, 5, 49)
+	pass
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:

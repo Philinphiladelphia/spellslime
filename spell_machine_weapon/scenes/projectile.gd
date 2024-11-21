@@ -23,5 +23,8 @@ func _on_area_2d_body_shape_entered(body_rid: RID, body: Node2D, body_shape_inde
 	timer.start()
 
 func _on_timeout() -> void:
+	var viewport = get_node("../../../PowderViewport")
+	viewport.position = global_position
+	collision_mask = 2
 	process_mode = PROCESS_MODE_DISABLED
 	queue_free()
