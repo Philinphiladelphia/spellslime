@@ -1,9 +1,11 @@
-[gd_scene load_steps=36 format=3 uid="uid://34qbmj05pf88"]
+[gd_scene load_steps=38 format=3 uid="uid://34qbmj05pf88"]
 
 [ext_resource type="Script" path="res://v1_slimes/slimes/slime_controller.gd" id="1_lhghq"]
 [ext_resource type="Script" uid="uid://cpb2ch1lvydrj" path="res://addons/softbody2d/softbody2d.gd" id="2_yt874"]
-[ext_resource type="Texture2D" uid="uid://bxgxydy4exlp1" path="res://v1_slimes/slimes/big_health.png" id="3_74ywb"]
+[ext_resource type="Texture2D" uid="uid://cfkm8h8yxc1wt" path="res://v1_slimes/slimes/damage_indicatior.png" id="3_pn31p"]
 [ext_resource type="Texture2D" uid="uid://3mxc54vah3ta" path="res://v1_slimes/slimes/big_frame.png" id="4_2g6y7"]
+[ext_resource type="Script" path="res://v1_slimes/slimes/damage_bar.gd" id="4_rpwii"]
+[ext_resource type="Texture2D" uid="uid://ddn3y0pkkg5q1" path="res://v1_slimes/slimes/black_frame.png" id="5_6eg2n"]
 [ext_resource type="Texture2D" uid="uid://7uuwexqkbxgp" path="res://v1_slimes/slimes/big_red_health.png" id="5_ha0l8"]
 [ext_resource type="Script" path="res://v1_slimes/slimes/texture_progress_bar.gd" id="6_l6wjy"]
 [ext_resource type="Script" path="res://v1_slimes/slimes/animation_player.gd" id="7_fdnfp"]
@@ -281,6 +283,7 @@ metadata/_local_pose_override_enabled_ = true
 [node name="Bone-2" type="Bone2D" parent="slime_soft_body/Skeleton2D"]
 position = Vector2(131.189, 102.88)
 rotation = 0.175721
+scale = Vector2(1, 1)
 rest = Transform2D(0.984601, 0.174818, -0.174818, 0.984601, 131.189, 102.88)
 auto_calculate_length_and_angle = false
 length = 72.0
@@ -2508,7 +2511,7 @@ stiffness = 10.0
 damping = 0.21
 metadata/joint_distance = 34.8132
 
-[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+[node name="damage_bar" type="TextureProgressBar" parent="."]
 offset_left = -98.9522
 offset_top = -390.161
 offset_right = 29.0478
@@ -2516,7 +2519,18 @@ offset_bottom = -262.161
 scale = Vector2(1.485, 1.49584)
 value = 100.0
 fill_mode = 4
-texture_under = ExtResource("3_74ywb")
+texture_progress = ExtResource("3_pn31p")
+script = ExtResource("4_rpwii")
+
+[node name="health_bar" type="TextureProgressBar" parent="."]
+offset_left = -98.9522
+offset_top = -390.161
+offset_right = 29.0478
+offset_bottom = -262.161
+scale = Vector2(1.485, 1.49584)
+value = 100.0
+fill_mode = 4
+texture_under = ExtResource("5_6eg2n")
 texture_over = ExtResource("4_2g6y7")
 texture_progress = ExtResource("5_ha0l8")
 script = ExtResource("6_l6wjy")

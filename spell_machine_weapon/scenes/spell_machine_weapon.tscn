@@ -2057,6 +2057,7 @@ region_enabled = true
 region_rect = Rect2(122.327, 381.62, 57.9784, 130.38)
 
 [node name="PowderViewport" parent="." instance=ExtResource("86_qet3t")]
+visible = false
 z_index = 20
 z_as_relative = false
 position = Vector2(-406, -167)
