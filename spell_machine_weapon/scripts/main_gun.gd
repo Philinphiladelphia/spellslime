@@ -32,7 +32,6 @@ func _process(delta: float) -> void:
 			angular_velocity = -rotation_speed
 	else:
 		angular_velocity = 0
-		rotate_toward(rotation, target_angle, delta)
 		
 
 func _input(event):
