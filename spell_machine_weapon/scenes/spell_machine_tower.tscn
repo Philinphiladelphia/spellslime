@@ -295,7 +295,7 @@ region_enabled = true
 region_rect = Rect2(334.65, 351.59, 70.1801, 146.41)
 
 [node name="ProjectileSpawnPoint" type="Marker2D" parent="spell_machine_tower/big_gear"]
-position = Vector2(8, 328)
+position = Vector2(6, 132)
 
 [node name="slime_spawner" type="Node2D" parent="spell_machine_tower/big_gear"]
 position = Vector2(8, 328)
