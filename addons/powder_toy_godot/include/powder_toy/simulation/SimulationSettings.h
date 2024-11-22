@@ -5,7 +5,6 @@ enum EdgeMode
 	EDGE_VOID,
 	EDGE_SOLID,
 	EDGE_LOOP,
-	EDGE_PATCH,
 	NUM_EDGEMODES,
 };
 

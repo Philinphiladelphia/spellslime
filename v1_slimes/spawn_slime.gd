@@ -5,12 +5,12 @@ var clear_slime = preload("res://v1_slimes/slimes/slime_subtypes/clear_slime.tsc
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var instance = slime.instantiate()
-	instance.position = Vector2(600, -100)
-	add_child(instance)
+	pass
 
 func inst(pos):
-	pass
+	var instance = slime.instantiate()
+	instance.position = pos
+	add_child(instance)
 	
 func _input(event):
 	if event is InputEventMouseButton && event.pressed:

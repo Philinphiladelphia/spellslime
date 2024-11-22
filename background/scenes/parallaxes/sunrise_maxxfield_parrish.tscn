@@ -1,0 +1,92 @@
+[gd_scene load_steps=7 format=3 uid="uid://e6og876glwxo"]
+
+[ext_resource type="Texture2D" uid="uid://bjvp3lk3almqm" path="res://background/parallax_backgrounds/Legacy Collection/Legacy Collection/Assets/Environments/Mountain Dusk/version B/Layers/sky.png" id="1_q0bqo"]
+[ext_resource type="Texture2D" uid="uid://cx68w7i5rdmyj" path="res://background/parallax_backgrounds/Legacy Collection/Legacy Collection/Assets/Environments/Mountain Dusk/version A/Layers/near-clouds.png" id="2_ftden"]
+[ext_resource type="Texture2D" uid="uid://cavthi507ux23" path="res://background/parallax_backgrounds/Legacy Collection/Legacy Collection/Assets/Environments/Mountain Dusk/version A/Layers/far-clouds.png" id="3_hytxk"]
+[ext_resource type="Texture2D" uid="uid://644fsrpwdn27" path="res://background/parallax_backgrounds/Legacy Collection/Legacy Collection/Assets/Environments/Mountain Dusk/version A/Layers/mountains.png" id="4_7vxu2"]
+[ext_resource type="Texture2D" uid="uid://11774c5h1stx" path="res://background/parallax_backgrounds/Legacy Collection/Legacy Collection/Assets/Environments/Mountain Dusk/version A/Layers/far-mountains.png" id="5_utw4a"]
+[ext_resource type="Texture2D" uid="uid://bw3louoe4u65m" path="res://background/parallax_backgrounds/Legacy Collection/Legacy Collection/Assets/Environments/Mountain Dusk/version A/Layers/trees.png" id="6_7juys"]
+
+[node name="ParallaxTest" type="Node2D"]
+position = Vector2(-30, -135)
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1920, 1000)
+render_target_update_mode = 4
+
+[node name="Parallax2D" type="Parallax2D" parent="SubViewportContainer/SubViewport"]
+scroll_scale = Vector2(0.7, 1)
+scroll_offset = Vector2(577, 310)
+
+[node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer/SubViewport/Parallax2D"]
+position = Vector2(223, 370)
+scale = Vector2(5, 5)
+texture = ExtResource("1_q0bqo")
+region_rect = Rect2(0, 0, 1500, 500)
+
+[node name="Parallax2D2" type="Parallax2D" parent="SubViewportContainer/SubViewport"]
+scroll_scale = Vector2(0.5, 1)
+scroll_offset = Vector2(-239, 550)
+repeat_size = Vector2(430, 0)
+autoscroll = Vector2(30, 0)
+repeat_times = 10
+
+[node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer/SubViewport/Parallax2D2"]
+position = Vector2(2, 3)
+scale = Vector2(3, 3)
+texture = ExtResource("2_ftden")
+region_rect = Rect2(0, 0, 1500, 500)
+
+[node name="Parallax2D5" type="Parallax2D" parent="SubViewportContainer/SubViewport"]
+scroll_scale = Vector2(0.5, 1)
+scroll_offset = Vector2(-167, 492)
+repeat_size = Vector2(250, 0)
+autoscroll = Vector2(20, 0)
+repeat_times = 15
+
+[node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer/SubViewport/Parallax2D5"]
+position = Vector2(834, 215)
+scale = Vector2(3, 3)
+texture = ExtResource("3_hytxk")
+region_rect = Rect2(0, 0, 1500, 500)
+
+[node name="Parallax2D3" type="Parallax2D" parent="SubViewportContainer/SubViewport"]
+scroll_scale = Vector2(0.2, 0)
+scroll_offset = Vector2(-491, 246)
+repeat_size = Vector2(960, 0)
+repeat_times = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer/SubViewport/Parallax2D3"]
+position = Vector2(495, 190)
+scale = Vector2(3, 3)
+texture = ExtResource("4_7vxu2")
+region_rect = Rect2(0, 0, 1500, 500)
+
+[node name="Parallax2D4" type="Parallax2D" parent="SubViewportContainer/SubViewport"]
+scroll_scale = Vector2(0.5, 1)
+scroll_offset = Vector2(-258, 379)
+repeat_size = Vector2(480, 0)
+repeat_times = 6
+
+[node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer/SubViewport/Parallax2D4"]
+position = Vector2(482, 301)
+scale = Vector2(3, 3)
+texture = ExtResource("5_utw4a")
+region_rect = Rect2(0, 0, 1500, 500)
+
+[node name="Parallax2D6" type="Parallax2D" parent="SubViewportContainer/SubViewport"]
+scroll_scale = Vector2(0.7, 1)
+repeat_size = Vector2(720, 0)
+repeat_times = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer/SubViewport/Parallax2D6"]
+position = Vector2(1018, 607)
+scale = Vector2(3, 3)
+texture = ExtResource("6_7juys")
+region_rect = Rect2(0, 0, 1500, 500)

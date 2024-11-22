@@ -5,18 +5,21 @@ var current_x = 0.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	powder_toy.sim_speed = 0.5
+	powder_toy.sim_speed = 1.0
+	powder_toy.set_edge_mode(0)
+	#powder_toy.powder_circle(80, 140, 20, 17)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	powder_toy.powder_circle(80, 70, 5, 49)
-	pass
+func _process(delta: float) -> void:	
+	#powder_toy.powder_circle(80, 190, 3, 49)
+	powder_toy.powder_circle(20, 180, 3, 4)
+	powder_toy.powder_circle(160, 180, 3, 4)
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
 		var mouse_pos = event.position
 		var scaled_pos = scale_position(mouse_pos)
-		powder_toy.powder_circle(scaled_pos.x, scaled_pos.y, 7, 87)
+		#powder_toy.powder_circle(scaled_pos.x, scaled_pos.y, 12, 87)
 
 func scale_position(pos: Vector2) -> Vector2:
 	var viewport_size = get_viewport().size

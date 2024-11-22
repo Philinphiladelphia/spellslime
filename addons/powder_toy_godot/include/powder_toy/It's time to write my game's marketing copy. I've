@@ -25,3 +25,7 @@ There are a couple Powder Toy things I should get to doing already. I can do all
 Why don't I just surround the thing in diamond if I want solids. I don't think solid mode every worked right in the original pwoder toy either.
 
 I should also add functions like draw_line or maybe even draw_ract form powder toy. They're not very hard and very useful.
+
+AI is used to choose between elements names dor spell usage.
+
+Is it worth it to try to pixelate everything? Might be, might not be.
