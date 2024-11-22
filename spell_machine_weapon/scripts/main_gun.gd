@@ -39,11 +39,11 @@ func _input(event):
 		var node_to_fire
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			node_to_fire = projectile_scene.instantiate()
-			apply_firing_velocity(node_to_fire)
+			apply_firing_velocity(node_to_fire, 3000)
 			node_to_fire.rotation = rotation + PI
 		elif event.button_index == MOUSE_BUTTON_RIGHT:
 			node_to_fire = slime_scene.instantiate()
-			apply_firing_velocity(node_to_fire)
+			apply_firing_velocity(node_to_fire, 800)
 		
 		# Set the node's position to the marker's position
 		node_to_fire.position = $ProjectileSpawnPoint.global_position
@@ -56,6 +56,6 @@ func _input(event):
 		# Add the node to the scene
 		get_parent().add_child(node_to_fire)
 
-func apply_firing_velocity(node):
+func apply_firing_velocity(node, velocity):
 	var local_move_direction = Vector2(0, 1).rotated(get_global_transform().get_rotation())
-	node.get_child(0).apply_impulse(local_move_direction * 3000)
+	node.get_child(0).apply_impulse(local_move_direction * velocity)

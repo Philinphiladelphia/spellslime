@@ -1,6 +1,6 @@
 extends Node2D
 
-var max_health = 20
+var max_health = 200.0
 
 var health = max_health
 
@@ -11,14 +11,18 @@ func _ready() -> void:
 
 func apply_damage(amount):
 	health -= amount
-	$TextureProgressBar.show()
-	$TextureProgressBar.value = health
+	$health_bar.current_health = health
+	$health_bar.show()
+	
+	$damage_bar.current_health = health
+	$damage_bar.show()
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if (health == max_health):
-		$TextureProgressBar.hide()
+		$health_bar.hide()
+		$damage_bar.hide()
 	
 	if (health <= 0):
 		var timer = Timer.new()
@@ -28,7 +32,7 @@ func _process(delta: float) -> void:
 		timer.connect("timeout", _on_timeout)
 		timer.start()
 		
-		$TextureProgressBar.hide()
+		$health_bar.hide()
 		
 		set_modulate(lerp(get_modulate(), Color(1,1,1,0), 0.05))
 		

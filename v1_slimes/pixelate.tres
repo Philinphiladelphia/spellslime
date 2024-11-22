@@ -10,7 +10,7 @@ script = ExtResource("1_7yr6s")
 [sub_resource type="VisualShaderNodeFloatConstant" id="VisualShaderNodeFloatConstant_g62v1"]
 
 [sub_resource type="VisualShaderNodeVec3Constant" id="VisualShaderNodeVec3Constant_x85oe"]
-constant = Vector3(960, 270, 0)
+constant = Vector3(960, 540, 0)
 
 [sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_j1v86"]
 expanded_output_ports = [0]
@@ -27,7 +27,7 @@ uniform sampler2D tex_frg_5;
 
 void fragment() {
 // Vector3Constant:4
-	vec3 n_out4p0 = vec3(960.000000, 270.000000, 0.000000);
+	vec3 n_out4p0 = vec3(960.000000, 540.000000, 0.000000);
 
 
 	vec3 n_out2p0;
@@ -53,7 +53,7 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(-796.141, 126.443)
+graph_offset = Vector2(-595.353, 51.3177)
 mode = 1
 flags/light_only = false
 nodes/fragment/2/node = SubResource("VisualShaderNodeCustom_5bcfa")
