@@ -8,12 +8,16 @@ func _ready() -> void:
 	powder_toy.sim_speed = 1.0
 	powder_toy.set_edge_mode(0)
 	#powder_toy.powder_circle(80, 140, 20, 17)
+	
+	powder_toy.powder_circle(100, 60, 20, 114)
+	powder_toy.powder_circle(100, 100, 20, 114)
+	powder_toy.powder_circle(100, 140, 20, 114)
+	
+	powder_toy.powder_circle(100, 190, 3, 4)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:	
-	#powder_toy.powder_circle(80, 190, 3, 49)
-	powder_toy.powder_circle(20, 180, 3, 4)
-	powder_toy.powder_circle(160, 180, 3, 4)
+	pass
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:

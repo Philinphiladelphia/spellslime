@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Spellslime"
-run/main_scene="res://v1_slimes/pixelate.tscn"
+run/main_scene="res://spell_machine_weapon/scenes/spell_machine_tower.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -23,7 +23,7 @@ window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/fuku/plugin.cfg", "res://addons/powder_toy_godot/plugin.cfg", "res://addons/rmsmartshape/plugin.cfg")
+enabled=PackedStringArray("res://addons/fuku/plugin.cfg", "res://addons/powder_toy_godot/plugin.cfg", "res://addons/rmsmartshape/plugin.cfg", "res://addons/softbody2d/plugin.cfg")
 
 [rendering]
 
