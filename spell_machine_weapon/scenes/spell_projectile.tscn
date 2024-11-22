@@ -10,6 +10,7 @@ radius = 24.4
 radius = 50.636
 
 [node name="SpellProjectile" type="Node2D"]
+auto_translate_mode = 2
 
 [node name="projectile" type="RigidBody2D" parent="."]
 collision_layer = 7
