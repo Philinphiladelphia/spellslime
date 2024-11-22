@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtvn2r7u8tyyk"
-path="res://.godot/imported/health_background.png-cf285988150823a5ce3bbeab153c3638.ctex"
+uid="uid://d3wtooav4aw20"
+path="res://.godot/imported/slime-200.png-d7d577cb3f5a5f6c01ab6b7171f94905.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://v1_slimes/slimes/health_background.png"
-dest_files=["res://.godot/imported/health_background.png-cf285988150823a5ce3bbeab153c3638.ctex"]
+source_file="res://common_assets/slimes/slime-200.png"
+dest_files=["res://.godot/imported/slime-200.png-d7d577cb3f5a5f6c01ab6b7171f94905.ctex"]
 
 [params]
 

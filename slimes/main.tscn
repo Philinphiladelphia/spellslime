@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://cdyu5ynbykqg8"]
 
-[ext_resource type="Script" path="res://v1_slimes/environment/background/spawn_forest.gd" id="3_1pr86"]
-[ext_resource type="Script" path="res://v1_slimes/spawn_slime.gd" id="8_8i51c"]
-[ext_resource type="PackedScene" uid="uid://82i5w8p42hu" path="res://v1_slimes/environment/foreground/basic_platform.tscn" id="9_5jgq4"]
+[ext_resource type="Script" path="res://slimes/environment/background/spawn_forest.gd" id="3_1pr86"]
+[ext_resource type="Script" path="res://slimes/spawn_slime.gd" id="8_8i51c"]
+[ext_resource type="PackedScene" uid="uid://82i5w8p42hu" path="res://slimes/environment/foreground/basic_platform.tscn" id="9_5jgq4"]
 
 [sub_resource type="Gradient" id="Gradient_aqfaf"]
 offsets = PackedFloat32Array(0.614583)

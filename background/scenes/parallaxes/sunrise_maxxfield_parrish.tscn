@@ -26,7 +26,7 @@ scroll_offset = Vector2(577, 310)
 
 [node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer/SubViewport/Parallax2D"]
 position = Vector2(223, 370)
-scale = Vector2(5, 5)
+scale = Vector2(6, 6)
 texture = ExtResource("1_q0bqo")
 region_rect = Rect2(0, 0, 1500, 500)
 

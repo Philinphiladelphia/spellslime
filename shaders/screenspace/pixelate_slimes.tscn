@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cis4gpfh8igqw"]
 
 [ext_resource type="Shader" path="res://shaders/scripts/pixelate.gdshader" id="1_jn235"]
-[ext_resource type="Script" path="res://v1_slimes/spawn_slime.gd" id="2_sv1un"]
+[ext_resource type="Script" path="res://slimes/spawn_slime.gd" id="2_sv1un"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_t3s8h"]
 shader = ExtResource("1_jn235")

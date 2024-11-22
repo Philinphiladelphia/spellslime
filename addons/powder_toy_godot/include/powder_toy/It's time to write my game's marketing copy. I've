@@ -29,14 +29,71 @@ I should also add functions like draw_line or maybe even draw_ract form powder t
 AI is used to choose between elements names dor spell usage.
 
 Is it worth it to try to pixelate everything? Might be, might not be.
+I tried it, it absolutely is.
 
 
 
 
 I love that "get off your phone" guy on youtube. Sola shin or something. I want my relationship with life and work to be increasingly more balanced. I wanna build a life filled with the most important things.
 
-I should shoe off the extent of my indie game knowledge.
+I should should off the extent of my indie game knowledge.
 
 Teaching requires an appreciation of all different experience levels in the room.
 
 The fact that you showed the general idea of the solution in the beginning (0:30) makes this tutorial S-tier in my book. ❤
+
+
+The slimes are trying to get right underneath your tower. If they do they explode into acid or powder and damage you a ton.
+
+
+The scale of the camera should be directly tied to the scale of the camera. this gives scale and lets us zoom out really easily while looking good. It's also the way that the damn world works lmao
+
+
+
+
+
+Make the tower chargable. Change up each shot before you shoot it.
+
+Next up, work on that and the scaling and variety of slimes.
+Slime scaling might be possible programmatically? Would have the change the circle radiuses I think. We'll see.
+Flying slimes are also a must. So are slime vines, to me. That sounds so fun to shoot and break.
+
+Fewer enemied, bigger health bars means less computational work for me. The Left for Dead designers aleays knew this, that's why they only had 4 zombies onscreen at any given time.
+
+
+
+
+What have I learned from amorcito?
+no one really gives a flying fuck about the pixel resolution or the legacy of the Powder Toy at the moment. Make a game that takes them out of their world and into another. That's what people need. not everyone is a games critic like me lmao
+
+I feel like I'm hiding behind the pixelization. People nowadays crave authenticity, Let's show off my art just as it is.
+
+Also, people know that games lag. Don't worry about it too much. It's accepted to a degree in the industry. It doesn't have to be perfect. Use your best ideas and find a good path to your goals in the time limit. That's what we're doing right now.
+
+I need to make the slimes attack the tower and the tower take damage. I need ot build a game loop. that's the most important thing for me right now
+
+players can define lines with thickness where powder will be summoned to defend the powder of the tower. These eat into your overall mana pool.
+
+I really apprecitae how much amorcito belives in me.
+
+Spellslime is a game about magic, order, chaos, and freedom of expression. It's a game about pushing the computational limits of fun.
+
+
+
+extends TextureProgressBar
+
+var spell_tower
+var current_health = 0.0
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	var parent = get_parent()
+	spell_tower = parent.get_node("spell_machine_tower")
+	max_value = parent.max_health
+	current_health = parent.max_health
+	value = parent.max_health
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	value = current_health
+	position = spell_tower.position - Vector2(350, 600)
