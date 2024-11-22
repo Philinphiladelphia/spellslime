@@ -15,16 +15,24 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_area_2d_body_shape_entered(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:
+	
+	body.get_parent().get_parent().apply_damage(1)
+	
+	set_modulate(lerp(get_modulate(), Color(1,1,1,0), 0.1))
+	
 	var timer = Timer.new()
-	timer.wait_time = 0.05
+	timer.wait_time = 0.1
 	timer.one_shot = true
 	add_child(timer)
 	timer.connect("timeout", _on_timeout)
 	timer.start()
+	
+# how to move the powder viewport	
+
+#var viewport = get_node("../../../PowderViewport")
+#viewport.position = global_position
+#collision_mask = 2
 
 func _on_timeout() -> void:
-	var viewport = get_node("../../../PowderViewport")
-	viewport.position = global_position
-	collision_mask = 2
 	process_mode = PROCESS_MODE_DISABLED
 	queue_free()

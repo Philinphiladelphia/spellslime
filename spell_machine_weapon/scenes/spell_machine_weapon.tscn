@@ -1,6 +1,7 @@
-[gd_scene load_steps=94 format=3 uid="uid://dd32qqj6y33t2"]
+[gd_scene load_steps=95 format=3 uid="uid://dd32qqj6y33t2"]
 
 [ext_resource type="Texture2D" uid="uid://bdg78nkkgj4j3" path="res://spell_machine_weapon/assets/stone/637059872.png" id="1_hfikh"]
+[ext_resource type="PackedScene" uid="uid://e6og876glwxo" path="res://background/scenes/parallaxes/sunrise_maxxfield_parrish.tscn" id="1_vcdrc"]
 [ext_resource type="Texture2D" uid="uid://81ljjbnoxjkm" path="res://spell_machine_weapon/assets/stone/22343422.png" id="13_e33m8"]
 [ext_resource type="Texture2D" uid="uid://65n34tbl6ban" path="res://spell_machine_weapon/assets/stone/22484447.png" id="14_mnpit"]
 [ext_resource type="Texture2D" uid="uid://bqok18annibjy" path="res://spell_machine_weapon/assets/stone/71932562.png" id="15_5pnus"]
@@ -151,6 +152,10 @@ size = Vector2(344.5, 1191)
 radius = 146.014
 
 [node name="SpellMachineWeapon" type="Node2D"]
+
+[node name="ParallaxTest" parent="." instance=ExtResource("1_vcdrc")]
+position = Vector2(-2032, -1482)
+scale = Vector2(2.5, 2.5)
 
 [node name="nav" type="Node2D" parent="."]
 
@@ -782,6 +787,7 @@ region_enabled = true
 region_rect = Rect2(0, 269.925, 89.7047, 242.075)
 
 [node name="Label" type="Label" parent="spell_machine_weapon/machine_topside"]
+visible = false
 offset_left = 712.0
 offset_top = -564.0
 offset_right = 1065.0
@@ -2051,5 +2057,7 @@ region_enabled = true
 region_rect = Rect2(122.327, 381.62, 57.9784, 130.38)
 
 [node name="PowderViewport" parent="." instance=ExtResource("86_qet3t")]
-position = Vector2(-1251, -224)
+z_index = 20
+z_as_relative = false
+position = Vector2(-406, -167)
 scale = Vector2(2.5, 2.5)

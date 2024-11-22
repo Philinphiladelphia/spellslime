@@ -58,4 +58,4 @@ func _input(event):
 
 func apply_firing_velocity(node):
 	var local_move_direction = Vector2(0, 1).rotated(get_global_transform().get_rotation())
-	node.get_child(0).apply_impulse(local_move_direction * 2000)
+	node.get_child(0).apply_impulse(local_move_direction * 3000)
