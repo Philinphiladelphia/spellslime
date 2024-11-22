@@ -36,27 +36,26 @@ func _process(delta: float) -> void:
 		
 
 func _input(event):
-	pass
-	#if event is InputEventMouseButton and event.pressed:
-		#var node_to_fire
-		#if event.button_index == MOUSE_BUTTON_LEFT:
-			#node_to_fire = projectile_scene.instantiate()
-			#apply_firing_velocity(node_to_fire, 5000)
-			#node_to_fire.rotation = rotation + PI
-		#elif event.button_index == MOUSE_BUTTON_RIGHT:
-			#node_to_fire = slime_scene.instantiate()
-			#apply_firing_velocity(node_to_fire, 2000)
-		#
-		## Set the node's position to the marker's position
-		#node_to_fire.position = $ProjectileSpawnPoint.global_position
-		#
-		##var my_shader = clear_shader.instantiate()
-		##my_shader.add_child(node_to_fire)
-		#
-		## add shader instead if you want a shader
-		#
-		## Add the node to the scene
-		#get_parent().add_child(node_to_fire)
+	if event is InputEventMouseButton and event.pressed:
+		var node_to_fire
+		if event.button_index == MOUSE_BUTTON_LEFT:
+			node_to_fire = projectile_scene.instantiate()
+			apply_firing_velocity(node_to_fire, 5000)
+			node_to_fire.rotation = rotation + PI
+		elif event.button_index == MOUSE_BUTTON_RIGHT:
+			node_to_fire = slime_scene.instantiate()
+			apply_firing_velocity(node_to_fire, 2000)
+		
+		# Set the node's position to the marker's position
+		node_to_fire.global_position = $ProjectileSpawnPoint.global_position
+		
+		#var my_shader = clear_shader.instantiate()
+		#my_shader.add_child(node_to_fire)
+		
+		# add shader instead if you want a shader
+		
+		# Add the node to the scene
+		get_parent().add_child(node_to_fire)
 
 func apply_firing_velocity(node, velocity):
 	var local_move_direction = Vector2(0, 1).rotated(get_global_transform().get_rotation())

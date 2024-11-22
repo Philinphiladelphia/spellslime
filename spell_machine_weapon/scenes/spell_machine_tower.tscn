@@ -1,10 +1,11 @@
-[gd_scene load_steps=104 format=3 uid="uid://dd32qqj6y33t2"]
+[gd_scene load_steps=105 format=3 uid="uid://dd32qqj6y33t2"]
 
 [ext_resource type="PackedScene" uid="uid://e6og876glwxo" path="res://background/scenes/parallaxes/sunrise_maxxfield_parrish.tscn" id="1_1edjf"]
 [ext_resource type="Script" path="res://spell_machine_weapon/scenes/spell_machine_controller.gd" id="1_dsv4g"]
 [ext_resource type="Texture2D" uid="uid://burv074pori0v" path="res://spell_machine_weapon/assets/stone/1999630919.png" id="3_4s3uo"]
 [ext_resource type="Texture2D" uid="uid://bdg78nkkgj4j3" path="res://spell_machine_weapon/assets/stone/637059872.png" id="4_m32xb"]
 [ext_resource type="PackedScene" uid="uid://82i5w8p42hu" path="res://slimes/environment/foreground/basic_platform.tscn" id="5_6uh78"]
+[ext_resource type="Script" path="res://spell_machine_weapon/scenes/tower_controller.gd" id="6_afdmy"]
 [ext_resource type="Script" path="res://spell_machine_weapon/scripts/main_gun.gd" id="6_em4o4"]
 [ext_resource type="Texture2D" uid="uid://deqynrtg8b57u" path="res://spell_machine_weapon/assets/pipes/541219343.png" id="7_wlgph"]
 [ext_resource type="Texture2D" uid="uid://bsn5gm2nqsy42" path="res://spell_machine_weapon/assets/gun_pieces/509133326.png" id="8_j55ll"]
@@ -170,7 +171,7 @@ scale = Vector2(2, 2)
 [node name="Camera2D" type="Camera2D" parent="sunset"]
 position = Vector2(895, 517.5)
 scale = Vector2(0.25, 0.25)
-zoom = Vector2(0.4, 0.4)
+zoom = Vector2(0.2, 0.2)
 
 [node name="nav" type="Node2D" parent="."]
 
@@ -213,6 +214,7 @@ scale = Vector2(4, 2)
 
 [node name="spell_machine_tower" type="Node2D" parent="."]
 position = Vector2(-2103, -1977)
+script = ExtResource("6_afdmy")
 
 [node name="big_gear" type="RigidBody2D" parent="spell_machine_tower"]
 z_index = 17

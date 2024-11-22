@@ -11,7 +11,7 @@ var y_resolution = 50
 # Define configurable display scale
 var display_scale = 1
 
-var draw_rect_size_boost = 1
+var draw_rect_size_boost = 1.5
 
 # Buffer for powder manifestation requests
 var powder_manifestation_buffer = []
