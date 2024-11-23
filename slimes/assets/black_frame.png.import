@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddn3y0pkkg5q1"
-path="res://.godot/imported/black_frame.png-8aeac6ef8485bcdd2c55d33cd2c06fd1.ctex"
+path="res://.godot/imported/black_frame.png-31237676937c7beae8abb351ec6583d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimes/slimes/black_frame.png"
-dest_files=["res://.godot/imported/black_frame.png-8aeac6ef8485bcdd2c55d33cd2c06fd1.ctex"]
+source_file="res://slimes/assets/black_frame.png"
+dest_files=["res://.godot/imported/black_frame.png-31237676937c7beae8abb351ec6583d3.ctex"]
 
 [params]
 

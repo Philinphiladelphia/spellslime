@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3mxc54vah3ta"
-path="res://.godot/imported/big_frame.png-1425860c236b108e840be2bdb8cf93f2.ctex"
+uid="uid://7uuwexqkbxgp"
+path="res://.godot/imported/big_red_health.png-034835aeebfe79c4262efac06cd43f78.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimes/slimes/big_frame.png"
-dest_files=["res://.godot/imported/big_frame.png-1425860c236b108e840be2bdb8cf93f2.ctex"]
+source_file="res://slimes/assets/big_red_health.png"
+dest_files=["res://.godot/imported/big_red_health.png-034835aeebfe79c4262efac06cd43f78.ctex"]
 
 [params]
 
