@@ -6,7 +6,8 @@ var health = max_health
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	
+	$health_bar.bone_number = 11
+	$damage_bar.bone_number = 11
 	pass
 
 func apply_damage(amount):
@@ -32,9 +33,7 @@ func _process(delta: float) -> void:
 		timer.connect("timeout", _on_timeout)
 		timer.start()
 		
-		$health_bar.hide()
-		
-		set_modulate(lerp(get_modulate(), Color(1,1,1,0), 0.05))
+		set_modulate(lerp(get_modulate(), Color(1,1,1,0), 0.1))
 		
 		# allow the slime to break before it dies
 		$slime_soft_body.break_distance_ratio = 1.1

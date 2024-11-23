@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfkm8h8yxc1wt"
-path="res://.godot/imported/damage_indicatior.png-0ee888c18df942636db70e3e5f81587f.ctex"
+uid="uid://bxgxydy4exlp1"
+path="res://.godot/imported/big_health.png-86a068786a007bf2c7f621d7e16bd80a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimes/slimes/damage_indicatior.png"
-dest_files=["res://.godot/imported/damage_indicatior.png-0ee888c18df942636db70e3e5f81587f.ctex"]
+source_file="res://slimes/assets/big_health.png"
+dest_files=["res://.godot/imported/big_health.png-86a068786a007bf2c7f621d7e16bd80a.ctex"]
 
 [params]
 

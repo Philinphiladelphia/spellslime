@@ -1,4 +1,4 @@
-[gd_scene load_steps=104 format=3 uid="uid://dd32qqj6y33t2"]
+[gd_scene load_steps=103 format=3 uid="uid://dd32qqj6y33t2"]
 
 [ext_resource type="PackedScene" uid="uid://e6og876glwxo" path="res://background/scenes/parallaxes/sunrise_maxxfield_parrish.tscn" id="1_1edjf"]
 [ext_resource type="Script" path="res://spell_machine_weapon/scenes/spell_machine_controller.gd" id="1_dsv4g"]
@@ -88,13 +88,12 @@
 [ext_resource type="Texture2D" uid="uid://dgggahwa6cgi1" path="res://spell_machine_weapon/assets/stone/2064920276.png" id="86_c75nb"]
 [ext_resource type="Texture2D" uid="uid://c5gv2bpsap7wy" path="res://spell_machine_weapon/assets/slime_dome/slime_dome.png" id="87_83o1c"]
 [ext_resource type="PackedScene" uid="uid://dod8ieervu1pf" path="res://addons/powder_toy_godot/powder_viewport.tscn" id="88_olaqi"]
-[ext_resource type="Texture2D" uid="uid://cfkm8h8yxc1wt" path="res://slimes/slimes/damage_indicatior.png" id="90_p8ees"]
+[ext_resource type="Texture2D" uid="uid://cfkm8h8yxc1wt" path="res://slimes/assets/damage_indicatior.png" id="90_p8ees"]
 [ext_resource type="Script" path="res://spell_machine_weapon/scenes/tower_damage_bar.gd" id="91_e36st"]
-[ext_resource type="Texture2D" uid="uid://ddn3y0pkkg5q1" path="res://slimes/slimes/black_frame.png" id="92_dwyvc"]
-[ext_resource type="Texture2D" uid="uid://3mxc54vah3ta" path="res://slimes/slimes/big_frame.png" id="93_catwd"]
-[ext_resource type="Texture2D" uid="uid://7uuwexqkbxgp" path="res://slimes/slimes/big_red_health.png" id="94_pv0dg"]
+[ext_resource type="Texture2D" uid="uid://ddn3y0pkkg5q1" path="res://slimes/assets/black_frame.png" id="92_dwyvc"]
+[ext_resource type="Texture2D" uid="uid://3mxc54vah3ta" path="res://slimes/assets/big_frame.png" id="93_catwd"]
+[ext_resource type="Texture2D" uid="uid://7uuwexqkbxgp" path="res://slimes/assets/big_red_health.png" id="94_pv0dg"]
 [ext_resource type="Script" path="res://spell_machine_weapon/scenes/tower_health_bar.gd" id="95_d4csd"]
-[ext_resource type="Script" path="res://slimes/spawn_slime.gd" id="96_nwx86"]
 [ext_resource type="Texture2D" uid="uid://xy3euqv5p8q3" path="res://common_assets/slimes/slime.png" id="96_ssyy0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n5dwq"]
@@ -294,13 +293,15 @@ flip_v = true
 region_enabled = true
 region_rect = Rect2(334.65, 351.59, 70.1801, 146.41)
 
-[node name="ProjectileSpawnPoint" type="Marker2D" parent="spell_machine_tower/big_gear"]
-position = Vector2(6, 132)
-
 [node name="slime_spawner" type="Node2D" parent="spell_machine_tower/big_gear"]
 position = Vector2(8, 328)
 scale = Vector2(1.0045, 0.995091)
 script = SubResource("GDScript_5enuy")
+
+[node name="Node" type="Node" parent="spell_machine_tower/big_gear"]
+
+[node name="ProjectileSpawnPoint" type="Marker2D" parent="spell_machine_tower/big_gear/Node"]
+position = Vector2(-2088, -2325)
 
 [node name="machine_topside" type="Node2D" parent="spell_machine_tower"]
 
@@ -2075,7 +2076,6 @@ texture_progress = ExtResource("94_pv0dg")
 script = ExtResource("95_d4csd")
 
 [node name="slime_spawner" type="Node2D" parent="."]
-script = ExtResource("96_nwx86")
 
 [node name="Slime" type="Sprite2D" parent="."]
 position = Vector2(-2068, -2742)
