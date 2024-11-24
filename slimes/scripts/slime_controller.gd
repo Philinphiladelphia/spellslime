@@ -8,7 +8,23 @@ var health = max_health
 func _ready() -> void:
 	$health_bar.bone_number = 11
 	$damage_bar.bone_number = 11
-	pass
+	
+	$health_bar.hide()
+	$damage_bar.hide()
+
+	var local_move_direction = Vector2(-1, -1)
+	#get_child(0).apply_impulse(local_move_direction * 1000)
+
+func set_max_health(amount):
+	max_health = amount
+	$health_bar.max_value = health
+	$damage_bar.max_value = health
+	
+func set_health(amount):
+	if amount <= max_health:
+		health = amount
+		$health_bar.current_health = health
+		$damage_bar.current_health = health
 
 func apply_damage(amount):
 	health -= amount
@@ -21,10 +37,6 @@ func apply_damage(amount):
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if (health == max_health):
-		$health_bar.hide()
-		$damage_bar.hide()
-	
 	if (health <= 0):
 		var timer = Timer.new()
 		timer.wait_time = 4
@@ -35,9 +47,7 @@ func _process(delta: float) -> void:
 		
 		set_modulate(lerp(get_modulate(), Color(1,1,1,0), 0.1))
 		
-		# allow the slime to break before it dies
-		$slime_soft_body.break_distance_ratio = 1.1
-		
+		# take away the slime's physics layer so it squishes easy
 		$slime_soft_body.collision_layer = 0
 
 func _on_timeout() -> void:

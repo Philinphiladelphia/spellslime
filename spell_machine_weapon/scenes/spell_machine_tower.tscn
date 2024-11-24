@@ -1,4 +1,4 @@
-[gd_scene load_steps=103 format=3 uid="uid://dd32qqj6y33t2"]
+[gd_scene load_steps=104 format=3 uid="uid://dd32qqj6y33t2"]
 
 [ext_resource type="PackedScene" uid="uid://e6og876glwxo" path="res://background/scenes/parallaxes/sunrise_maxxfield_parrish.tscn" id="1_1edjf"]
 [ext_resource type="Script" path="res://spell_machine_weapon/scenes/spell_machine_controller.gd" id="1_dsv4g"]
@@ -94,6 +94,7 @@
 [ext_resource type="Texture2D" uid="uid://3mxc54vah3ta" path="res://slimes/assets/big_frame.png" id="93_catwd"]
 [ext_resource type="Texture2D" uid="uid://7uuwexqkbxgp" path="res://slimes/assets/big_red_health.png" id="94_pv0dg"]
 [ext_resource type="Script" path="res://spell_machine_weapon/scenes/tower_health_bar.gd" id="95_d4csd"]
+[ext_resource type="Script" path="res://slimes/spawn_slime.gd" id="96_nwx86"]
 [ext_resource type="Texture2D" uid="uid://xy3euqv5p8q3" path="res://common_assets/slimes/slime.png" id="96_ssyy0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n5dwq"]
@@ -375,7 +376,7 @@ region_rect = Rect2(389.1, 196.105, 93.17, 312.785)
 [node name="med_gear_1" type="RigidBody2D" parent="spell_machine_tower/machine_topside"]
 position = Vector2(139, -244)
 collision_layer = 0
-collision_mask = 2
+collision_mask = 0
 mass = 0.125
 gravity_scale = 0.0
 
@@ -541,6 +542,7 @@ region_rect = Rect2(378.452, 5.77197, 118.459, 179.685)
 
 [node name="Sprite2D131" type="Sprite2D" parent="spell_machine_tower/machine_topside"]
 z_index = 11
+z_as_relative = false
 position = Vector2(168, -73)
 texture = ExtResource("13_jwxgc")
 region_enabled = true
@@ -549,7 +551,7 @@ region_rect = Rect2(378.452, 5.77197, 118.459, 179.685)
 [node name="tiny_wheel" type="RigidBody2D" parent="spell_machine_tower/machine_topside"]
 position = Vector2(-9, -313)
 collision_layer = 0
-collision_mask = 2
+collision_mask = 0
 mass = 0.125
 gravity_scale = 0.0
 
@@ -573,7 +575,7 @@ shape = SubResource("CircleShape2D_g3a8e")
 [node name="tiner_wheel" type="RigidBody2D" parent="spell_machine_tower/machine_topside"]
 position = Vector2(-9, -313)
 collision_layer = 0
-collision_mask = 2
+collision_mask = 0
 mass = 0.125
 gravity_scale = 0.0
 
@@ -597,7 +599,7 @@ shape = SubResource("CircleShape2D_x2myk")
 [node name="med_gear_3" type="RigidBody2D" parent="spell_machine_tower/machine_topside"]
 position = Vector2(-48, -189)
 collision_layer = 0
-collision_mask = 2
+collision_mask = 0
 mass = 0.125
 gravity_scale = 0.0
 
@@ -621,7 +623,7 @@ region_rect = Rect2(18.9939, 161.744, 185.097, 187.829)
 [node name="med_gear_2" type="RigidBody2D" parent="spell_machine_tower/machine_topside"]
 position = Vector2(-8, -352)
 collision_layer = 0
-collision_mask = 2
+collision_mask = 0
 mass = 0.125
 gravity_scale = 0.0
 
@@ -751,6 +753,16 @@ position = Vector2(-59, -463)
 texture = ExtResource("53_pnjip")
 region_enabled = true
 region_rect = Rect2(0, 0, 82.9699, 512)
+
+[node name="gear_motor" type="PinJoint2D" parent="spell_machine_tower"]
+position = Vector2(13, -489)
+node_a = NodePath("../big_gear")
+node_b = NodePath("../hitboxes/tower_body")
+softness = 5.47
+angular_limit_enabled = true
+angular_limit_lower = -3.14159
+angular_limit_upper = 3.14159
+motor_enabled = true
 
 [node name="unused_parts" type="Node2D" parent="."]
 visible = false
@@ -2046,6 +2058,7 @@ region_enabled = true
 region_rect = Rect2(122.327, 381.62, 57.9784, 130.38)
 
 [node name="PowderViewport" parent="." instance=ExtResource("88_olaqi")]
+visible = false
 z_index = 20
 z_as_relative = false
 position = Vector2(-2351, -2273)
@@ -2076,6 +2089,7 @@ texture_progress = ExtResource("94_pv0dg")
 script = ExtResource("95_d4csd")
 
 [node name="slime_spawner" type="Node2D" parent="."]
+script = ExtResource("96_nwx86")
 
 [node name="Slime" type="Sprite2D" parent="."]
 position = Vector2(-2068, -2742)
