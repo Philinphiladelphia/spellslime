@@ -459,7 +459,7 @@ script = ExtResource("2_8gxnu")
 show_shapes = true
 vertex_interval = 50
 joint_type = "spring"
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 radius = 39
 shape_type = "Circle"
@@ -571,7 +571,7 @@ metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-7" type="Bone2D" parent="slime_soft_body/Skeleton2D"]
 position = Vector2(176.115, 94.3163)
-rotation = 0.253791
+rotation = 0.25379
 scale = Vector2(1, 1)
 rest = Transform2D(0.967968, 0.251075, -0.251075, 0.967968, 176.115, 94.3163)
 auto_calculate_length_and_angle = false
@@ -1219,7 +1219,7 @@ rotation = -1.57334
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-4")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 19.1558
 
@@ -1229,7 +1229,7 @@ rotation = 0.0243862
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-1")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.6894
 
@@ -1239,7 +1239,7 @@ rotation = -0.709467
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-5")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 30.6054
 
@@ -1266,7 +1266,7 @@ rotation = -3.11721
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-0")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.6894
 
@@ -1276,7 +1276,7 @@ rotation = -2.4404
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-4")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 30.0946
 
@@ -1286,7 +1286,7 @@ rotation = -1.55768
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-5")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.8207
 
@@ -1296,7 +1296,7 @@ rotation = 0.00851874
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-2")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.4807
 
@@ -1306,7 +1306,7 @@ rotation = -0.717303
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-6")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 30.7101
 
@@ -1333,7 +1333,7 @@ rotation = -3.13307
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-1")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.4807
 
@@ -1343,7 +1343,7 @@ rotation = -2.41926
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-5")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 31.3198
 
@@ -1353,7 +1353,7 @@ rotation = -1.60126
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-6")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.7149
 
@@ -1363,7 +1363,7 @@ rotation = 0.0332755
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-21")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 25.7689
 
@@ -1373,7 +1373,7 @@ rotation = -0.685741
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-22")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.87
 
@@ -1400,7 +1400,7 @@ rotation = -1.71282
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-7")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 24.3023
 
@@ -1410,7 +1410,7 @@ rotation = -0.0141856
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-4")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.9281
 
@@ -1420,7 +1420,7 @@ rotation = -0.81045
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-8")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 36.7498
 
@@ -1447,7 +1447,7 @@ rotation = -3.15578
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-3")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.9281
 
@@ -1457,7 +1457,7 @@ rotation = 1.56825
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-0")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 19.1558
 
@@ -1467,7 +1467,7 @@ rotation = 0.701192
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-1")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 30.0946
 
@@ -1477,7 +1477,7 @@ rotation = -0.0462875
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-5")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.0214
 
@@ -1487,7 +1487,7 @@ rotation = -2.42051
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-7")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 35.4084
 
@@ -1497,7 +1497,7 @@ rotation = -1.49244
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-8")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.7159
 
@@ -1507,7 +1507,7 @@ rotation = -0.869493
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-9")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 37.2754
 
@@ -1534,7 +1534,7 @@ rotation = -3.85106
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-0")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 30.6054
 
@@ -1544,7 +1544,7 @@ rotation = -4.69927
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-1")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.8207
 
@@ -1554,7 +1554,7 @@ rotation = -3.18788
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-4")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.0214
 
@@ -1564,7 +1564,7 @@ rotation = 0.722336
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-2")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 31.3198
 
@@ -1574,7 +1574,7 @@ rotation = 0.0137272
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-6")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.6025
 
@@ -1584,7 +1584,7 @@ rotation = -2.27143
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-8")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 33.0426
 
@@ -1594,7 +1594,7 @@ rotation = -1.54597
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-9")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.7132
 
@@ -1604,7 +1604,7 @@ rotation = -0.893527
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-10")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 34.2983
 
@@ -1631,7 +1631,7 @@ rotation = -3.8589
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-1")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 30.7101
 
@@ -1641,7 +1641,7 @@ rotation = 1.54034
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-2")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.7149
 
@@ -1651,7 +1651,7 @@ rotation = -3.12787
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-5")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.6025
 
@@ -1661,7 +1661,7 @@ rotation = 0.672642
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-21")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 34.077
 
@@ -1671,7 +1671,7 @@ rotation = 0.0613137
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-22")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.5217
 
@@ -1681,7 +1681,7 @@ rotation = -2.24816
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-9")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 35.5852
 
@@ -1691,7 +1691,7 @@ rotation = -1.62583
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-10")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.3707
 
@@ -1701,7 +1701,7 @@ rotation = -0.84481
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-24")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 32.6752
 
@@ -1728,7 +1728,7 @@ rotation = 1.42877
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-3")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 24.3023
 
@@ -1738,7 +1738,7 @@ rotation = 0.721079
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-4")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 35.4084
 
@@ -1748,7 +1748,7 @@ rotation = -0.099415
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-8")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 28.4578
 
@@ -1758,7 +1758,7 @@ rotation = -1.31701
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-12")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 25.2336
 
@@ -1768,7 +1768,7 @@ rotation = -0.697269
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-13")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 41.8389
 
@@ -1778,7 +1778,7 @@ rotation = -2.10544
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-11")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.9443
 
@@ -1805,7 +1805,7 @@ rotation = -3.95204
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-3")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 36.7498
 
@@ -1815,7 +1815,7 @@ rotation = -4.63404
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-4")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.7159
 
@@ -1825,7 +1825,7 @@ rotation = -3.24101
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-7")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 28.4578
 
@@ -1835,7 +1835,7 @@ rotation = 0.870166
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-5")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 33.0426
 
@@ -1845,7 +1845,7 @@ rotation = -0.0969311
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-9")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 21.7375
 
@@ -1855,7 +1855,7 @@ rotation = -2.38293
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-12")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 30.9026
 
@@ -1865,7 +1865,7 @@ rotation = -1.4286
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-13")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 24.6304
 
@@ -1875,7 +1875,7 @@ rotation = -0.881534
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-14")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 37.7808
 
@@ -1902,7 +1902,7 @@ rotation = -4.01109
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-4")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 37.2754
 
@@ -1912,7 +1912,7 @@ rotation = -4.68756
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-5")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.7132
 
@@ -1922,7 +1922,7 @@ rotation = -3.23852
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-8")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 21.7375
 
@@ -1932,7 +1932,7 @@ rotation = 0.893432
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-6")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 35.5852
 
@@ -1942,7 +1942,7 @@ rotation = 0.0329144
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-10")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.4776
 
@@ -1952,7 +1952,7 @@ rotation = -2.27109
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-13")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 28.7525
 
@@ -1962,7 +1962,7 @@ rotation = -1.49551
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-14")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.3874
 
@@ -1972,7 +1972,7 @@ rotation = -0.963747
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-15")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 30.302
 
@@ -1999,7 +1999,7 @@ rotation = -4.03512
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-5")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 34.2983
 
@@ -2009,7 +2009,7 @@ rotation = 1.51576
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-6")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.3707
 
@@ -2019,7 +2019,7 @@ rotation = -3.10868
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-9")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.4776
 
@@ -2029,7 +2029,7 @@ rotation = 0.843736
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-22")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 38.1074
 
@@ -2039,7 +2039,7 @@ rotation = 0.110522
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-24")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.9714
 
@@ -2049,7 +2049,7 @@ rotation = -2.16625
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-14")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 33.5438
 
@@ -2059,7 +2059,7 @@ rotation = -1.70931
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-15")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.0357
 
@@ -2069,7 +2069,7 @@ rotation = -0.807986
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-26")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.3206
 
@@ -2096,7 +2096,7 @@ rotation = 1.03615
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-7")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.9443
 
@@ -2106,7 +2106,7 @@ rotation = -0.0554735
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-12")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 19.6581
 
@@ -2116,7 +2116,7 @@ rotation = -1.55782
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-16")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.4785
 
@@ -2126,7 +2126,7 @@ rotation = -0.835123
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-17")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 31.1274
 
@@ -2153,7 +2153,7 @@ rotation = -4.4586
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-7")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 25.2336
 
@@ -2163,7 +2163,7 @@ rotation = 0.758659
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-8")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 30.9026
 
@@ -2173,7 +2173,7 @@ rotation = -0.107445
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-13")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 25.6893
 
@@ -2183,7 +2183,7 @@ rotation = -3.19707
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-11")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 19.6581
 
@@ -2193,7 +2193,7 @@ rotation = -2.29729
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-16")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.5541
 
@@ -2203,7 +2203,7 @@ rotation = -1.52706
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-17")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.2594
 
@@ -2213,7 +2213,7 @@ rotation = -0.650406
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-18")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 35.5061
 
@@ -2240,7 +2240,7 @@ rotation = -3.83886
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-7")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 41.8389
 
@@ -2250,7 +2250,7 @@ rotation = -4.57019
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-8")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 24.6304
 
@@ -2260,7 +2260,7 @@ rotation = -3.24904
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-12")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 25.6893
 
@@ -2270,7 +2270,7 @@ rotation = 0.870502
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-9")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 28.7525
 
@@ -2280,7 +2280,7 @@ rotation = -0.239595
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-14")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.8642
 
@@ -2290,7 +2290,7 @@ rotation = -2.48661
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-17")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 31.3236
 
@@ -2300,7 +2300,7 @@ rotation = -1.44001
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-18")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 19.1966
 
@@ -2310,7 +2310,7 @@ rotation = -0.619516
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-19")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.8739
 
@@ -2337,7 +2337,7 @@ rotation = -4.02313
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-8")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 37.7808
 
@@ -2347,7 +2347,7 @@ rotation = -4.63711
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-9")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.3874
 
@@ -2357,7 +2357,7 @@ rotation = -3.38119
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-13")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.8642
 
@@ -2367,7 +2367,7 @@ rotation = 0.975339
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-10")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 33.5438
 
@@ -2377,7 +2377,7 @@ rotation = 0.142555
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-15")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 15.1238
 
@@ -2387,7 +2387,7 @@ rotation = -2.48973
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-18")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.621
 
@@ -2397,7 +2397,7 @@ rotation = -1.26544
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-19")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 13.1585
 
@@ -2407,7 +2407,7 @@ rotation = -0.917434
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-20")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 16.5574
 
@@ -2434,7 +2434,7 @@ rotation = -4.10534
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-9")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 30.302
 
@@ -2444,7 +2444,7 @@ rotation = 1.43228
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-10")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.0357
 
@@ -2454,7 +2454,7 @@ rotation = -2.99904
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-14")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 15.1238
 
@@ -2464,7 +2464,7 @@ rotation = 0.80971
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-24")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 38.7247
 
@@ -2474,7 +2474,7 @@ rotation = 0.177582
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-26")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.8629
 
@@ -2484,7 +2484,7 @@ rotation = -2.22807
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-19")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 18.4919
 
@@ -2494,7 +2494,7 @@ rotation = -1.89547
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-20")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 16.2951
 
@@ -2504,7 +2504,7 @@ rotation = -0.628929
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-28")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.3445
 
@@ -2531,7 +2531,7 @@ rotation = -4.69941
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-11")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.4785
 
@@ -2541,7 +2541,7 @@ rotation = 0.844301
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-12")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.5541
 
@@ -2551,7 +2551,7 @@ rotation = 0.00562422
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-17")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.277
 
@@ -2561,7 +2561,7 @@ rotation = -1.60389
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-30")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.6029
 
@@ -2571,7 +2571,7 @@ rotation = -0.851992
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-31")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.3398
 
@@ -2598,7 +2598,7 @@ rotation = -3.97672
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-11")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 31.1274
 
@@ -2608,7 +2608,7 @@ rotation = -4.66865
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-12")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.2594
 
@@ -2618,7 +2618,7 @@ rotation = -3.13597
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-16")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.277
 
@@ -2628,7 +2628,7 @@ rotation = 0.65498
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-13")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 31.3236
 
@@ -2638,7 +2638,7 @@ rotation = 0.0132298
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-18")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.0253
 
@@ -2648,7 +2648,7 @@ rotation = -2.31018
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-30")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 31.6954
 
@@ -2658,7 +2658,7 @@ rotation = -1.6283
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-31")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.4931
 
@@ -2668,7 +2668,7 @@ rotation = -0.670425
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-32")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 30.9063
 
@@ -2695,7 +2695,7 @@ rotation = -3.792
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-12")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 35.5061
 
@@ -2705,7 +2705,7 @@ rotation = -4.5816
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-13")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 19.1966
 
@@ -2715,7 +2715,7 @@ rotation = -3.12836
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-17")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.0253
 
@@ -2725,7 +2725,7 @@ rotation = 0.651859
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-14")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.621
 
@@ -2735,7 +2735,7 @@ rotation = 0.0619358
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-19")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 21.7015
 
@@ -2745,7 +2745,7 @@ rotation = -2.47588
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-31")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 36.3427
 
@@ -2755,7 +2755,7 @@ rotation = -1.72785
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-32")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.1271
 
@@ -2765,7 +2765,7 @@ rotation = -0.717793
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-33")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.1804
 
@@ -2792,7 +2792,7 @@ rotation = -3.76111
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-13")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.8739
 
@@ -2802,7 +2802,7 @@ rotation = -4.40703
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-14")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 13.1585
 
@@ -2812,7 +2812,7 @@ rotation = -3.07966
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-18")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 21.7015
 
@@ -2822,7 +2822,7 @@ rotation = 0.913527
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-15")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 18.4919
 
@@ -2832,7 +2832,7 @@ rotation = -0.112204
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-20")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 6.07246
 
@@ -2842,7 +2842,7 @@ rotation = -2.44457
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-32")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 32.6149
 
@@ -2852,7 +2852,7 @@ rotation = -1.83313
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-33")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 17.4287
 
@@ -2862,7 +2862,7 @@ rotation = -0.989232
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-34")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.1217
 
@@ -2889,7 +2889,7 @@ rotation = -4.05903
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-14")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 16.5574
 
@@ -2899,7 +2899,7 @@ rotation = 1.24613
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-15")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 16.2951
 
@@ -2909,7 +2909,7 @@ rotation = -3.2538
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-19")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 6.07246
 
@@ -2919,7 +2919,7 @@ rotation = 0.594126
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-26")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 34.7427
 
@@ -2929,7 +2929,7 @@ rotation = -0.0320353
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-28")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.9859
 
@@ -2939,7 +2939,7 @@ rotation = -2.15672
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-33")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 19.2412
 
@@ -2949,7 +2949,7 @@ rotation = -1.24542
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-34")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 18.8786
 
@@ -2959,7 +2959,7 @@ rotation = -0.636746
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-46")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 36.4305
 
@@ -2986,7 +2986,7 @@ rotation = -3.10832
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-2")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 25.7689
 
@@ -2996,7 +2996,7 @@ rotation = -2.46895
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-6")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 34.077
 
@@ -3006,7 +3006,7 @@ rotation = -1.7176
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-22")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.3127
 
@@ -3016,7 +3016,7 @@ rotation = -0.7168
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-23")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.6119
 
@@ -3043,7 +3043,7 @@ rotation = -3.82733
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-2")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.87
 
@@ -3053,7 +3053,7 @@ rotation = -3.08028
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-6")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.5217
 
@@ -3063,7 +3063,7 @@ rotation = 1.42399
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-21")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.3127
 
@@ -3073,7 +3073,7 @@ rotation = -2.29786
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-10")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 38.1074
 
@@ -3083,7 +3083,7 @@ rotation = -1.65361
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-24")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.2948
 
@@ -3093,7 +3093,7 @@ rotation = 0.0697284
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-23")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.5214
 
@@ -3103,7 +3103,7 @@ rotation = -0.76924
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-25")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 33.7923
 
@@ -3130,7 +3130,7 @@ rotation = -1.55096
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-25")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 25.5246
 
@@ -3140,7 +3140,7 @@ rotation = -3.85839
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-21")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.6119
 
@@ -3150,7 +3150,7 @@ rotation = -3.07186
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-22")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.5214
 
@@ -3160,7 +3160,7 @@ rotation = -2.32657
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-24")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 37.8453
 
@@ -3187,7 +3187,7 @@ rotation = -3.9864
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-6")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 32.6752
 
@@ -3197,7 +3197,7 @@ rotation = -3.03107
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-10")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.9714
 
@@ -3207,7 +3207,7 @@ rotation = 1.48799
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-22")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.2948
 
@@ -3217,7 +3217,7 @@ rotation = -2.33188
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-15")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 38.7247
 
@@ -3227,7 +3227,7 @@ rotation = -1.69212
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-26")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 24.2428
 
@@ -3237,7 +3237,7 @@ rotation = 0.815021
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-23")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 37.8453
 
@@ -3247,7 +3247,7 @@ rotation = 0.0883562
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-25")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.178
 
@@ -3257,7 +3257,7 @@ rotation = -0.71945
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-27")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 32.7918
 
@@ -3284,7 +3284,7 @@ rotation = -4.69256
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-23")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 25.5246
 
@@ -3294,7 +3294,7 @@ rotation = -3.91083
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-22")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 33.7923
 
@@ -3304,7 +3304,7 @@ rotation = -3.05324
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-24")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.178
 
@@ -3314,7 +3314,7 @@ rotation = -2.41455
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-26")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 39.1943
 
@@ -3324,7 +3324,7 @@ rotation = -1.64258
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-27")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 24.3754
 
@@ -3351,7 +3351,7 @@ rotation = -3.94958
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-10")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.3206
 
@@ -3361,7 +3361,7 @@ rotation = -2.96401
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-15")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.8629
 
@@ -3371,7 +3371,7 @@ rotation = 1.44947
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-24")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 24.2428
 
@@ -3381,7 +3381,7 @@ rotation = -2.54747
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-20")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 34.7427
 
@@ -3391,7 +3391,7 @@ rotation = -1.64844
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-28")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.7621
 
@@ -3401,7 +3401,7 @@ rotation = 0.727043
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-25")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 39.1943
 
@@ -3411,7 +3411,7 @@ rotation = 0.0760333
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-27")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.3081
 
@@ -3421,7 +3421,7 @@ rotation = -0.654687
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-29")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 33.8127
 
@@ -3448,7 +3448,7 @@ rotation = -3.86104
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-24")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 32.7918
 
@@ -3458,7 +3458,7 @@ rotation = 1.49901
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-25")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 24.3754
 
@@ -3468,7 +3468,7 @@ rotation = -3.06556
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-26")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.3081
 
@@ -3478,7 +3478,7 @@ rotation = -2.48438
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-28")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 36.7475
 
@@ -3488,7 +3488,7 @@ rotation = -1.60103
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-29")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.0848
 
@@ -3515,7 +3515,7 @@ rotation = -3.77052
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-15")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.3445
 
@@ -3525,7 +3525,7 @@ rotation = -3.17363
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-20")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.9859
 
@@ -3535,7 +3535,7 @@ rotation = 1.49316
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-26")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.7621
 
@@ -3545,7 +3545,7 @@ rotation = -2.47497
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-34")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.1139
 
@@ -3555,7 +3555,7 @@ rotation = -1.47236
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-46")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 21.2533
 
@@ -3565,7 +3565,7 @@ rotation = 0.657217
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-27")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 36.7475
 
@@ -3575,7 +3575,7 @@ rotation = -0.00832029
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-29")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 28.1139
 
@@ -3585,7 +3585,7 @@ rotation = -0.671308
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-47")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 37.0477
 
@@ -3612,7 +3612,7 @@ rotation = -3.79628
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-26")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 33.8127
 
@@ -3622,7 +3622,7 @@ rotation = 1.54057
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-27")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.0848
 
@@ -3632,7 +3632,7 @@ rotation = -3.14991
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-28")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 28.1139
 
@@ -3642,7 +3642,7 @@ rotation = -2.47898
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-46")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 33.4309
 
@@ -3652,7 +3652,7 @@ rotation = -1.54488
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-47")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.1972
 
@@ -3679,7 +3679,7 @@ rotation = 1.5377
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-16")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.6029
 
@@ -3689,7 +3689,7 @@ rotation = 0.831409
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-17")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 31.6954
 
@@ -3699,7 +3699,7 @@ rotation = 0.0614136
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-31")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 19.8182
 
@@ -3709,7 +3709,7 @@ rotation = -1.57566
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-35")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.7092
 
@@ -3719,7 +3719,7 @@ rotation = -0.908362
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-36")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.1174
 
@@ -3746,7 +3746,7 @@ rotation = -3.99359
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-16")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.3398
 
@@ -3756,7 +3756,7 @@ rotation = 1.5133
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-17")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.4931
 
@@ -3766,7 +3766,7 @@ rotation = -3.08018
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-30")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 19.8182
 
@@ -3776,7 +3776,7 @@ rotation = 0.665708
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-18")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 36.3427
 
@@ -3786,7 +3786,7 @@ rotation = 0.112693
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-32")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 25.3856
 
@@ -3796,7 +3796,7 @@ rotation = -2.25707
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-35")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 31.9155
 
@@ -3806,7 +3806,7 @@ rotation = -1.66203
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-36")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 24.5407
 
@@ -3816,7 +3816,7 @@ rotation = -0.771418
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-37")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 31.16
 
@@ -3843,7 +3843,7 @@ rotation = -3.81202
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-17")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 30.9063
 
@@ -3853,7 +3853,7 @@ rotation = 1.41374
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-18")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.1271
 
@@ -3863,7 +3863,7 @@ rotation = -3.0289
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-31")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 25.3856
 
@@ -3873,7 +3873,7 @@ rotation = 0.697021
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-19")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 32.6149
 
@@ -3883,7 +3883,7 @@ rotation = 0.208141
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-33")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.7901
 
@@ -3893,7 +3893,7 @@ rotation = -2.37016
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-36")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 38.7273
 
@@ -3903,7 +3903,7 @@ rotation = -1.70083
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-37")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 25.1614
 
@@ -3913,7 +3913,7 @@ rotation = -0.875407
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-38")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.6847
 
@@ -3940,7 +3940,7 @@ rotation = -3.85939
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-18")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.1804
 
@@ -3950,7 +3950,7 @@ rotation = 1.30847
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-19")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 17.4287
 
@@ -3960,7 +3960,7 @@ rotation = -2.93345
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-32")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.7901
 
@@ -3970,7 +3970,7 @@ rotation = 0.984872
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-20")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 19.2412
 
@@ -3980,7 +3980,7 @@ rotation = -0.105265
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-34")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 16.4216
 
@@ -3990,7 +3990,7 @@ rotation = -2.25887
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-37")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 37.6102
 
@@ -4000,7 +4000,7 @@ rotation = -1.63086
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-38")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.5027
 
@@ -4010,7 +4010,7 @@ rotation = -0.954785
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-39")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 34.0664
 
@@ -4037,7 +4037,7 @@ rotation = -4.13082
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-19")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.1217
 
@@ -4047,7 +4047,7 @@ rotation = -4.38701
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-20")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 18.8786
 
@@ -4057,7 +4057,7 @@ rotation = -3.24686
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-33")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 16.4216
 
@@ -4067,7 +4067,7 @@ rotation = 0.666624
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-28")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.1139
 
@@ -4077,7 +4077,7 @@ rotation = -0.171185
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-46")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.4782
 
@@ -4087,7 +4087,7 @@ rotation = -2.19324
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-38")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 31.3237
 
@@ -4097,7 +4097,7 @@ rotation = -1.45408
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-39")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.4531
 
@@ -4107,7 +4107,7 @@ rotation = -0.822056
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-48")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 38.6253
 
@@ -4134,7 +4134,7 @@ rotation = 1.56593
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-30")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.7092
 
@@ -4144,7 +4144,7 @@ rotation = 0.884527
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-31")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 31.9155
 
@@ -4154,7 +4154,7 @@ rotation = 0.0282723
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-36")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 17.7225
 
@@ -4181,7 +4181,7 @@ rotation = -4.04995
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-30")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.1174
 
@@ -4191,7 +4191,7 @@ rotation = 1.47956
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-31")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 24.5407
 
@@ -4201,7 +4201,7 @@ rotation = -3.11332
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-35")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 17.7225
 
@@ -4211,7 +4211,7 @@ rotation = 0.771436
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-32")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 38.7273
 
@@ -4221,7 +4221,7 @@ rotation = 0.0968047
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-37")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 24.336
 
@@ -4231,7 +4231,7 @@ rotation = -1.63079
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-40")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.1188
 
@@ -4241,7 +4241,7 @@ rotation = -0.890073
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-41")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 35.8095
 
@@ -4268,7 +4268,7 @@ rotation = -3.91301
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-31")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 31.16
 
@@ -4278,7 +4278,7 @@ rotation = 1.44076
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-32")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 25.1614
 
@@ -4288,7 +4288,7 @@ rotation = -3.04479
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-36")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 24.336
 
@@ -4298,7 +4298,7 @@ rotation = 0.882723
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-33")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 37.6102
 
@@ -4308,7 +4308,7 @@ rotation = 0.0849063
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-38")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 21.97
 
@@ -4318,7 +4318,7 @@ rotation = -2.31915
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-40")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 38.3963
 
@@ -4328,7 +4328,7 @@ rotation = -1.63975
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-41")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 30.6125
 
@@ -4338,7 +4338,7 @@ rotation = -0.867312
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-42")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 33.4604
 
@@ -4365,7 +4365,7 @@ rotation = -4.017
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-32")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.6847
 
@@ -4375,7 +4375,7 @@ rotation = 1.51073
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-33")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.5027
 
@@ -4385,7 +4385,7 @@ rotation = -3.05669
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-37")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 21.97
 
@@ -4395,7 +4395,7 @@ rotation = 0.948355
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-34")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 31.3237
 
@@ -4405,7 +4405,7 @@ rotation = -0.0278694
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-39")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.9389
 
@@ -4415,7 +4415,7 @@ rotation = -2.21941
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-41")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 40.3312
 
@@ -4425,7 +4425,7 @@ rotation = -1.59258
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-42")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.7269
 
@@ -4435,7 +4435,7 @@ rotation = -0.886446
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-43")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 35.7611
 
@@ -4462,7 +4462,7 @@ rotation = -4.09638
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-33")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 34.0664
 
@@ -4472,7 +4472,7 @@ rotation = -4.59568
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-34")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.4531
 
@@ -4482,7 +4482,7 @@ rotation = -3.16946
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-38")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 20.9389
 
@@ -4492,7 +4492,7 @@ rotation = 0.820357
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-46")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.9413
 
@@ -4502,7 +4502,7 @@ rotation = -0.100263
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-48")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.0282
 
@@ -4512,7 +4512,7 @@ rotation = -2.25488
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-42")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 34.6204
 
@@ -4522,7 +4522,7 @@ rotation = -1.52194
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-43")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.4401
 
@@ -4532,7 +4532,7 @@ rotation = -0.880212
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-50")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 39.9403
 
@@ -4559,7 +4559,7 @@ rotation = 1.5108
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-36")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.1188
 
@@ -4569,7 +4569,7 @@ rotation = 0.822447
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-37")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 38.3963
 
@@ -4579,7 +4579,7 @@ rotation = -0.0841074
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-41")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.7758
 
@@ -4606,7 +4606,7 @@ rotation = -4.03167
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-36")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 35.8095
 
@@ -4616,7 +4616,7 @@ rotation = 1.50184
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-37")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 30.6125
 
@@ -4626,7 +4626,7 @@ rotation = -3.2257
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-40")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.7758
 
@@ -4636,7 +4636,7 @@ rotation = 0.922183
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-38")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 40.3312
 
@@ -4646,7 +4646,7 @@ rotation = 0.194887
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-42")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.8271
 
@@ -4656,7 +4656,7 @@ rotation = -0.527931
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-44")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.9672
 
@@ -4683,7 +4683,7 @@ rotation = -4.0089
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-37")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 33.4604
 
@@ -4693,7 +4693,7 @@ rotation = 1.54901
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-38")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.7269
 
@@ -4703,7 +4703,7 @@ rotation = -2.94671
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-41")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.8271
 
@@ -4713,7 +4713,7 @@ rotation = 0.886712
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-39")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 34.6204
 
@@ -4723,7 +4723,7 @@ rotation = -0.0122795
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-43")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.8237
 
@@ -4733,7 +4733,7 @@ rotation = -1.58298
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-44")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 18.602
 
@@ -4743,7 +4743,7 @@ rotation = -0.658308
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-45")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.7992
 
@@ -4770,7 +4770,7 @@ rotation = -4.02804
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-38")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 35.7611
 
@@ -4780,7 +4780,7 @@ rotation = -4.66353
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-39")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.4401
 
@@ -4790,7 +4790,7 @@ rotation = -3.15387
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-42")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.8237
 
@@ -4800,7 +4800,7 @@ rotation = 0.845411
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-48")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 33.071
 
@@ -4810,7 +4810,7 @@ rotation = -0.151347
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-50")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 24.0118
 
@@ -4820,7 +4820,7 @@ rotation = -2.48337
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-44")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.433
 
@@ -4830,7 +4830,7 @@ rotation = -1.54234
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-45")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 18.2614
 
@@ -4857,7 +4857,7 @@ rotation = -3.66952
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-41")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.9672
 
@@ -4867,7 +4867,7 @@ rotation = 1.55862
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-42")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 18.602
 
@@ -4877,7 +4877,7 @@ rotation = 0.658224
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-43")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.433
 
@@ -4887,7 +4887,7 @@ rotation = 0.00240604
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-45")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.5479
 
@@ -4914,7 +4914,7 @@ rotation = -3.7999
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-42")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.7992
 
@@ -4924,7 +4924,7 @@ rotation = -4.68393
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-43")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 18.2614
 
@@ -4934,7 +4934,7 @@ rotation = -3.13919
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-44")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.5479
 
@@ -4944,7 +4944,7 @@ rotation = 0.547145
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-50")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.3917
 
@@ -4971,7 +4971,7 @@ rotation = -3.77834
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-20")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 36.4305
 
@@ -4981,7 +4981,7 @@ rotation = -4.61396
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-28")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 21.2533
 
@@ -4991,7 +4991,7 @@ rotation = -3.31278
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-34")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.4782
 
@@ -5001,7 +5001,7 @@ rotation = 0.66261
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-29")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 33.4309
 
@@ -5011,7 +5011,7 @@ rotation = -0.0828002
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-47")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.7618
 
@@ -5021,7 +5021,7 @@ rotation = -2.32124
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-39")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 29.9413
 
@@ -5031,7 +5031,7 @@ rotation = -1.45457
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-48")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 24.7016
 
@@ -5041,7 +5041,7 @@ rotation = -0.749872
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-49")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 38.7438
 
@@ -5068,7 +5068,7 @@ rotation = -1.51539
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-49")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 24.5522
 
@@ -5078,7 +5078,7 @@ rotation = -3.8129
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-28")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 37.0477
 
@@ -5088,7 +5088,7 @@ rotation = -4.68648
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-29")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.1972
 
@@ -5098,7 +5098,7 @@ rotation = -3.22439
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-46")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 26.7618
 
@@ -5108,7 +5108,7 @@ rotation = -2.40466
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-48")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 32.65
 
@@ -5135,7 +5135,7 @@ rotation = -3.96365
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-34")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 38.6253
 
@@ -5145,7 +5145,7 @@ rotation = -3.24186
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-39")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.0282
 
@@ -5155,7 +5155,7 @@ rotation = -4.59616
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-46")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 24.7016
 
@@ -5165,7 +5165,7 @@ rotation = -2.29618
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-43")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 33.071
 
@@ -5175,7 +5175,7 @@ rotation = -1.49518
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-50")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 28.8372
 
@@ -5185,7 +5185,7 @@ rotation = 0.736929
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-47")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 32.65
 
@@ -5195,7 +5195,7 @@ rotation = -0.0865457
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-49")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 25.2999
 
@@ -5205,7 +5205,7 @@ rotation = -0.802191
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-51")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 35.6662
 
@@ -5232,7 +5232,7 @@ rotation = -4.65698
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-47")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 24.5522
 
@@ -5242,7 +5242,7 @@ rotation = -3.89146
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-46")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 38.7438
 
@@ -5252,7 +5252,7 @@ rotation = -3.22814
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-48")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 25.2999
 
@@ -5262,7 +5262,7 @@ rotation = -2.30069
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-50")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 35.1506
 
@@ -5272,7 +5272,7 @@ rotation = -1.60371
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-51")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.7416
 
@@ -5299,7 +5299,7 @@ rotation = -4.02181
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-39")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 39.9403
 
@@ -5309,7 +5309,7 @@ rotation = -3.29294
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-43")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 24.0118
 
@@ -5319,7 +5319,7 @@ rotation = -4.63677
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-48")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 28.8372
 
@@ -5329,7 +5329,7 @@ rotation = -2.59445
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-45")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 27.3917
 
@@ -5339,7 +5339,7 @@ rotation = 0.840904
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-49")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 35.1506
 
@@ -5349,7 +5349,7 @@ rotation = 0.12071
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-51")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.4924
 
@@ -5376,7 +5376,7 @@ rotation = -3.94378
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-48")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 35.6662
 
@@ -5386,7 +5386,7 @@ rotation = 1.53788
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-49")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 23.7416
 
@@ -5396,7 +5396,7 @@ rotation = -3.02088
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-50")
 length = 0.0
-stiffness = 5.0
+stiffness = 30.0
 damping = 0.11
 metadata/joint_distance = 22.4924
 
